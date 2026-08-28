@@ -1,28 +1,1069 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://agrondo.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/"/>
     <lastmod>2026-08-28</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://agrondo.com/help.html</loc>
+    <loc>https://agrondo.com/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/"/>
     <lastmod>2026-08-28</lastmod>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/it/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/nl/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/pl/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/pt-BR/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/pt-PT/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/ro/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/sv/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/tr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/ko/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/zh-Hans/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/zh-Hant/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/help.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/help.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/help.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/help.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/help.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/help.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/help.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/help.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/help.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/help.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/help.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/help.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/de/help.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/help.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/help.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/help.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/help.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/help.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/help.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/help.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/help.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/help.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/help.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/help.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/es/help.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/help.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/help.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/help.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/help.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/help.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/help.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/help.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/help.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/help.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/help.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/help.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/fr/help.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/help.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/help.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/help.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/help.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/help.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/help.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/help.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/help.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/help.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/help.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/help.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/it/help.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/help.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/help.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/help.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/help.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/help.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/help.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/help.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/help.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/help.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/help.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/help.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/nl/help.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/help.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/help.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/help.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/help.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/help.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/help.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/help.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/help.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/help.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/help.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/help.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/pl/help.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/help.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/help.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/help.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/help.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/help.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/help.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/help.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/help.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/help.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/help.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/help.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/pt-BR/help.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/help.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/help.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/help.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/help.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/help.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/help.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/help.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/help.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/help.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/help.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/help.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/pt-PT/help.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/help.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/help.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/help.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/help.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/help.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/help.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/help.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/help.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/help.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/help.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/help.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/ro/help.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/help.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/help.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/help.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/help.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/help.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/help.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/help.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/help.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/help.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/help.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/help.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/sv/help.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/help.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/help.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/help.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/help.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/help.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/help.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/help.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/help.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/help.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/help.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/help.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/tr/help.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/help.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/help.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/help.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/help.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/help.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/help.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/help.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/help.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/help.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/help.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/help.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/ja/help.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/help.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/help.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/help.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/help.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/help.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/help.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/help.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/help.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/help.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/help.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/help.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/ko/help.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/help.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/help.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/help.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/help.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/help.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/help.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/help.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/help.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/help.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/help.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/help.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/zh-Hans/help.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/help.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/help.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/help.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/help.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/help.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/help.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/help.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/help.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/help.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/help.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/help.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/zh-Hant/help.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/help.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/help.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/help.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/help.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/help.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/help.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/help.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/help.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/help.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/help.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/help.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/help.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/help.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://agrondo.com/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/support.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/support.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/support.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/support.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/support.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/support.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/support.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/support.html"/>
     <lastmod>2026-08-28</lastmod>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/de/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/support.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/support.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/support.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/support.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/support.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/support.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/support.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/support.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/es/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/support.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/support.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/support.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/support.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/support.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/support.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/support.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/support.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/fr/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/support.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/support.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/support.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/support.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/support.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/support.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/support.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/support.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/it/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/support.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/support.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/support.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/support.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/support.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/support.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/support.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/support.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/nl/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/support.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/support.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/support.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/support.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/support.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/support.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/support.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/support.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/pl/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/support.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/support.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/support.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/support.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/support.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/support.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/support.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/support.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/pt-BR/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/support.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/support.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/support.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/support.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/support.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/support.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/support.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/support.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/pt-PT/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/support.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/support.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/support.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/support.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/support.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/support.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/support.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/support.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/ro/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/support.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/support.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/support.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/support.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/support.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/support.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/support.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/support.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/sv/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/support.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/support.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/support.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/support.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/support.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/support.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/support.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/support.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/tr/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/support.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/support.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/support.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/support.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/support.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/support.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/support.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/support.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/ja/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/support.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/support.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/support.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/support.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/support.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/support.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/support.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/support.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/ko/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/support.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/support.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/support.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/support.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/support.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/support.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/support.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/support.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/zh-Hans/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/support.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/support.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/support.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/support.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/support.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/support.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/support.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/support.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agrondo.com/zh-Hant/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://agrondo.com/support.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://agrondo.com/de/support.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://agrondo.com/es/support.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://agrondo.com/fr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://agrondo.com/it/support.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://agrondo.com/nl/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://agrondo.com/pl/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://agrondo.com/pt-BR/support.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://agrondo.com/pt-PT/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/support.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://agrondo.com/sv/support.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://agrondo.com/tr/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://agrondo.com/ja/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://agrondo.com/ko/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://agrondo.com/zh-Hans/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://agrondo.com/zh-Hant/support.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://agrondo.com/support.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://agrondo.com/privacy.html</loc>
     <lastmod>2026-08-28</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://agrondo.com/terms.html</loc>
     <lastmod>2026-08-28</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
 </urlset>

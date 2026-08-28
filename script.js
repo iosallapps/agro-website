@@ -203,3 +203,74 @@
      this file blocked. Nothing here to replace it with.
      ---------------------------------------------------------- */
 })();
+
+/* ============================================================
+   LANGUAGE
+   The site is static, so there is no server to read an IP and no
+   geo lookup: that would mean calling a third party, which the
+   privacy page promises this site never does. The browser's own
+   language list is a better signal anyway, since a Romanian
+   working in Germany wants Romanian, not German.
+   ============================================================ */
+(function () {
+  'use strict';
+
+  var SHIPPED = ['de','es','fr','it','nl','pl','pt-BR','pt-PT','ro','sv','tr','ja','ko','zh-Hans','zh-Hant'];
+  var KEY = 'agrondo.lang';
+
+  function store(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
+  function stored() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
+
+  /* Remember an explicit choice, so detection never argues with the user. */
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a.langs__item');
+    if (a) store(a.getAttribute('hreflang') || 'en');
+  });
+
+  /* Written by the picker's own markup: the page we are on right now. */
+  var here = document.documentElement.getAttribute('lang') || 'en';
+  if (here !== 'en') { store(here); return; }
+
+  /* Only the English pages auto-redirect, and only when nothing is stored,
+     so a deliberate visit to /de/ is never bounced and a return visit is
+     never redirected twice. */
+  if (stored()) return;
+
+  var tags = (navigator.languages && navigator.languages.length)
+    ? navigator.languages
+    : [navigator.language || ''];
+
+  function resolve(tag) {
+    if (!tag) return null;
+    var t = String(tag).replace('_', '-');
+    var i;
+    for (i = 0; i < SHIPPED.length; i++) {
+      if (SHIPPED[i].toLowerCase() === t.toLowerCase()) return SHIPPED[i];
+    }
+    var base = t.split('-')[0].toLowerCase();
+    var rest = t.slice(base.length + 1).toLowerCase();
+    /* Portuguese and Chinese need the region, and a bare tag has to pick one. */
+    if (base === 'pt') return rest === 'br' ? 'pt-BR' : 'pt-PT';
+    if (base === 'zh') {
+      if (rest.indexOf('hant') > -1 || rest === 'tw' || rest === 'hk' || rest === 'mo') return 'zh-Hant';
+      return 'zh-Hans';
+    }
+    if (base === 'en') return 'en';
+    for (i = 0; i < SHIPPED.length; i++) {
+      if (SHIPPED[i].toLowerCase() === base) return SHIPPED[i];
+    }
+    return null;
+  }
+
+  var match = null;
+  for (var i = 0; i < tags.length && !match; i++) match = resolve(tags[i]);
+
+  /* English, or a language this site does not carry, both stay here. */
+  if (!match || match === 'en') { store('en'); return; }
+
+  var path = location.pathname;
+  var page = path.replace(/^\/+/, '');
+  if (page === '' || page === 'index.html') page = '';
+  store(match);
+  location.replace('/' + match + '/' + page + location.search + location.hash);
+})();

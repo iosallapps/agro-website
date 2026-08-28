@@ -1574,3 +1574,68 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   .nav, .hero__plan, .device, .devices, .rail, .split__plate { display: none !important; }
   body { background: #fff; color: #000; }
 }
+
+/* ============================================================
+   14. LANGUAGE PICKER
+   A <details> disclosure, so the whole list is reachable with
+   scripting off. The menu is absolutely positioned but the page
+   never scrolls sideways because it is anchored to its right edge.
+   ============================================================ */
+.langs { position: relative; margin-left: auto; font-size: 0.9rem; }
+
+.langs__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 14px;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  color: var(--ink);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+.langs__button::-webkit-details-marker { display: none; }
+.langs__button:hover { border-color: var(--rule-lit); }
+.langs__button:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+.langs__globe { color: var(--green); font-size: 0.95em; }
+
+.langs__menu {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 8px);
+  z-index: 40;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2px;
+  min-width: 220px;
+  max-height: min(60vh, 420px);
+  overflow-y: auto;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: var(--sheet);
+  border: 1px solid var(--rule);
+  border-radius: 14px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
+}
+@media (min-width: 560px) { .langs__menu { grid-template-columns: 1fr 1fr; min-width: 380px; } }
+
+.langs__item {
+  display: block;
+  padding: 9px 12px;
+  border-radius: 9px;
+  color: var(--ink);
+  text-decoration: none;
+  white-space: nowrap;
+}
+a.langs__item:hover { background: var(--sheet-hi); text-decoration: none; }
+a.langs__item:focus-visible { outline: 2px solid var(--green); outline-offset: -2px; }
+.langs__item--on { color: var(--green-read); }
+
+/* The footer nav and the picker share a row on wide screens and stack below. */
+@media (max-width: 559px) {
+  .langs { margin-left: 0; }
+  .langs__menu { right: auto; left: 0; }
+}
