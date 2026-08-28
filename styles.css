@@ -1639,3 +1639,14 @@ a.langs__item:focus-visible { outline: 2px solid var(--green); outline-offset: -
   .langs { margin-left: 0; }
   .langs__menu { right: auto; left: 0; }
 }
+
+/* The header copy of the picker opens downward, and gives up its label on
+   narrow screens so the brand and the chip still fit on one line. */
+.langs--top { margin-left: 0; flex: 0 0 auto; }
+.langs--top .langs__menu { top: calc(100% + 8px); bottom: auto; right: 0; }
+
+@media (max-width: 719px) {
+  .langs--top .langs__button { padding: 0 12px; font-size: 0; gap: 0; }
+  .langs--top .langs__globe { font-size: 1.05rem; }
+  .langs--top .langs__menu { grid-template-columns: 1fr; min-width: 200px; }
+}
