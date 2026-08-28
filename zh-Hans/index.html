@@ -61,7 +61,7 @@
      Two colour systems, held apart.
 
      The same orange used to mean "money going out" on a figure and "the
-     field called Creek Bottom" on a dot two screens later, and the class
+     field called 路南十亩地" on a dot two screens later, and the class
      names admitted it: .dot--cost sat on a field. The page now reads on
      three rules.
 
@@ -71,15 +71,15 @@
 
      Nothing else is a coloured numeral, so no hue does two jobs inside one
      shape. Neither set was picked here. The field hues are
-     ScreenshotSeeder.fieldColors in seed order, which is why Creek Bottom
-     is the orange one and Home 80 the green one. The entry hues are
+     ScreenshotSeeder.fieldColors in seed order, which is why 路南十亩地
+     is the orange one and 村东大地 the green one. The entry hues are
      JournalEntryType.color.
      ---------------------------------------------------------- */
   :root {
-    --field-1: #4CAF50;  /* Home 80 */
-    --field-2: #FF9800;  /* Creek Bottom */
-    --field-3: #9C27B0;  /* Miller Place */
-    --field-4: #009688;  /* Timber Pasture */
+    --field-1: #4CAF50;  /* 村东大地 */
+    --field-2: #FF9800;  /* 路南十亩地 */
+    --field-3: #9C27B0;  /* 后坡苹果园 */
+    --field-4: #009688;  /* 村北大棚 */
 
     --entry-treatment: #FF9500;  /* JournalEntryType.treatment, .orange */
     --entry-operation: #0A84FF;  /* JournalEntryType.operation, .blue */
@@ -284,7 +284,7 @@
             <figure class="device" style="--dw:296px">
               <div class="device__screen">
                 <img src="/img/screens/zh-Hans/fieldMap.jpg"
-                     alt="Agrondo 的田块地图。卫星影像上画着四条彩色边界，下方列出 Creek Bottom、Home 80、Miller Place 和 Timber Pasture 及各自面积。"
+                     alt="Agrondo 的田块地图。卫星影像上画着四条彩色边界，下方列出村北大棚、村东大地、后坡苹果园和路南十亩地及各自面积。"
                      width="395" height="860" loading="lazy" decoding="async">
               </div>
             </figure>
@@ -308,22 +308,22 @@
               <ul class="ledger reveal" data-stagger>
                 <li class="ledger__row">
                   <span class="dot dot--f2"></span>
-                  <span class="ledger__label">Creek Bottom</span>
+                  <span class="ledger__label">路南十亩地</span>
                   <span class="fig ledger__fig">9.27<span class="unit">ha</span></span>
                 </li>
                 <li class="ledger__row">
                   <span class="dot dot--f1"></span>
-                  <span class="ledger__label">Home 80</span>
+                  <span class="ledger__label">村东大地</span>
                   <span class="fig ledger__fig">13.36<span class="unit">ha</span></span>
                 </li>
                 <li class="ledger__row">
                   <span class="dot dot--f3"></span>
-                  <span class="ledger__label">Miller Place</span>
+                  <span class="ledger__label">后坡苹果园</span>
                   <span class="fig ledger__fig">5.60<span class="unit">ha</span></span>
                 </li>
                 <li class="ledger__row">
                   <span class="dot dot--f4"></span>
-                  <span class="ledger__label">Timber Pasture</span>
+                  <span class="ledger__label">村北大棚</span>
                   <span class="fig ledger__fig">4.09<span class="unit">ha</span></span>
                 </li>
                 <li class="ledger__row ledger__row--plain ledger__row--sum">
@@ -367,7 +367,7 @@
         <figure class="device device--break" style="--dw:268px">
           <div class="device__screen">
             <img src="/img/screens/zh-Hans/journal.jpg"
-                 alt="Agrondo 的日志。玉米收获、每公顷 2.5 升的除草剂、一次播种作业、一次杀菌剂和一次犁地作业，每条都带日期。"
+                 alt="Agrondo 的日志。小麦收获、每公顷 2.5 升的除草剂戊唑醇、一次播种作业、每公顷 1.2 升的杀菌剂烟嘧磺隆和一次犁地作业，每条都带日期。"
                  width="395" height="860" loading="lazy" decoding="async">
           </div>
         </figure>
@@ -376,29 +376,29 @@
           <ul class="ledger reveal" data-stagger>
             <li class="ledger__row">
               <span class="dot dot--harvest"></span>
-              <span class="ledger__label">收获，玉米</span>
-              <span class="fig ledger__fig">35,000<span class="unit">kg</span></span>
-              <span class="ledger__meta spec-line num">7,525.00 USD</span>
+              <span class="ledger__label">收获，小麦</span>
+              <span class="fig ledger__fig">10168<span class="unit">kg</span></span>
+              <span class="ledger__meta spec-line num">15740 USD</span>
             </li>
             <li class="ledger__row">
               <span class="dot dot--treatment"></span>
-              <span class="ledger__label">除草剂</span>
+              <span class="ledger__label">除草剂，戊唑醇</span>
               <span class="fig ledger__fig">2.5<span class="unit">L/ha</span></span>
             </li>
             <li class="ledger__row">
               <span class="dot dot--operation"></span>
-              <span class="ledger__label">播种，Home 80</span>
-              <span class="spec-line num">Jun 20, 2026</span>
+              <span class="ledger__label">播种</span>
+              <span class="spec-line num">2026 年 6 月 20 日</span>
             </li>
             <li class="ledger__row">
               <span class="dot dot--treatment"></span>
-              <span class="ledger__label">杀菌剂</span>
+              <span class="ledger__label">杀菌剂，烟嘧磺隆</span>
               <span class="fig ledger__fig">1.2<span class="unit">L/ha</span></span>
             </li>
             <li class="ledger__row">
               <span class="dot dot--operation"></span>
-              <span class="ledger__label">犁地，Creek Bottom</span>
-              <span class="spec-line num">May 21, 2026</span>
+              <span class="ledger__label">犁地</span>
+              <span class="spec-line num">2026 年 5 月 21 日</span>
             </li>
           </ul>
           <p class="caption">上面日志截图里的五条记录。这里的圆点表示记录类型：用药、田间作业、收获。</p>
@@ -426,19 +426,19 @@
              smallest type underneath. It belongs here, beside the two report
              screens it was read off, and labelled before it is read. -->
         <div class="money-strip">
-          <p class="micro">演示农场。Creek Bottom，田块报告算出来的数。</p>
+          <p class="micro">演示农场。村北大棚，田块报告算出来的数。</p>
           <div class="strip reveal">
             <div class="strip__cell">
               <span class="micro">面积</span>
-              <span class="fig fig--strip">9.27<span class="unit">ha</span></span>
+              <span class="fig fig--strip">4.09<span class="unit">ha</span></span>
             </div>
             <div class="strip__cell">
               <span class="micro">成本</span>
-              <span class="fig fig--strip">3,635.00<span class="unit">USD</span></span>
+              <span class="fig fig--strip">11,554.00<span class="unit">USD</span></span>
             </div>
             <div class="strip__cell strip__cell--net">
               <span class="micro">净利润</span>
-              <span class="fig fig--strip fig--rev">11,209.00<span class="unit">USD</span></span>
+              <span class="fig fig--strip fig--rev">35,668.00<span class="unit">USD</span></span>
             </div>
           </div>
         </div>
@@ -448,29 +448,29 @@
             <div class="stack-12">
               <div class="panel reveal">
                 <div class="panel__head">
-                  <h3 class="h-3">East 40</h3>
-                  <p class="micro">Creek Bottom &middot; 4.57 ha</p>
+                  <h3 class="h-3">三号棚</h3>
+                  <p class="micro">村北大棚 &middot; 1.39 ha</p>
                 </div>
                 <ul class="ledger" data-stagger>
                   <li class="ledger__row ledger__row--plain">
                     <span class="ledger__label">用药 (4)</span>
-                    <span class="fig ledger__fig">983.00<span class="unit">USD</span></span>
+                    <span class="fig ledger__fig">2,151.00<span class="unit">USD</span></span>
                   </li>
                   <li class="ledger__row ledger__row--plain">
                     <span class="ledger__label">作业 (3)</span>
-                    <span class="fig ledger__fig">809.00<span class="unit">USD</span></span>
+                    <span class="fig ledger__fig">1,772.00<span class="unit">USD</span></span>
                   </li>
                   <li class="ledger__row ledger__row--plain">
                     <span class="ledger__label">成本</span>
-                    <span class="fig ledger__fig">1,792.00<span class="unit">USD</span></span>
+                    <span class="fig ledger__fig">3,923.00<span class="unit">USD</span></span>
                   </li>
                   <li class="ledger__row ledger__row--plain">
                     <span class="ledger__label">收入</span>
-                    <span class="fig ledger__fig fig--rev">7,319.00<span class="unit">USD</span></span>
+                    <span class="fig ledger__fig fig--rev">16,033.00<span class="unit">USD</span></span>
                   </li>
                   <li class="ledger__row ledger__row--plain ledger__row--net">
                     <span class="ledger__label">净利润</span>
-                    <span class="fig fig--net">5,527.00<span class="unit">USD</span></span>
+                    <span class="fig fig--net">12,110.00<span class="unit">USD</span></span>
                   </li>
                 </ul>
               </div>
@@ -483,14 +483,14 @@
               <figure class="device devices__back" style="--dw:244px">
                 <div class="device__screen">
                   <img src="/img/screens/zh-Hans/fieldReport.jpg"
-                       alt="Creek Bottom 的田块报告：两个地块共 9.27 公顷，列出以美元计的成本、收入和净利润。"
+                       alt="村北大棚的田块报告：三个地块共 4.09 公顷，列出以美元计的成本、收入和净利润。"
                        width="395" height="860" loading="lazy" decoding="async">
                 </div>
               </figure>
               <figure class="device devices__front" style="--dw:244px">
                 <div class="device__screen">
                   <img src="/img/screens/zh-Hans/parcelReport.jpg"
-                       alt="East 40 的地块报告，显示成本、收入和净利润，一条玉米收获记录，以及用药和作业的明细。"
+                       alt="三号棚的地块报告，显示成本、收入和净利润，一条小麦收获记录，以及用药和作业的明细。"
                        width="395" height="860" loading="lazy" decoding="async">
                 </div>
               </figure>
@@ -526,7 +526,7 @@
                 </li>
                 <li class="rot__node">
                   <span class="rot__year">2024</span>
-                  <span class="rot__crop">玉米</span>
+                  <span class="rot__crop">夏玉米</span>
                 </li>
                 <li class="rot__node">
                   <span class="rot__year">2025</span>
@@ -622,7 +622,7 @@
               <div class="spec__row"><dt>温度</dt><dd>15 至 24 &deg;C</dd></div>
               <div class="spec__row"><dt>最佳季节</dt><dd>秋播或春播</dd></div>
               <div class="spec__row"><dt>光照</dt><dd>全日照</dd></div>
-              <div class="spec__row"><dt>浇水</dt><dd>中等</dd></div>
+              <div class="spec__row"><dt>浇水</dt><dd>中</dd></div>
             </dl>
           </div>
           <p class="caption">养护指南里的小麦词条。往下是玉米、向日葵、水稻、大麦、马铃薯，还有 55 种：大田作物、蔬菜、香草和花卉。</p>

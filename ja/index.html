@@ -61,7 +61,7 @@
      Two colour systems, held apart.
 
      The same orange used to mean "money going out" on a figure and "the
-     field called Creek Bottom" on a dot two screens later, and the class
+     field called 川向こうの畑" on a dot two screens later, and the class
      names admitted it: .dot--cost sat on a field. The page now reads on
      three rules.
 
@@ -71,15 +71,15 @@
 
      Nothing else is a coloured numeral, so no hue does two jobs inside one
      shape. Neither set was picked here. The field hues are
-     ScreenshotSeeder.fieldColors in seed order, which is why Creek Bottom
-     is the orange one and Home 80 the green one. The entry hues are
+     ScreenshotSeeder.fieldColors in seed order, which is why 川向こうの畑
+     is the orange one and 道下の田 the green one. The entry hues are
      JournalEntryType.color.
      ---------------------------------------------------------- */
   :root {
-    --field-1: #4CAF50;  /* Home 80 */
-    --field-2: #FF9800;  /* Creek Bottom */
-    --field-3: #9C27B0;  /* Miller Place */
-    --field-4: #009688;  /* Timber Pasture */
+    --field-1: #4CAF50;  /* 道下の田 */
+    --field-2: #FF9800;  /* 川向こうの畑 */
+    --field-3: #9C27B0;  /* 西山の園地 */
+    --field-4: #009688;  /* 家裏ハウス */
 
     --entry-treatment: #FF9500;  /* JournalEntryType.treatment, .orange */
     --entry-operation: #0A84FF;  /* JournalEntryType.operation, .blue */
@@ -284,7 +284,7 @@
             <figure class="device" style="--dw:296px">
               <div class="device__screen">
                 <img src="/img/screens/ja/fieldMap.jpg"
-                     alt="Agrondoの圃場マップ。衛星画像の上に色分けされた4つの境界が描かれ、その下にCreek Bottom、Home 80、Miller Place、Timber Pastureが面積とともに並んでいます。"
+                     alt="Agrondoの圃場マップ。衛星画像の上に色分けされた4つの境界が描かれ、その下に家裏ハウス、西山の園地、川向こうの畑、道下の田が面積とともに並んでいます。"
                      width="395" height="860" loading="lazy" decoding="async">
               </div>
             </figure>
@@ -308,22 +308,22 @@
               <ul class="ledger reveal" data-stagger>
                 <li class="ledger__row">
                   <span class="dot dot--f2"></span>
-                  <span class="ledger__label">Creek Bottom</span>
+                  <span class="ledger__label">川向こうの畑</span>
                   <span class="fig ledger__fig">9.27<span class="unit">ha</span></span>
                 </li>
                 <li class="ledger__row">
                   <span class="dot dot--f1"></span>
-                  <span class="ledger__label">Home 80</span>
+                  <span class="ledger__label">道下の田</span>
                   <span class="fig ledger__fig">13.36<span class="unit">ha</span></span>
                 </li>
                 <li class="ledger__row">
                   <span class="dot dot--f3"></span>
-                  <span class="ledger__label">Miller Place</span>
+                  <span class="ledger__label">西山の園地</span>
                   <span class="fig ledger__fig">5.60<span class="unit">ha</span></span>
                 </li>
                 <li class="ledger__row">
                   <span class="dot dot--f4"></span>
-                  <span class="ledger__label">Timber Pasture</span>
+                  <span class="ledger__label">家裏ハウス</span>
                   <span class="fig ledger__fig">4.09<span class="unit">ha</span></span>
                 </li>
                 <li class="ledger__row ledger__row--plain ledger__row--sum">
@@ -331,7 +331,7 @@
                   <span class="fig ledger__fig">32.33<span class="unit">ha</span></span>
                 </li>
               </ul>
-              <p class="caption">アプリに並んでいるとおりの4枚の圃場です。それぞれ、地図と同じ色が付いています。面積は表示のときに丸めているので、合計は上の行を足した数より末尾の桁で1だけ大きくなります。</p>
+              <p class="caption">アプリに入っている4枚の圃場です。それぞれ、地図と同じ色が付いています。面積は表示のときに丸めているので、合計は上の行を足した数より末尾の桁で1だけ大きくなります。</p>
             </div>
           </div>
         </div>
@@ -367,7 +367,7 @@
         <figure class="device device--break" style="--dw:268px">
           <div class="device__screen">
             <img src="/img/screens/ja/journal.jpg"
-                 alt="Agrondoの日誌。トウモロコシの収穫、1ヘクタールあたり2.5リットルの除草剤、播種作業、殺菌剤、耕起作業が、それぞれ日付付きで並んでいます。"
+                 alt="Agrondoの日誌。はえぬきの収穫、1ヘクタールあたり2.5リットルの除草剤、播種作業、殺菌剤、耕起作業が、それぞれ日付付きで並んでいます。"
                  width="395" height="860" loading="lazy" decoding="async">
           </div>
         </figure>
@@ -376,9 +376,9 @@
           <ul class="ledger reveal" data-stagger>
             <li class="ledger__row">
               <span class="dot dot--harvest"></span>
-              <span class="ledger__label">収穫、トウモロコシ</span>
-              <span class="fig ledger__fig">35,000<span class="unit">kg</span></span>
-              <span class="ledger__meta spec-line num">7,525.00 USD</span>
+              <span class="ledger__label">収穫、はえぬき</span>
+              <span class="fig ledger__fig">15,464<span class="unit">kg</span></span>
+              <span class="ledger__meta spec-line num">498,714.00 USD</span>
             </li>
             <li class="ledger__row">
               <span class="dot dot--treatment"></span>
@@ -387,7 +387,7 @@
             </li>
             <li class="ledger__row">
               <span class="dot dot--operation"></span>
-              <span class="ledger__label">播種、Home 80</span>
+              <span class="ledger__label">播種</span>
               <span class="spec-line num">2026年6月20日</span>
             </li>
             <li class="ledger__row">
@@ -397,7 +397,7 @@
             </li>
             <li class="ledger__row">
               <span class="dot dot--operation"></span>
-              <span class="ledger__label">耕起、Creek Bottom</span>
+              <span class="ledger__label">耕起</span>
               <span class="spec-line num">2026年5月21日</span>
             </li>
           </ul>
@@ -426,19 +426,19 @@
              smallest type underneath. It belongs here, beside the two report
              screens it was read off, and labelled before it is read. -->
         <div class="money-strip">
-          <p class="micro">デモ農場。圃場レポートが集計したCreek Bottomの数字です。</p>
+          <p class="micro">デモ農場。圃場レポートが集計した家裏ハウスの数字です。</p>
           <div class="strip reveal">
             <div class="strip__cell">
               <span class="micro">面積</span>
-              <span class="fig fig--strip">9.27<span class="unit">ha</span></span>
+              <span class="fig fig--strip">4.09<span class="unit">ha</span></span>
             </div>
             <div class="strip__cell">
               <span class="micro">コスト</span>
-              <span class="fig fig--strip">3,635.00<span class="unit">USD</span></span>
+              <span class="fig fig--strip">240,766.00<span class="unit">USD</span></span>
             </div>
             <div class="strip__cell strip__cell--net">
               <span class="micro">純利益</span>
-              <span class="fig fig--strip fig--rev">11,209.00<span class="unit">USD</span></span>
+              <span class="fig fig--strip fig--rev">743,020.00<span class="unit">USD</span></span>
             </div>
           </div>
         </div>
@@ -448,29 +448,29 @@
             <div class="stack-12">
               <div class="panel reveal">
                 <div class="panel__head">
-                  <h3 class="h-3">East 40</h3>
-                  <p class="micro">Creek Bottom &middot; 4.57 ha</p>
+                  <h3 class="h-3">1号棟</h3>
+                  <p class="micro">家裏ハウス &middot; 2.02 ha</p>
                 </div>
                 <ul class="ledger" data-stagger>
                   <li class="ledger__row ledger__row--plain">
                     <span class="ledger__label">防除 (4)</span>
-                    <span class="fig ledger__fig">983.00<span class="unit">USD</span></span>
+                    <span class="fig ledger__fig">65,109.00<span class="unit">USD</span></span>
                   </li>
                   <li class="ledger__row ledger__row--plain">
                     <span class="ledger__label">作業 (3)</span>
-                    <span class="fig ledger__fig">809.00<span class="unit">USD</span></span>
+                    <span class="fig ledger__fig">53,602.00<span class="unit">USD</span></span>
                   </li>
                   <li class="ledger__row ledger__row--plain">
                     <span class="ledger__label">コスト</span>
-                    <span class="fig ledger__fig">1,792.00<span class="unit">USD</span></span>
+                    <span class="fig ledger__fig">118,711.00<span class="unit">USD</span></span>
                   </li>
                   <li class="ledger__row ledger__row--plain">
                     <span class="ledger__label">売上高</span>
-                    <span class="fig ledger__fig fig--rev">7,319.00<span class="unit">USD</span></span>
+                    <span class="fig ledger__fig fig--rev">485,072.00<span class="unit">USD</span></span>
                   </li>
                   <li class="ledger__row ledger__row--plain ledger__row--net">
                     <span class="ledger__label">純利益</span>
-                    <span class="fig fig--net">5,527.00<span class="unit">USD</span></span>
+                    <span class="fig fig--net">366,361.00<span class="unit">USD</span></span>
                   </li>
                 </ul>
               </div>
@@ -483,14 +483,14 @@
               <figure class="device devices__back" style="--dw:244px">
                 <div class="device__screen">
                   <img src="/img/screens/ja/fieldReport.jpg"
-                       alt="Creek Bottomの圃場レポート。2区画で9.27ヘクタール、コスト、売上高、純利益が米ドルで表示されています。"
+                       alt="家裏ハウスの圃場レポート。2区画で4.09ヘクタール、コスト、売上高、純利益が米ドルで表示されています。"
                        width="395" height="860" loading="lazy" decoding="async">
                 </div>
               </figure>
               <figure class="device devices__front" style="--dw:244px">
                 <div class="device__screen">
                   <img src="/img/screens/ja/parcelReport.jpg"
-                       alt="East 40の区画レポート。コスト、売上高、純利益に加えて、トウモロコシの収穫記録と、防除と作業の内訳が並んでいます。"
+                       alt="1号棟の区画レポート。コスト、売上高、純利益に加えて、はえぬきの収穫記録と、防除と作業の内訳が並んでいます。"
                        width="395" height="860" loading="lazy" decoding="async">
                 </div>
               </figure>
@@ -522,19 +522,19 @@
               <ol class="rot__line">
                 <li class="rot__node">
                   <span class="rot__year">2023</span>
-                  <span class="rot__crop">小麦</span>
+                  <span class="rot__crop">はえぬき</span>
                 </li>
                 <li class="rot__node">
                   <span class="rot__year">2024</span>
-                  <span class="rot__crop">トウモロコシ</span>
+                  <span class="rot__crop">大豆（里のほほえみ）</span>
                 </li>
                 <li class="rot__node">
                   <span class="rot__year">2025</span>
-                  <span class="rot__crop">小麦</span>
+                  <span class="rot__crop">はえぬき</span>
                 </li>
                 <li class="rot__node rot__node--flag">
                   <span class="rot__year">2026</span>
-                  <span class="rot__crop">小麦</span>
+                  <span class="rot__crop">はえぬき</span>
                   <span class="chip chip--warn">昨年と同じ作物</span>
                 </li>
               </ol>
@@ -574,7 +574,7 @@
           <li></li>
         </ul>
       </div>
-      <p class="micro plate__foot">小麦、トウモロコシ、ヒマワリ、稲、ほか57種。</p>
+      <p class="micro plate__foot">コムギ、トウモロコシ、ヒマワリ、イネ、ほか57種。</p>
     </div>
 
     <div class="split__body">
@@ -592,14 +592,14 @@
           <figure class="device devices__back" style="--dw:232px">
             <div class="device__screen">
               <img src="/img/screens/ja/plantDetail.jpg"
-                   alt="Agrondoの小麦のページ。土壌、気温、最適な時期、日当たり、水やりを並べた手入れガイドが表示されています。"
+                   alt="Agrondoのコムギのページ。土壌、気温、最適な時期、日当たり、水やりを並べた手入れガイドが表示されています。"
                    width="395" height="860" loading="lazy" decoding="async">
             </div>
           </figure>
           <figure class="device devices__front" style="--dw:272px">
             <div class="device__screen">
               <img src="/img/screens/ja/plants.jpg"
-                   alt="Agrondoの植物タブ。写真から植物を識別するボタンの下に、小麦、トウモロコシ、ヒマワリ、稲の手入れガイドが並んでいます。"
+                   alt="Agrondoの植物タブ。写真から植物を識別するボタンの下に、コムギ、トウモロコシ、ヒマワリ、イネの手入れガイドが並んでいます。"
                    width="395" height="860" loading="lazy" decoding="async">
             </div>
           </figure>
@@ -614,7 +614,7 @@
         <div class="stack-12">
           <div class="panel reveal">
             <div class="panel__head">
-              <h3 class="h-3">小麦</h3>
+              <h3 class="h-3">コムギ</h3>
               <p class="micro">Triticum aestivum</p>
             </div>
             <dl class="spec">
@@ -625,7 +625,7 @@
               <div class="spec__row"><dt>水やり</dt><dd>中</dd></div>
             </dl>
           </div>
-          <p class="caption">手入れガイドの小麦の項目です。このあとトウモロコシ、ヒマワリ、稲、大麦、ジャガイモと続き、さらに55種。畑作物、野菜、ハーブ、花が入っています。</p>
+          <p class="caption">手入れガイドのコムギの項目です。このあとトウモロコシ、ヒマワリ、イネと続き、さらに57種。畑作物、野菜、ハーブ、花が入っています。</p>
         </div>
       </div>
     </div>
@@ -642,7 +642,7 @@
             <figure class="device" style="--dw:232px">
               <div class="device__screen">
                 <img src="/img/screens/ja/home.jpg"
-                     alt="Agrondoのホーム画面。圃場4枚で32.33ヘクタールという農場の概況、3日間の天気予報、区画数と作物数が表示されています。"
+                     alt="Agrondoのホーム画面。有限会社 阿部農園の農場概況は圃場4枚で32.33ヘクタール。3日間の天気予報と、区画9、作物9のカウンターが並んでいます。"
                      width="395" height="860" loading="lazy" decoding="async">
               </div>
             </figure>

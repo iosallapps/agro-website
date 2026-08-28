@@ -61,7 +61,7 @@
      Two colour systems, held apart.
 
      The same orange used to mean "money going out" on a figure and "the
-     field called Creek Bottom" on a dot two screens later, and the class
+     field called El Majuelo" on a dot two screens later, and the class
      names admitted it: .dot--cost sat on a field. The page now reads on
      three rules.
 
@@ -71,15 +71,15 @@
 
      Nothing else is a coloured numeral, so no hue does two jobs inside one
      shape. Neither set was picked here. The field hues are
-     ScreenshotSeeder.fieldColors in seed order, which is why Creek Bottom
-     is the orange one and Home 80 the green one. The entry hues are
+     ScreenshotSeeder.fieldColors in seed order, which is why El Majuelo
+     is the orange one and Haza Grande the green one. The entry hues are
      JournalEntryType.color.
      ---------------------------------------------------------- */
   :root {
-    --field-1: #4CAF50;  /* Home 80 */
-    --field-2: #FF9800;  /* Creek Bottom */
-    --field-3: #9C27B0;  /* Miller Place */
-    --field-4: #009688;  /* Timber Pasture */
+    --field-1: #4CAF50;  /* Haza Grande */
+    --field-2: #FF9800;  /* El Majuelo */
+    --field-3: #9C27B0;  /* Olivar del Pozo */
+    --field-4: #009688;  /* La Dehesa */
 
     --entry-treatment: #FF9500;  /* JournalEntryType.treatment, .orange */
     --entry-operation: #0A84FF;  /* JournalEntryType.operation, .blue */
@@ -229,7 +229,7 @@
       <svg class="plan" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid meet" role="presentation" focusable="false">
         <g style="--d:980ms">
           <path class="plan__dim" style="--len:1180" d="M270 108 V126 M270 117 H1356 M1356 108 V126"/>
-          <text class="plan__total" x="813" y="96" text-anchor="middle">32.33 ha</text>
+          <text class="plan__total" x="813" y="96" text-anchor="middle">32,33 ha</text>
         </g>
 
         <path class="plan__track" d="M0 430 L1600 418 M0 450 L1600 438"/>
@@ -256,7 +256,7 @@
       </svg>
     </div>
 
-    <p class="micro hero__block">Plano de la explotación de ejemplo &middot; cuatro campos &middot; 32.33 ha</p>
+    <p class="micro hero__block">Plano de la explotación de ejemplo &middot; cuatro campos &middot; 32,33 ha</p>
 
     <div class="hero__body wrap" data-stagger>
       <p class="section__num" aria-hidden="true">01</p>
@@ -284,12 +284,12 @@
             <figure class="device" style="--dw:296px">
               <div class="device__screen">
                 <img src="/img/screens/es/fieldMap.jpg"
-                     alt="El mapa de campos de Agrondo. Cuatro límites de color dibujados sobre imagen de satélite y, debajo, Creek Bottom, Home 80, Miller Place y Timber Pasture con su superficie."
+                     alt="El mapa de campos de Agrondo. Cuatro límites de color dibujados sobre imagen de satélite y, debajo, El Majuelo, Haza Grande, La Dehesa y Olivar del Pozo con su superficie."
                      width="395" height="860" loading="lazy" decoding="async">
               </div>
             </figure>
             <div class="dim" style="--dim-top:62%;--dim-left:57%;--dim-w:32%" aria-hidden="true">
-              <span class="dim__chip">9.27 ha</span>
+              <span class="dim__chip">9,27 ha</span>
             </div>
           </div>
         </div>
@@ -308,27 +308,27 @@
               <ul class="ledger reveal" data-stagger>
                 <li class="ledger__row">
                   <span class="dot dot--f2"></span>
-                  <span class="ledger__label">Creek Bottom</span>
-                  <span class="fig ledger__fig">9.27<span class="unit">ha</span></span>
+                  <span class="ledger__label">El Majuelo</span>
+                  <span class="fig ledger__fig">9,27<span class="unit">ha</span></span>
                 </li>
                 <li class="ledger__row">
                   <span class="dot dot--f1"></span>
-                  <span class="ledger__label">Home 80</span>
-                  <span class="fig ledger__fig">13.36<span class="unit">ha</span></span>
+                  <span class="ledger__label">Haza Grande</span>
+                  <span class="fig ledger__fig">13,36<span class="unit">ha</span></span>
                 </li>
                 <li class="ledger__row">
                   <span class="dot dot--f3"></span>
-                  <span class="ledger__label">Miller Place</span>
-                  <span class="fig ledger__fig">5.60<span class="unit">ha</span></span>
+                  <span class="ledger__label">Olivar del Pozo</span>
+                  <span class="fig ledger__fig">5,60<span class="unit">ha</span></span>
                 </li>
                 <li class="ledger__row">
                   <span class="dot dot--f4"></span>
-                  <span class="ledger__label">Timber Pasture</span>
-                  <span class="fig ledger__fig">4.09<span class="unit">ha</span></span>
+                  <span class="ledger__label">La Dehesa</span>
+                  <span class="fig ledger__fig">4,09<span class="unit">ha</span></span>
                 </li>
                 <li class="ledger__row ledger__row--plain ledger__row--sum">
                   <span class="ledger__label">Superficie total</span>
-                  <span class="fig ledger__fig">32.33<span class="unit">ha</span></span>
+                  <span class="fig ledger__fig">32,33<span class="unit">ha</span></span>
                 </li>
               </ul>
               <p class="caption">Los cuatro campos tal y como los lista la app, cada uno con el color que lleva en el mapa. Las superficies se redondean al mostrarlas, por eso el total queda una centésima por encima de la suma de las filas.</p>
@@ -367,7 +367,7 @@
         <figure class="device device--break" style="--dw:268px">
           <div class="device__screen">
             <img src="/img/screens/es/journal.jpg"
-                 alt="El diario de Agrondo. Entradas de una cosecha de maíz, un herbicida a 2.5 litros por hectárea, una siembra, un fungicida y un arado, cada una con su fecha."
+                 alt="El diario de Agrondo. Entradas de una cosecha de trigo duro, un herbicida a 2.5 litros por hectárea, una siembra, un fungicida y un arado, cada una con su fecha."
                  width="395" height="860" loading="lazy" decoding="async">
           </div>
         </figure>
@@ -376,9 +376,9 @@
           <ul class="ledger reveal" data-stagger>
             <li class="ledger__row">
               <span class="dot dot--harvest"></span>
-              <span class="ledger__label">Cosecha, maíz</span>
-              <span class="fig ledger__fig">35,000<span class="unit">kg</span></span>
-              <span class="ledger__meta spec-line num">7,525.00 USD</span>
+              <span class="ledger__label">Cosecha, trigo duro</span>
+              <span class="fig ledger__fig">35000<span class="unit">kg</span></span>
+              <span class="ledger__meta spec-line num">7149,00 EUR</span>
             </li>
             <li class="ledger__row">
               <span class="dot dot--treatment"></span>
@@ -387,7 +387,7 @@
             </li>
             <li class="ledger__row">
               <span class="dot dot--operation"></span>
-              <span class="ledger__label">Siembra, Home 80</span>
+              <span class="ledger__label">Siembra</span>
               <span class="spec-line num">20 jun 2026</span>
             </li>
             <li class="ledger__row">
@@ -397,7 +397,7 @@
             </li>
             <li class="ledger__row">
               <span class="dot dot--operation"></span>
-              <span class="ledger__label">Arado, Creek Bottom</span>
+              <span class="ledger__label">Arado</span>
               <span class="spec-line num">21 may 2026</span>
             </li>
           </ul>
@@ -426,19 +426,19 @@
              smallest type underneath. It belongs here, beside the two report
              screens it was read off, and labelled before it is read. -->
         <div class="money-strip">
-          <p class="micro">Explotación de ejemplo. Creek Bottom, tal y como lo suma el informe del campo.</p>
+          <p class="micro">Explotación de ejemplo. El Majuelo, tal y como lo suma el informe del campo.</p>
           <div class="strip reveal">
             <div class="strip__cell">
               <span class="micro">Superficie</span>
-              <span class="fig fig--strip">9.27<span class="unit">ha</span></span>
+              <span class="fig fig--strip">9,27<span class="unit">ha</span></span>
             </div>
             <div class="strip__cell">
               <span class="micro">Costes</span>
-              <span class="fig fig--strip">3,635.00<span class="unit">USD</span></span>
+              <span class="fig fig--strip">3451,00<span class="unit">EUR</span></span>
             </div>
             <div class="strip__cell strip__cell--net">
               <span class="micro">Beneficio neto</span>
-              <span class="fig fig--strip fig--rev">11,209.00<span class="unit">USD</span></span>
+              <span class="fig fig--strip fig--rev">10.651,00<span class="unit">EUR</span></span>
             </div>
           </div>
         </div>
@@ -448,29 +448,29 @@
             <div class="stack-12">
               <div class="panel reveal">
                 <div class="panel__head">
-                  <h3 class="h-3">East 40</h3>
-                  <p class="micro">Creek Bottom &middot; 4.57 ha</p>
+                  <h3 class="h-3">Espaldera Nueva</h3>
+                  <p class="micro">El Majuelo &middot; 4,70 ha</p>
                 </div>
                 <ul class="ledger" data-stagger>
                   <li class="ledger__row ledger__row--plain">
                     <span class="ledger__label">Tratamientos (4)</span>
-                    <span class="fig ledger__fig">983.00<span class="unit">USD</span></span>
+                    <span class="fig ledger__fig">960,00<span class="unit">EUR</span></span>
                   </li>
                   <li class="ledger__row ledger__row--plain">
                     <span class="ledger__label">Operaciones (3)</span>
-                    <span class="fig ledger__fig">809.00<span class="unit">USD</span></span>
+                    <span class="fig ledger__fig">789,00<span class="unit">EUR</span></span>
                   </li>
                   <li class="ledger__row ledger__row--plain">
                     <span class="ledger__label">Costes</span>
-                    <span class="fig ledger__fig">1,792.00<span class="unit">USD</span></span>
+                    <span class="fig ledger__fig">1749,00<span class="unit">EUR</span></span>
                   </li>
                   <li class="ledger__row ledger__row--plain">
                     <span class="ledger__label">Ingresos</span>
-                    <span class="fig ledger__fig fig--rev">7,319.00<span class="unit">USD</span></span>
+                    <span class="fig ledger__fig fig--rev">7149,00<span class="unit">EUR</span></span>
                   </li>
                   <li class="ledger__row ledger__row--plain ledger__row--net">
                     <span class="ledger__label">Beneficio neto</span>
-                    <span class="fig fig--net">5,527.00<span class="unit">USD</span></span>
+                    <span class="fig fig--net">5400,00<span class="unit">EUR</span></span>
                   </li>
                 </ul>
               </div>
@@ -483,14 +483,14 @@
               <figure class="device devices__back" style="--dw:244px">
                 <div class="device__screen">
                   <img src="/img/screens/es/fieldReport.jpg"
-                       alt="El informe del campo Creek Bottom: 9.27 hectáreas repartidas en dos parcelas, con costes, ingresos y beneficio neto en dólares."
+                       alt="El informe del campo El Majuelo: 9,27 hectáreas repartidas en dos parcelas, con costes, ingresos y beneficio neto en euros."
                        width="395" height="860" loading="lazy" decoding="async">
                 </div>
               </figure>
               <figure class="device devices__front" style="--dw:244px">
                 <div class="device__screen">
                   <img src="/img/screens/es/parcelReport.jpg"
-                       alt="El informe de la parcela East 40, con costes, ingresos y beneficio neto, una entrada de cosecha de maíz y el desglose de tratamientos y operaciones."
+                       alt="El informe de la parcela Espaldera Nueva, con costes, ingresos y beneficio neto, una entrada de cosecha de trigo duro y el desglose de tratamientos y operaciones."
                        width="395" height="860" loading="lazy" decoding="async">
                 </div>
               </figure>
@@ -522,19 +522,19 @@
               <ol class="rot__line">
                 <li class="rot__node">
                   <span class="rot__year">2023</span>
-                  <span class="rot__crop">Trigo</span>
+                  <span class="rot__crop">Trigo duro</span>
                 </li>
                 <li class="rot__node">
                   <span class="rot__year">2024</span>
-                  <span class="rot__crop">Maíz</span>
+                  <span class="rot__crop">Girasol</span>
                 </li>
                 <li class="rot__node">
                   <span class="rot__year">2025</span>
-                  <span class="rot__crop">Trigo</span>
+                  <span class="rot__crop">Trigo duro</span>
                 </li>
                 <li class="rot__node rot__node--flag">
                   <span class="rot__year">2026</span>
-                  <span class="rot__crop">Trigo</span>
+                  <span class="rot__crop">Trigo duro</span>
                   <span class="chip chip--warn">Mismo cultivo que el año pasado</span>
                 </li>
               </ol>
@@ -620,7 +620,7 @@
             <dl class="spec">
               <div class="spec__row"><dt>Suelo</dt><dd>Franco fértil y con buen drenaje</dd></div>
               <div class="spec__row"><dt>Temperatura</dt><dd>De 15 a 24 &deg;C</dd></div>
-              <div class="spec__row"><dt>Mejor temporada</dt><dd>Siembra de otoño o de primavera</dd></div>
+              <div class="spec__row"><dt>Mejor temporada</dt><dd>Siembra de otoño o primavera</dd></div>
               <div class="spec__row"><dt>Luz</dt><dd>Pleno sol</dd></div>
               <div class="spec__row"><dt>Riego</dt><dd>Medio</dd></div>
             </dl>
@@ -642,7 +642,7 @@
             <figure class="device" style="--dw:232px">
               <div class="device__screen">
                 <img src="/img/screens/es/home.jpg"
-                     alt="La pantalla de inicio de Agrondo: un resumen de la explotación con 4 campos y 32.33 hectáreas, el pronóstico del tiempo a tres días y el recuento de parcelas y cultivos."
+                     alt="La pantalla de inicio de Agrondo: un resumen de la explotación Agrícola Hermanos Serrano, S.L. con 4 campos y 32,33 hectáreas, el pronóstico del tiempo a tres días y el recuento de 8 parcelas y 7 cultivos."
                      width="395" height="860" loading="lazy" decoding="async">
               </div>
             </figure>

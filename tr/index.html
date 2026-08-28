@@ -61,7 +61,7 @@
      Two colour systems, held apart.
 
      The same orange used to mean "money going out" on a figure and "the
-     field called Creek Bottom" on a dot two screens later, and the class
+     field called Dere Kenarı" on a dot two screens later, and the class
      names admitted it: .dot--cost sat on a field. The page now reads on
      three rules.
 
@@ -71,15 +71,15 @@
 
      Nothing else is a coloured numeral, so no hue does two jobs inside one
      shape. Neither set was picked here. The field hues are
-     ScreenshotSeeder.fieldColors in seed order, which is why Creek Bottom
-     is the orange one and Home 80 the green one. The entry hues are
+     ScreenshotSeeder.fieldColors in seed order, which is why Dere Kenarı
+     is the orange one and Yol Üstü Tarla the green one. The entry hues are
      JournalEntryType.color.
      ---------------------------------------------------------- */
   :root {
-    --field-1: #4CAF50;  /* Home 80 */
-    --field-2: #FF9800;  /* Creek Bottom */
-    --field-3: #9C27B0;  /* Miller Place */
-    --field-4: #009688;  /* Timber Pasture */
+    --field-1: #4CAF50;  /* Yol Üstü Tarla */
+    --field-2: #FF9800;  /* Dere Kenarı */
+    --field-3: #9C27B0;  /* Köy Altı Bağ */
+    --field-4: #009688;  /* Zeytinlik */
 
     --entry-treatment: #FF9500;  /* JournalEntryType.treatment, .orange */
     --entry-operation: #0A84FF;  /* JournalEntryType.operation, .blue */
@@ -229,7 +229,7 @@
       <svg class="plan" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid meet" role="presentation" focusable="false">
         <g style="--d:980ms">
           <path class="plan__dim" style="--len:1180" d="M270 108 V126 M270 117 H1356 M1356 108 V126"/>
-          <text class="plan__total" x="813" y="96" text-anchor="middle">32.33 ha</text>
+          <text class="plan__total" x="813" y="96" text-anchor="middle">32,33 ha</text>
         </g>
 
         <path class="plan__track" d="M0 430 L1600 418 M0 450 L1600 438"/>
@@ -256,7 +256,7 @@
       </svg>
     </div>
 
-    <p class="micro hero__block">Örnek çiftliğin planı &middot; dört tarla &middot; 32.33 ha</p>
+    <p class="micro hero__block">Örnek çiftliğin planı &middot; dört tarla &middot; 32,33 ha</p>
 
     <div class="hero__body wrap" data-stagger>
       <p class="section__num" aria-hidden="true">01</p>
@@ -284,12 +284,12 @@
             <figure class="device" style="--dw:296px">
               <div class="device__screen">
                 <img src="/img/screens/tr/fieldMap.jpg"
-                     alt="Agrondo'nun tarla haritası. Uydu görüntüsünün üzerine renkli dört sınır çizilmiş, altında Creek Bottom, Home 80, Miller Place ve Timber Pasture alanlarıyla birlikte sıralanıyor."
+                     alt="Agrondo'nun tarla haritası. Uydu görüntüsünün üzerine renkli dört sınır çizilmiş, altında Dere Kenarı, Köy Altı Bağ, Yol Üstü Tarla ve Zeytinlik alanlarıyla birlikte sıralanıyor."
                      width="395" height="860" loading="lazy" decoding="async">
               </div>
             </figure>
             <div class="dim" style="--dim-top:62%;--dim-left:57%;--dim-w:32%" aria-hidden="true">
-              <span class="dim__chip">9.27 ha</span>
+              <span class="dim__chip">9,27 ha</span>
             </div>
           </div>
         </div>
@@ -308,30 +308,30 @@
               <ul class="ledger reveal" data-stagger>
                 <li class="ledger__row">
                   <span class="dot dot--f2"></span>
-                  <span class="ledger__label">Creek Bottom</span>
-                  <span class="fig ledger__fig">9.27<span class="unit">ha</span></span>
+                  <span class="ledger__label">Dere Kenarı</span>
+                  <span class="fig ledger__fig">9,27<span class="unit">ha</span></span>
                 </li>
                 <li class="ledger__row">
                   <span class="dot dot--f1"></span>
-                  <span class="ledger__label">Home 80</span>
-                  <span class="fig ledger__fig">13.36<span class="unit">ha</span></span>
+                  <span class="ledger__label">Yol Üstü Tarla</span>
+                  <span class="fig ledger__fig">13,36<span class="unit">ha</span></span>
                 </li>
                 <li class="ledger__row">
                   <span class="dot dot--f3"></span>
-                  <span class="ledger__label">Miller Place</span>
-                  <span class="fig ledger__fig">5.60<span class="unit">ha</span></span>
+                  <span class="ledger__label">Köy Altı Bağ</span>
+                  <span class="fig ledger__fig">5,60<span class="unit">ha</span></span>
                 </li>
                 <li class="ledger__row">
                   <span class="dot dot--f4"></span>
-                  <span class="ledger__label">Timber Pasture</span>
-                  <span class="fig ledger__fig">4.09<span class="unit">ha</span></span>
+                  <span class="ledger__label">Zeytinlik</span>
+                  <span class="fig ledger__fig">4,09<span class="unit">ha</span></span>
                 </li>
                 <li class="ledger__row ledger__row--plain ledger__row--sum">
                   <span class="ledger__label">Çiftlik toplamı</span>
-                  <span class="fig ledger__fig">32.33<span class="unit">ha</span></span>
+                  <span class="fig ledger__fig">32,33<span class="unit">ha</span></span>
                 </li>
               </ul>
-              <p class="caption">Dört tarla, uygulamada listelendiği sırayla; her biri haritada taşıdığı renkle. Alanlar ekranda yuvarlanır, o yüzden toplam yukarıdaki satırlardan son hanede bir fazla çıkar.</p>
+              <p class="caption">Dört tarla, her biri haritada taşıdığı renkle. Alanlar ekranda yuvarlanır, o yüzden toplam yukarıdaki satırlardan son hanede bir fazla çıkar.</p>
             </div>
           </div>
         </div>
@@ -367,7 +367,7 @@
         <figure class="device device--break" style="--dw:268px">
           <div class="device__screen">
             <img src="/img/screens/tr/journal.jpg"
-                 alt="Agrondo günlüğü. Mısır hasadı, hektara 2.5 litre herbisit, tohumlama geçişi, fungisit ve sürme geçişi kayıtları, her biri tarihli."
+                 alt="Agrondo günlüğü. Ekmeklik buğday hasadı, hektara 2.5 litre herbisit, tohumlama geçişi, fungisit ve sürme geçişi kayıtları, her biri tarihli."
                  width="395" height="860" loading="lazy" decoding="async">
           </div>
         </figure>
@@ -376,9 +376,9 @@
           <ul class="ledger reveal" data-stagger>
             <li class="ledger__row">
               <span class="dot dot--harvest"></span>
-              <span class="ledger__label">Hasat, mısır</span>
-              <span class="fig ledger__fig">35,000<span class="unit">kg</span></span>
-              <span class="ledger__meta spec-line num">7,525.00 USD</span>
+              <span class="ledger__label">Hasat, ekmeklik buğday</span>
+              <span class="fig ledger__fig">35000<span class="unit">kg</span></span>
+              <span class="ledger__meta spec-line num">255850 USD</span>
             </li>
             <li class="ledger__row">
               <span class="dot dot--treatment"></span>
@@ -387,7 +387,7 @@
             </li>
             <li class="ledger__row">
               <span class="dot dot--operation"></span>
-              <span class="ledger__label">Tohumlama, Home 80</span>
+              <span class="ledger__label">Tohumlama, Yol Üstü Tarla</span>
               <span class="spec-line num">20 Haz 2026</span>
             </li>
             <li class="ledger__row">
@@ -397,7 +397,7 @@
             </li>
             <li class="ledger__row">
               <span class="dot dot--operation"></span>
-              <span class="ledger__label">Sürme, Creek Bottom</span>
+              <span class="ledger__label">Sürme, Köy Altı Bağ</span>
               <span class="spec-line num">21 May 2026</span>
             </li>
           </ul>
@@ -426,19 +426,19 @@
              smallest type underneath. It belongs here, beside the two report
              screens it was read off, and labelled before it is read. -->
         <div class="money-strip">
-          <p class="micro">Örnek çiftlik. Creek Bottom, Tarla Raporu'nun topladığı haliyle.</p>
+          <p class="micro">Örnek çiftlik. Dere Kenarı, Tarla Raporu'nun topladığı haliyle.</p>
           <div class="strip reveal">
             <div class="strip__cell">
               <span class="micro">Alan</span>
-              <span class="fig fig--strip">9.27<span class="unit">ha</span></span>
+              <span class="fig fig--strip">9,27<span class="unit">ha</span></span>
             </div>
             <div class="strip__cell">
               <span class="micro">Maliyet</span>
-              <span class="fig fig--strip">3,635.00<span class="unit">USD</span></span>
+              <span class="fig fig--strip">123.515,00<span class="unit">USD</span></span>
             </div>
             <div class="strip__cell strip__cell--net">
               <span class="micro">Net kâr</span>
-              <span class="fig fig--strip fig--rev">11,209.00<span class="unit">USD</span></span>
+              <span class="fig fig--strip fig--rev">381.175,00<span class="unit">USD</span></span>
             </div>
           </div>
         </div>
@@ -448,29 +448,29 @@
             <div class="stack-12">
               <div class="panel reveal">
                 <div class="panel__head">
-                  <h3 class="h-3">East 40</h3>
-                  <p class="micro">Creek Bottom &middot; 4.57 ha</p>
+                  <h3 class="h-3">Yol Tarafı</h3>
+                  <p class="micro">Dere Kenarı &middot; 4,57 ha</p>
                 </div>
                 <ul class="ledger" data-stagger>
                   <li class="ledger__row ledger__row--plain">
                     <span class="ledger__label">İlaçlamalar (4)</span>
-                    <span class="fig ledger__fig">983.00<span class="unit">USD</span></span>
+                    <span class="fig ledger__fig">33.401,00<span class="unit">USD</span></span>
                   </li>
                   <li class="ledger__row ledger__row--plain">
                     <span class="ledger__label">İşlemler (3)</span>
-                    <span class="fig ledger__fig">809.00<span class="unit">USD</span></span>
+                    <span class="fig ledger__fig">27.499,00<span class="unit">USD</span></span>
                   </li>
                   <li class="ledger__row ledger__row--plain">
                     <span class="ledger__label">Maliyetler</span>
-                    <span class="fig ledger__fig">1,792.00<span class="unit">USD</span></span>
+                    <span class="fig ledger__fig">60.900,00<span class="unit">USD</span></span>
                   </li>
                   <li class="ledger__row ledger__row--plain">
                     <span class="ledger__label">Gelir</span>
-                    <span class="fig ledger__fig fig--rev">7,319.00<span class="unit">USD</span></span>
+                    <span class="fig ledger__fig fig--rev">248.840,00<span class="unit">USD</span></span>
                   </li>
                   <li class="ledger__row ledger__row--plain ledger__row--net">
                     <span class="ledger__label">Net kâr</span>
-                    <span class="fig fig--net">5,527.00<span class="unit">USD</span></span>
+                    <span class="fig fig--net">187.940,00<span class="unit">USD</span></span>
                   </li>
                 </ul>
               </div>
@@ -483,14 +483,14 @@
               <figure class="device devices__back" style="--dw:244px">
                 <div class="device__screen">
                   <img src="/img/screens/tr/fieldReport.jpg"
-                       alt="Creek Bottom için Tarla Raporu: iki parselde 9.27 hektar, ABD doları cinsinden maliyet, gelir ve net kâr."
+                       alt="Dere Kenarı için Tarla Raporu: iki parselde 9,27 hektar, ABD doları cinsinden maliyet, gelir ve net kâr."
                        width="395" height="860" loading="lazy" decoding="async">
                 </div>
               </figure>
               <figure class="device devices__front" style="--dw:244px">
                 <div class="device__screen">
                   <img src="/img/screens/tr/parcelReport.jpg"
-                       alt="East 40 için Parsel Raporu: maliyet, gelir ve net kâr, bir mısır hasadı kaydı, ilaçlamaların ve işlemlerin dökümü."
+                       alt="Yol Tarafı için Parsel Raporu: maliyet, gelir ve net kâr, bir ekmeklik buğday hasadı kaydı, ilaçlamaların ve işlemlerin dökümü."
                        width="395" height="860" loading="lazy" decoding="async">
                 </div>
               </figure>
@@ -522,19 +522,19 @@
               <ol class="rot__line">
                 <li class="rot__node">
                   <span class="rot__year">2023</span>
-                  <span class="rot__crop">Buğday</span>
+                  <span class="rot__crop">Ekmeklik buğday</span>
                 </li>
                 <li class="rot__node">
                   <span class="rot__year">2024</span>
-                  <span class="rot__crop">Mısır</span>
+                  <span class="rot__crop">Silajlık mısır</span>
                 </li>
                 <li class="rot__node">
                   <span class="rot__year">2025</span>
-                  <span class="rot__crop">Buğday</span>
+                  <span class="rot__crop">Ekmeklik buğday</span>
                 </li>
                 <li class="rot__node rot__node--flag">
                   <span class="rot__year">2026</span>
-                  <span class="rot__crop">Buğday</span>
+                  <span class="rot__crop">Ekmeklik buğday</span>
                   <span class="chip chip--warn">Geçen yılla aynı ürün</span>
                 </li>
               </ol>
@@ -642,7 +642,7 @@
             <figure class="device" style="--dw:232px">
               <div class="device__screen">
                 <img src="/img/screens/tr/home.jpg"
-                     alt="Agrondo ana sayfası: 32.33 hektarda 4 tarlanın çiftlik özeti, üç günlük hava durumu tahmini, parsel ve ürün sayıları."
+                     alt="Agrondo ana sayfası: 32,33 hektarda 4 tarlanın çiftlik özeti, üç günlük hava durumu tahmini, parsel ve ürün sayıları."
                      width="395" height="860" loading="lazy" decoding="async">
               </div>
             </figure>

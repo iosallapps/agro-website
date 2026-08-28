@@ -61,7 +61,7 @@
      Two colour systems, held apart.
 
      The same orange used to mean "money going out" on a figure and "the
-     field called Creek Bottom" on a dot two screens later, and the class
+     field called Derrière la Grange" on a dot two screens later, and the class
      names admitted it: .dot--cost sat on a field. The page now reads on
      three rules.
 
@@ -71,15 +71,15 @@
 
      Nothing else is a coloured numeral, so no hue does two jobs inside one
      shape. Neither set was picked here. The field hues are
-     ScreenshotSeeder.fieldColors in seed order, which is why Creek Bottom
-     is the orange one and Home 80 the green one. The entry hues are
-     JournalEntryType.color.
+     ScreenshotSeeder.fieldColors in seed order, which is why Derrière la
+     Grange is the orange one and Les Grandes Terres the green one. The
+     entry hues are JournalEntryType.color.
      ---------------------------------------------------------- */
   :root {
-    --field-1: #4CAF50;  /* Home 80 */
-    --field-2: #FF9800;  /* Creek Bottom */
-    --field-3: #9C27B0;  /* Miller Place */
-    --field-4: #009688;  /* Timber Pasture */
+    --field-1: #4CAF50;  /* Les Grandes Terres */
+    --field-2: #FF9800;  /* Derrière la Grange */
+    --field-3: #9C27B0;  /* Le Clos du Coteau */
+    --field-4: #009688;  /* Le Pré du Ruisseau */
 
     --entry-treatment: #FF9500;  /* JournalEntryType.treatment, .orange */
     --entry-operation: #0A84FF;  /* JournalEntryType.operation, .blue */
@@ -229,7 +229,7 @@
       <svg class="plan" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid meet" role="presentation" focusable="false">
         <g style="--d:980ms">
           <path class="plan__dim" style="--len:1180" d="M270 108 V126 M270 117 H1356 M1356 108 V126"/>
-          <text class="plan__total" x="813" y="96" text-anchor="middle">32.33 ha</text>
+          <text class="plan__total" x="813" y="96" text-anchor="middle">32,33 ha</text>
         </g>
 
         <path class="plan__track" d="M0 430 L1600 418 M0 450 L1600 438"/>
@@ -256,7 +256,7 @@
       </svg>
     </div>
 
-    <p class="micro hero__block">Plan de l’exploitation de démonstration &middot; quatre champs &middot; 32.33 ha</p>
+    <p class="micro hero__block">Plan du GAEC de la Grande Métairie, l’exploitation de démonstration &middot; quatre champs &middot; 32,33 ha</p>
 
     <div class="hero__body wrap" data-stagger>
       <p class="section__num" aria-hidden="true">01</p>
@@ -284,12 +284,12 @@
             <figure class="device" style="--dw:296px">
               <div class="device__screen">
                 <img src="/img/screens/fr/fieldMap.jpg"
-                     alt="La carte des champs d'Agrondo. Quatre contours de couleur tracés sur l'imagerie satellite, avec Creek Bottom, Home 80, Miller Place et Timber Pasture listés en dessous avec leur surface."
+                     alt="La carte des champs d'Agrondo. Quatre contours de couleur tracés sur l'imagerie satellite, avec Derrière la Grange, Le Clos du Coteau, Le Pré du Ruisseau et Les Grandes Terres listés en dessous avec leur surface."
                      width="395" height="860" loading="lazy" decoding="async">
               </div>
             </figure>
             <div class="dim" style="--dim-top:62%;--dim-left:57%;--dim-w:32%" aria-hidden="true">
-              <span class="dim__chip">9.27 ha</span>
+              <span class="dim__chip">9,27 ha</span>
             </div>
           </div>
         </div>
@@ -308,30 +308,30 @@
               <ul class="ledger reveal" data-stagger>
                 <li class="ledger__row">
                   <span class="dot dot--f2"></span>
-                  <span class="ledger__label">Creek Bottom</span>
-                  <span class="fig ledger__fig">9.27<span class="unit">ha</span></span>
+                  <span class="ledger__label">Derrière la Grange</span>
+                  <span class="fig ledger__fig">9,27<span class="unit">ha</span></span>
                 </li>
                 <li class="ledger__row">
                   <span class="dot dot--f1"></span>
-                  <span class="ledger__label">Home 80</span>
-                  <span class="fig ledger__fig">13.36<span class="unit">ha</span></span>
+                  <span class="ledger__label">Les Grandes Terres</span>
+                  <span class="fig ledger__fig">13,36<span class="unit">ha</span></span>
                 </li>
                 <li class="ledger__row">
                   <span class="dot dot--f3"></span>
-                  <span class="ledger__label">Miller Place</span>
-                  <span class="fig ledger__fig">5.60<span class="unit">ha</span></span>
+                  <span class="ledger__label">Le Clos du Coteau</span>
+                  <span class="fig ledger__fig">5,60<span class="unit">ha</span></span>
                 </li>
                 <li class="ledger__row">
                   <span class="dot dot--f4"></span>
-                  <span class="ledger__label">Timber Pasture</span>
-                  <span class="fig ledger__fig">4.09<span class="unit">ha</span></span>
+                  <span class="ledger__label">Le Pré du Ruisseau</span>
+                  <span class="fig ledger__fig">4,09<span class="unit">ha</span></span>
                 </li>
                 <li class="ledger__row ledger__row--plain ledger__row--sum">
                   <span class="ledger__label">Total de l’exploitation</span>
-                  <span class="fig ledger__fig">32.33<span class="unit">ha</span></span>
+                  <span class="fig ledger__fig">32,33<span class="unit">ha</span></span>
                 </li>
               </ul>
-              <p class="caption">Les quatre champs tels que l’application les liste, chacun avec la couleur qu’il porte sur la carte. Les surfaces sont arrondies à l’affichage : le total dépasse donc la somme des lignes d’un centième.</p>
+              <p class="caption">Les quatre champs du GAEC de la Grande Métairie, chacun avec la surface et la couleur que l’application lui donne sur la carte. Les surfaces sont arrondies à l’affichage : le total dépasse donc la somme des lignes d’un centième.</p>
             </div>
           </div>
         </div>
@@ -367,7 +367,7 @@
         <figure class="device device--break" style="--dw:268px">
           <div class="device__screen">
             <img src="/img/screens/fr/journal.jpg"
-                 alt="Le journal d'Agrondo. Des entrées pour une récolte de maïs, un herbicide à 2.5 litres par hectare, un passage de semis, un fongicide et un labour, chacune datée."
+                 alt="Le journal d'Agrondo. Des entrées pour une récolte de blé tendre d'hiver, un herbicide à 2.5 litres par hectare, un passage de semis, un fongicide et un labour, chacune datée."
                  width="395" height="860" loading="lazy" decoding="async">
           </div>
         </figure>
@@ -376,9 +376,9 @@
           <ul class="ledger reveal" data-stagger>
             <li class="ledger__row">
               <span class="dot dot--harvest"></span>
-              <span class="ledger__label">Récolte, maïs</span>
-              <span class="fig ledger__fig">35,000<span class="unit">kg</span></span>
-              <span class="ledger__meta spec-line num">7,525.00 USD</span>
+              <span class="ledger__label">Récolte, blé tendre d’hiver</span>
+              <span class="fig ledger__fig">34&#8239;041<span class="unit">kg</span></span>
+              <span class="ledger__meta spec-line num">6&#8239;953,00 EUR</span>
             </li>
             <li class="ledger__row">
               <span class="dot dot--treatment"></span>
@@ -387,7 +387,7 @@
             </li>
             <li class="ledger__row">
               <span class="dot dot--operation"></span>
-              <span class="ledger__label">Semis, Home 80</span>
+              <span class="ledger__label">Semis</span>
               <span class="spec-line num">20 juin 2026</span>
             </li>
             <li class="ledger__row">
@@ -397,7 +397,7 @@
             </li>
             <li class="ledger__row">
               <span class="dot dot--operation"></span>
-              <span class="ledger__label">Labour, Creek Bottom</span>
+              <span class="ledger__label">Labour</span>
               <span class="spec-line num">21 mai 2026</span>
             </li>
           </ul>
@@ -426,19 +426,19 @@
              smallest type underneath. It belongs here, beside the two report
              screens it was read off, and labelled before it is read. -->
         <div class="money-strip">
-          <p class="micro">Exploitation de démonstration. Creek Bottom, additionné par le rapport de champ.</p>
+          <p class="micro">Exploitation de démonstration. Derrière la Grange, additionné par le rapport de champ.</p>
           <div class="strip reveal">
             <div class="strip__cell">
               <span class="micro">Surface</span>
-              <span class="fig fig--strip">9.27<span class="unit">ha</span></span>
+              <span class="fig fig--strip">9,27<span class="unit">ha</span></span>
             </div>
             <div class="strip__cell">
               <span class="micro">Coûts</span>
-              <span class="fig fig--strip">3,635.00<span class="unit">USD</span></span>
+              <span class="fig fig--strip">3&#8239;451,00<span class="unit">EUR</span></span>
             </div>
             <div class="strip__cell strip__cell--net">
               <span class="micro">Bénéfice net</span>
-              <span class="fig fig--strip fig--rev">11,209.00<span class="unit">USD</span></span>
+              <span class="fig fig--strip fig--rev">10&#8239;651,00<span class="unit">EUR</span></span>
             </div>
           </div>
         </div>
@@ -448,29 +448,29 @@
             <div class="stack-12">
               <div class="panel reveal">
                 <div class="panel__head">
-                  <h3 class="h-3">East 40</h3>
-                  <p class="micro">Creek Bottom &middot; 4.57 ha</p>
+                  <h3 class="h-3">Îlot 7</h3>
+                  <p class="micro">Derrière la Grange &middot; 4,57 ha</p>
                 </div>
                 <ul class="ledger" data-stagger>
                   <li class="ledger__row ledger__row--plain">
                     <span class="ledger__label">Traitements (4)</span>
-                    <span class="fig ledger__fig">983.00<span class="unit">USD</span></span>
+                    <span class="fig ledger__fig">933,00<span class="unit">EUR</span></span>
                   </li>
                   <li class="ledger__row ledger__row--plain">
                     <span class="ledger__label">Opérations (3)</span>
-                    <span class="fig ledger__fig">809.00<span class="unit">USD</span></span>
+                    <span class="fig ledger__fig">769,00<span class="unit">EUR</span></span>
                   </li>
                   <li class="ledger__row ledger__row--plain">
                     <span class="ledger__label">Coûts</span>
-                    <span class="fig ledger__fig">1,792.00<span class="unit">USD</span></span>
+                    <span class="fig ledger__fig">1&#8239;702,00<span class="unit">EUR</span></span>
                   </li>
                   <li class="ledger__row ledger__row--plain">
                     <span class="ledger__label">Revenu</span>
-                    <span class="fig ledger__fig fig--rev">7,319.00<span class="unit">USD</span></span>
+                    <span class="fig ledger__fig fig--rev">6&#8239;953,00<span class="unit">EUR</span></span>
                   </li>
                   <li class="ledger__row ledger__row--plain ledger__row--net">
                     <span class="ledger__label">Bénéfice net</span>
-                    <span class="fig fig--net">5,527.00<span class="unit">USD</span></span>
+                    <span class="fig fig--net">5&#8239;251,00<span class="unit">EUR</span></span>
                   </li>
                 </ul>
               </div>
@@ -483,14 +483,14 @@
               <figure class="device devices__back" style="--dw:244px">
                 <div class="device__screen">
                   <img src="/img/screens/fr/fieldReport.jpg"
-                       alt="Le rapport de champ de Creek Bottom : 9.27 hectares sur deux parcelles, avec les coûts, le revenu et le bénéfice net en dollars américains."
+                       alt="Le rapport de champ de Derrière la Grange : 9,27 hectares sur deux parcelles, avec les coûts, le revenu et le bénéfice net en euros."
                        width="395" height="860" loading="lazy" decoding="async">
                 </div>
               </figure>
               <figure class="device devices__front" style="--dw:244px">
                 <div class="device__screen">
                   <img src="/img/screens/fr/parcelReport.jpg"
-                       alt="Le rapport de parcelle d'East 40 : les coûts, le revenu et le bénéfice net, une entrée de récolte de maïs et le détail des traitements et des opérations."
+                       alt="Le rapport de la parcelle Îlot 7 : les coûts, le revenu et le bénéfice net, une entrée de récolte de blé tendre d'hiver et le détail des traitements et des opérations."
                        width="395" height="860" loading="lazy" decoding="async">
                 </div>
               </figure>
@@ -522,19 +522,19 @@
               <ol class="rot__line">
                 <li class="rot__node">
                   <span class="rot__year">2023</span>
-                  <span class="rot__crop">Blé</span>
+                  <span class="rot__crop">Colza d’hiver</span>
                 </li>
                 <li class="rot__node">
                   <span class="rot__year">2024</span>
-                  <span class="rot__crop">Maïs</span>
+                  <span class="rot__crop">Orge d’hiver</span>
                 </li>
                 <li class="rot__node">
                   <span class="rot__year">2025</span>
-                  <span class="rot__crop">Blé</span>
+                  <span class="rot__crop">Blé tendre d’hiver</span>
                 </li>
                 <li class="rot__node rot__node--flag">
                   <span class="rot__year">2026</span>
-                  <span class="rot__crop">Blé</span>
+                  <span class="rot__crop">Blé tendre d’hiver</span>
                   <span class="chip chip--warn">Même culture que l’an dernier</span>
                 </li>
               </ol>
@@ -622,7 +622,7 @@
               <div class="spec__row"><dt>Température</dt><dd>15 à 24 &deg;C</dd></div>
               <div class="spec__row"><dt>Meilleure saison</dt><dd>Semis d’automne ou de printemps</dd></div>
               <div class="spec__row"><dt>Lumière</dt><dd>Plein soleil</dd></div>
-              <div class="spec__row"><dt>Arrosage</dt><dd>Modéré</dd></div>
+              <div class="spec__row"><dt>Arrosage</dt><dd>Moyen</dd></div>
             </dl>
           </div>
           <p class="caption">La fiche Blé dans les guides d’entretien. Puis le maïs, le tournesol, le riz, l’orge, la pomme de terre et 55 autres : grandes cultures, légumes, herbes aromatiques et fleurs.</p>
@@ -642,11 +642,11 @@
             <figure class="device" style="--dw:232px">
               <div class="device__screen">
                 <img src="/img/screens/fr/home.jpg"
-                     alt="L'écran d'accueil d'Agrondo : un aperçu de l'exploitation avec 4 champs sur 32.33 hectares, les prévisions météo à trois jours et le nombre de parcelles et de cultures."
+                     alt="L'écran d'accueil d'Agrondo : un aperçu du GAEC de la Grande Métairie avec 4 champs sur 32,33 hectares, les prévisions météo à trois jours, puis les compteurs 8 parcelles et 8 cultures."
                      width="395" height="860" loading="lazy" decoding="async">
               </div>
             </figure>
-            <p class="caption">L’écran d’accueil de l’exploitation de démonstration.</p>
+            <p class="caption">L’écran d’accueil du GAEC de la Grande Métairie, l’exploitation de démonstration.</p>
           </div>
         </div>
 

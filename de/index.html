@@ -61,7 +61,7 @@
      Two colour systems, held apart.
 
      The same orange used to mean "money going out" on a figure and "the
-     field called Creek Bottom" on a dot two screens later, and the class
+     field called Am Mühlenweg" on a dot two screens later, and the class
      names admitted it: .dot--cost sat on a field. The page now reads on
      three rules.
 
@@ -71,15 +71,15 @@
 
      Nothing else is a coloured numeral, so no hue does two jobs inside one
      shape. Neither set was picked here. The field hues are
-     ScreenshotSeeder.fieldColors in seed order, which is why Creek Bottom
-     is the orange one and Home 80 the green one. The entry hues are
+     ScreenshotSeeder.fieldColors in seed order, which is why Am Mühlenweg
+     is the orange one and Große Breite the green one. The entry hues are
      JournalEntryType.color.
      ---------------------------------------------------------- */
   :root {
-    --field-1: #4CAF50;  /* Home 80 */
-    --field-2: #FF9800;  /* Creek Bottom */
-    --field-3: #9C27B0;  /* Miller Place */
-    --field-4: #009688;  /* Timber Pasture */
+    --field-1: #4CAF50;  /* Große Breite */
+    --field-2: #FF9800;  /* Am Mühlenweg */
+    --field-3: #9C27B0;  /* Anlage Südhang */
+    --field-4: #009688;  /* Bachwiese */
 
     --entry-treatment: #FF9500;  /* JournalEntryType.treatment, .orange */
     --entry-operation: #0A84FF;  /* JournalEntryType.operation, .blue */
@@ -229,7 +229,7 @@
       <svg class="plan" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid meet" role="presentation" focusable="false">
         <g style="--d:980ms">
           <path class="plan__dim" style="--len:1180" d="M270 108 V126 M270 117 H1356 M1356 108 V126"/>
-          <text class="plan__total" x="813" y="96" text-anchor="middle">32.33 ha</text>
+          <text class="plan__total" x="813" y="96" text-anchor="middle">32,33 ha</text>
         </g>
 
         <path class="plan__track" d="M0 430 L1600 418 M0 450 L1600 438"/>
@@ -256,7 +256,7 @@
       </svg>
     </div>
 
-    <p class="micro hero__block">Plan des Demo-Betriebs &middot; vier Felder &middot; 32.33 ha</p>
+    <p class="micro hero__block">Plan des Demo-Betriebs &middot; vier Felder &middot; 32,33 ha</p>
 
     <div class="hero__body wrap" data-stagger>
       <p class="section__num" aria-hidden="true">01</p>
@@ -284,12 +284,12 @@
             <figure class="device" style="--dw:296px">
               <div class="device__screen">
                 <img src="/img/screens/de/fieldMap.jpg"
-                     alt="Die Feldkarte von Agrondo. Vier farbige Grenzen liegen über dem Satellitenbild, darunter stehen Creek Bottom, Home 80, Miller Place und Timber Pasture mit ihren Flächen."
+                     alt="Die Feldkarte von Agrondo. Vier farbige Grenzen liegen über dem Satellitenbild, darunter stehen Am Mühlenweg, Anlage Südhang, Bachwiese und Große Breite mit ihren Flächen."
                      width="395" height="860" loading="lazy" decoding="async">
               </div>
             </figure>
             <div class="dim" style="--dim-top:62%;--dim-left:57%;--dim-w:32%" aria-hidden="true">
-              <span class="dim__chip">9.27 ha</span>
+              <span class="dim__chip">9,27 ha</span>
             </div>
           </div>
         </div>
@@ -308,27 +308,27 @@
               <ul class="ledger reveal" data-stagger>
                 <li class="ledger__row">
                   <span class="dot dot--f2"></span>
-                  <span class="ledger__label">Creek Bottom</span>
-                  <span class="fig ledger__fig">9.27<span class="unit">ha</span></span>
+                  <span class="ledger__label">Am Mühlenweg</span>
+                  <span class="fig ledger__fig">9,27<span class="unit">ha</span></span>
                 </li>
                 <li class="ledger__row">
                   <span class="dot dot--f1"></span>
-                  <span class="ledger__label">Home 80</span>
-                  <span class="fig ledger__fig">13.36<span class="unit">ha</span></span>
+                  <span class="ledger__label">Große Breite</span>
+                  <span class="fig ledger__fig">13,36<span class="unit">ha</span></span>
                 </li>
                 <li class="ledger__row">
                   <span class="dot dot--f3"></span>
-                  <span class="ledger__label">Miller Place</span>
-                  <span class="fig ledger__fig">5.60<span class="unit">ha</span></span>
+                  <span class="ledger__label">Anlage Südhang</span>
+                  <span class="fig ledger__fig">5,60<span class="unit">ha</span></span>
                 </li>
                 <li class="ledger__row">
                   <span class="dot dot--f4"></span>
-                  <span class="ledger__label">Timber Pasture</span>
-                  <span class="fig ledger__fig">4.09<span class="unit">ha</span></span>
+                  <span class="ledger__label">Bachwiese</span>
+                  <span class="fig ledger__fig">4,09<span class="unit">ha</span></span>
                 </li>
                 <li class="ledger__row ledger__row--plain ledger__row--sum">
                   <span class="ledger__label">Betrieb gesamt</span>
-                  <span class="fig ledger__fig">32.33<span class="unit">ha</span></span>
+                  <span class="fig ledger__fig">32,33<span class="unit">ha</span></span>
                 </li>
               </ul>
               <p class="caption">Die vier Felder, wie die App sie auflistet, jedes in der Farbe, die es auf der Karte trägt. Die Flächen sind gerundet, deshalb liegt die Summe ein Hundertstel höher als die Zeilen darüber.</p>
@@ -367,7 +367,7 @@
         <figure class="device device--break" style="--dw:268px">
           <div class="device__screen">
             <img src="/img/screens/de/journal.jpg"
-                 alt="Das Journal von Agrondo. Einträge für eine Maisernte, ein Herbizid mit 2.5 Liter je Hektar, eine Aussaat, ein Fungizid und eine Pflugüberfahrt, jeder mit Datum."
+                 alt="Das Journal von Agrondo. Einträge für eine Winterweizenernte, ein Herbizid mit 2.5 Liter je Hektar, eine Aussaat, ein Fungizid und eine Pflugüberfahrt, jeder mit Datum."
                  width="395" height="860" loading="lazy" decoding="async">
           </div>
         </figure>
@@ -376,9 +376,9 @@
           <ul class="ledger reveal" data-stagger>
             <li class="ledger__row">
               <span class="dot dot--harvest"></span>
-              <span class="ledger__label">Ernte, Mais</span>
-              <span class="fig ledger__fig">35,000<span class="unit">kg</span></span>
-              <span class="ledger__meta spec-line num">7,525.00 USD</span>
+              <span class="ledger__label">Ernte, Winterweizen</span>
+              <span class="fig ledger__fig">34041<span class="unit">kg</span></span>
+              <span class="ledger__meta spec-line num">6.953,00 EUR</span>
             </li>
             <li class="ledger__row">
               <span class="dot dot--treatment"></span>
@@ -387,7 +387,7 @@
             </li>
             <li class="ledger__row">
               <span class="dot dot--operation"></span>
-              <span class="ledger__label">Aussaat, Home 80</span>
+              <span class="ledger__label">Aussaat, Große Breite</span>
               <span class="spec-line num">20. Juni 2026</span>
             </li>
             <li class="ledger__row">
@@ -397,7 +397,7 @@
             </li>
             <li class="ledger__row">
               <span class="dot dot--operation"></span>
-              <span class="ledger__label">Pflügen, Creek Bottom</span>
+              <span class="ledger__label">Pflügen, Am Mühlenweg</span>
               <span class="spec-line num">21. Mai 2026</span>
             </li>
           </ul>
@@ -426,19 +426,19 @@
              smallest type underneath. It belongs here, beside the two report
              screens it was read off, and labelled before it is read. -->
         <div class="money-strip">
-          <p class="micro">Demo-Betrieb. Creek Bottom, wie der Feldbericht es zusammenrechnet.</p>
+          <p class="micro">Demo-Betrieb. Am Mühlenweg, wie der Feldbericht es zusammenrechnet.</p>
           <div class="strip reveal">
             <div class="strip__cell">
               <span class="micro">Fläche</span>
-              <span class="fig fig--strip">9.27<span class="unit">ha</span></span>
+              <span class="fig fig--strip">9,27<span class="unit">ha</span></span>
             </div>
             <div class="strip__cell">
               <span class="micro">Kosten</span>
-              <span class="fig fig--strip">3,635.00<span class="unit">USD</span></span>
+              <span class="fig fig--strip">3.451,00<span class="unit">EUR</span></span>
             </div>
             <div class="strip__cell strip__cell--net">
               <span class="micro">Nettogewinn</span>
-              <span class="fig fig--strip fig--rev">11,209.00<span class="unit">USD</span></span>
+              <span class="fig fig--strip fig--rev">10.651,00<span class="unit">EUR</span></span>
             </div>
           </div>
         </div>
@@ -448,29 +448,29 @@
             <div class="stack-12">
               <div class="panel reveal">
                 <div class="panel__head">
-                  <h3 class="h-3">East 40</h3>
-                  <p class="micro">Creek Bottom &middot; 4.57 ha</p>
+                  <h3 class="h-3">Schlag 7 West</h3>
+                  <p class="micro">Am Mühlenweg &middot; 4,57 ha</p>
                 </div>
                 <ul class="ledger" data-stagger>
                   <li class="ledger__row ledger__row--plain">
                     <span class="ledger__label">Behandlungen (4)</span>
-                    <span class="fig ledger__fig">983.00<span class="unit">USD</span></span>
+                    <span class="fig ledger__fig">933,00<span class="unit">EUR</span></span>
                   </li>
                   <li class="ledger__row ledger__row--plain">
                     <span class="ledger__label">Arbeitsgänge (3)</span>
-                    <span class="fig ledger__fig">809.00<span class="unit">USD</span></span>
+                    <span class="fig ledger__fig">769,00<span class="unit">EUR</span></span>
                   </li>
                   <li class="ledger__row ledger__row--plain">
                     <span class="ledger__label">Kosten</span>
-                    <span class="fig ledger__fig">1,792.00<span class="unit">USD</span></span>
+                    <span class="fig ledger__fig">1.702,00<span class="unit">EUR</span></span>
                   </li>
                   <li class="ledger__row ledger__row--plain">
                     <span class="ledger__label">Umsatz</span>
-                    <span class="fig ledger__fig fig--rev">7,319.00<span class="unit">USD</span></span>
+                    <span class="fig ledger__fig fig--rev">6.953,00<span class="unit">EUR</span></span>
                   </li>
                   <li class="ledger__row ledger__row--plain ledger__row--net">
                     <span class="ledger__label">Nettogewinn</span>
-                    <span class="fig fig--net">5,527.00<span class="unit">USD</span></span>
+                    <span class="fig fig--net">5.251,00<span class="unit">EUR</span></span>
                   </li>
                 </ul>
               </div>
@@ -483,14 +483,14 @@
               <figure class="device devices__back" style="--dw:244px">
                 <div class="device__screen">
                   <img src="/img/screens/de/fieldReport.jpg"
-                       alt="Der Feldbericht für Creek Bottom: 9.27 Hektar auf zwei Parzellen, mit Kosten, Umsatz und Nettogewinn in US-Dollar."
+                       alt="Der Feldbericht für Am Mühlenweg: 9,27 Hektar auf zwei Parzellen, mit Kosten, Umsatz und Nettogewinn in Euro."
                        width="395" height="860" loading="lazy" decoding="async">
                 </div>
               </figure>
               <figure class="device devices__front" style="--dw:244px">
                 <div class="device__screen">
                   <img src="/img/screens/de/parcelReport.jpg"
-                       alt="Der Parzellenbericht für East 40, mit Kosten, Umsatz und Nettogewinn, einem Eintrag zur Maisernte und einer Aufschlüsselung nach Behandlungen und Arbeitsgängen."
+                       alt="Der Parzellenbericht für Schlag 7 West, mit Kosten, Umsatz und Nettogewinn, einem Eintrag zur Winterweizenernte und einer Aufschlüsselung nach Behandlungen und Arbeitsgängen."
                        width="395" height="860" loading="lazy" decoding="async">
                 </div>
               </figure>
@@ -522,19 +522,19 @@
               <ol class="rot__line">
                 <li class="rot__node">
                   <span class="rot__year">2023</span>
-                  <span class="rot__crop">Weizen</span>
+                  <span class="rot__crop">Wintergerste</span>
                 </li>
                 <li class="rot__node">
                   <span class="rot__year">2024</span>
-                  <span class="rot__crop">Mais</span>
+                  <span class="rot__crop">Zuckerrüben</span>
                 </li>
                 <li class="rot__node">
                   <span class="rot__year">2025</span>
-                  <span class="rot__crop">Weizen</span>
+                  <span class="rot__crop">Winterweizen</span>
                 </li>
                 <li class="rot__node rot__node--flag">
                   <span class="rot__year">2026</span>
-                  <span class="rot__crop">Weizen</span>
+                  <span class="rot__crop">Winterweizen</span>
                   <span class="chip chip--warn">Gleiche Kultur wie im Vorjahr</span>
                 </li>
               </ol>
@@ -618,7 +618,7 @@
               <p class="micro">Triticum aestivum</p>
             </div>
             <dl class="spec">
-              <div class="spec__row"><dt>Boden</dt><dd>Nährstoffreicher, durchlässiger Lehmboden</dd></div>
+              <div class="spec__row"><dt>Boden</dt><dd>Fruchtbarer, gut durchlässiger Lehmboden</dd></div>
               <div class="spec__row"><dt>Temperatur</dt><dd>15 bis 24 &deg;C</dd></div>
               <div class="spec__row"><dt>Beste Saison</dt><dd>Aussaat im Herbst oder Frühjahr</dd></div>
               <div class="spec__row"><dt>Licht</dt><dd>Volle Sonne</dd></div>
@@ -642,7 +642,7 @@
             <figure class="device" style="--dw:232px">
               <div class="device__screen">
                 <img src="/img/screens/de/home.jpg"
-                     alt="Der Startbildschirm von Agrondo: ein Betriebsüberblick mit 4 Feldern auf 32.33 Hektar, eine Dreitagesvorhersage und die Anzahl der Parzellen und Kulturen."
+                     alt="Der Startbildschirm von Agrondo: ein Betriebsüberblick mit 4 Feldern auf 32,33 Hektar, eine Dreitagesvorhersage und die Anzahl der Parzellen und Kulturen."
                      width="395" height="860" loading="lazy" decoding="async">
               </div>
             </figure>

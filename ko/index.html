@@ -61,7 +61,7 @@
      Two colour systems, held apart.
 
      The same orange used to mean "money going out" on a figure and "the
-     field called Creek Bottom" on a dot two screens later, and the class
+     field called 도로 건너 밭" on a dot two screens later, and the class
      names admitted it: .dot--cost sat on a field. The page now reads on
      three rules.
 
@@ -71,15 +71,15 @@
 
      Nothing else is a coloured numeral, so no hue does two jobs inside one
      shape. Neither set was picked here. The field hues are
-     ScreenshotSeeder.fieldColors in seed order, which is why Creek Bottom
-     is the orange one and Home 80 the green one. The entry hues are
+     ScreenshotSeeder.fieldColors in seed order, which is why 도로 건너 밭
+     is the orange one and 집앞 큰논 the green one. The entry hues are
      JournalEntryType.color.
      ---------------------------------------------------------- */
   :root {
-    --field-1: #4CAF50;  /* Home 80 */
-    --field-2: #FF9800;  /* Creek Bottom */
-    --field-3: #9C27B0;  /* Miller Place */
-    --field-4: #009688;  /* Timber Pasture */
+    --field-1: #4CAF50;  /* 집앞 큰논 */
+    --field-2: #FF9800;  /* 도로 건너 밭 */
+    --field-3: #9C27B0;  /* 산밑 배밭 */
+    --field-4: #009688;  /* 하우스 3동 */
 
     --entry-treatment: #FF9500;  /* JournalEntryType.treatment, .orange */
     --entry-operation: #0A84FF;  /* JournalEntryType.operation, .blue */
@@ -284,7 +284,7 @@
             <figure class="device" style="--dw:296px">
               <div class="device__screen">
                 <img src="/img/screens/ko/fieldMap.jpg"
-                     alt="Agrondo의 농지 지도. 위성 사진 위에 색이 다른 경계 네 개가 그려져 있고, 그 아래에 Creek Bottom, Home 80, Miller Place, Timber Pasture가 각자 면적과 함께 적혀 있어요."
+                     alt="Agrondo의 농지 지도. 위성 사진 위에 색이 다른 경계 네 개가 그려져 있고, 그 아래에 도로 건너 밭, 산밑 배밭, 집앞 큰논, 하우스 3동이 각자 면적과 함께 적혀 있어요."
                      width="395" height="860" loading="lazy" decoding="async">
               </div>
             </figure>
@@ -308,22 +308,22 @@
               <ul class="ledger reveal" data-stagger>
                 <li class="ledger__row">
                   <span class="dot dot--f2"></span>
-                  <span class="ledger__label">Creek Bottom</span>
+                  <span class="ledger__label">도로 건너 밭</span>
                   <span class="fig ledger__fig">9.27<span class="unit">ha</span></span>
                 </li>
                 <li class="ledger__row">
                   <span class="dot dot--f1"></span>
-                  <span class="ledger__label">Home 80</span>
+                  <span class="ledger__label">집앞 큰논</span>
                   <span class="fig ledger__fig">13.36<span class="unit">ha</span></span>
                 </li>
                 <li class="ledger__row">
                   <span class="dot dot--f3"></span>
-                  <span class="ledger__label">Miller Place</span>
+                  <span class="ledger__label">산밑 배밭</span>
                   <span class="fig ledger__fig">5.60<span class="unit">ha</span></span>
                 </li>
                 <li class="ledger__row">
                   <span class="dot dot--f4"></span>
-                  <span class="ledger__label">Timber Pasture</span>
+                  <span class="ledger__label">하우스 3동</span>
                   <span class="fig ledger__fig">4.09<span class="unit">ha</span></span>
                 </li>
                 <li class="ledger__row ledger__row--plain ledger__row--sum">
@@ -367,7 +367,7 @@
         <figure class="device device--break" style="--dw:268px">
           <div class="device__screen">
             <img src="/img/screens/ko/journal.jpg"
-                 alt="Agrondo 일지. 옥수수 수확, 헥타르당 2.5리터 제초제, 파종 작업, 살균제, 경운 작업이 각각 날짜와 함께 적혀 있어요."
+                 alt="Agrondo 일지. 추청벼 수확, 헥타르당 2.5리터 제초제, 파종 작업, 살균제, 경운 작업이 각각 날짜와 함께 적혀 있어요."
                  width="395" height="860" loading="lazy" decoding="async">
           </div>
         </figure>
@@ -376,9 +376,9 @@
           <ul class="ledger reveal" data-stagger>
             <li class="ledger__row">
               <span class="dot dot--harvest"></span>
-              <span class="ledger__label">수확, 옥수수</span>
-              <span class="fig ledger__fig">35,000<span class="unit">kg</span></span>
-              <span class="ledger__meta spec-line num">7,525.00 USD</span>
+              <span class="ledger__label">수확, 추청벼</span>
+              <span class="fig ledger__fig">34,041<span class="unit">kg</span></span>
+              <span class="ledger__meta spec-line num">9,880,400.00 USD</span>
             </li>
             <li class="ledger__row">
               <span class="dot dot--treatment"></span>
@@ -387,7 +387,7 @@
             </li>
             <li class="ledger__row">
               <span class="dot dot--operation"></span>
-              <span class="ledger__label">파종, Home 80</span>
+              <span class="ledger__label">파종, 집앞 큰논</span>
               <span class="spec-line num">2026년 6월 20일</span>
             </li>
             <li class="ledger__row">
@@ -397,7 +397,7 @@
             </li>
             <li class="ledger__row">
               <span class="dot dot--operation"></span>
-              <span class="ledger__label">경운, Creek Bottom</span>
+              <span class="ledger__label">경운, 산밑 배밭</span>
               <span class="spec-line num">2026년 5월 21일</span>
             </li>
           </ul>
@@ -426,7 +426,7 @@
              smallest type underneath. It belongs here, beside the two report
              screens it was read off, and labelled before it is read. -->
         <div class="money-strip">
-          <p class="micro">예시 농장. 농지 보고서가 합산한 Creek Bottom이에요.</p>
+          <p class="micro">예시 농장. 농지 보고서가 합산한 도로 건너 밭이에요.</p>
           <div class="strip reveal">
             <div class="strip__cell">
               <span class="micro">면적</span>
@@ -434,11 +434,11 @@
             </div>
             <div class="strip__cell">
               <span class="micro">비용</span>
-              <span class="fig fig--strip">3,635.00<span class="unit">USD</span></span>
+              <span class="fig fig--strip">4,904,202.00<span class="unit">USD</span></span>
             </div>
             <div class="strip__cell strip__cell--net">
               <span class="micro">순이익</span>
-              <span class="fig fig--strip fig--rev">11,209.00<span class="unit">USD</span></span>
+              <span class="fig fig--strip fig--rev">15,134,948.00<span class="unit">USD</span></span>
             </div>
           </div>
         </div>
@@ -448,29 +448,29 @@
             <div class="stack-12">
               <div class="panel reveal">
                 <div class="panel__head">
-                  <h3 class="h-3">East 40</h3>
-                  <p class="micro">Creek Bottom &middot; 4.57 ha</p>
+                  <h3 class="h-3">1번 두둑</h3>
+                  <p class="micro">도로 건너 밭 &middot; 4.57 ha</p>
                 </div>
                 <ul class="ledger" data-stagger>
                   <li class="ledger__row ledger__row--plain">
                     <span class="ledger__label">방제 (4)</span>
-                    <span class="fig ledger__fig">983.00<span class="unit">USD</span></span>
+                    <span class="fig ledger__fig">1,326,223.00<span class="unit">USD</span></span>
                   </li>
                   <li class="ledger__row ledger__row--plain">
                     <span class="ledger__label">작업 (3)</span>
-                    <span class="fig ledger__fig">809.00<span class="unit">USD</span></span>
+                    <span class="fig ledger__fig">1,091,821.00<span class="unit">USD</span></span>
                   </li>
                   <li class="ledger__row ledger__row--plain">
                     <span class="ledger__label">비용</span>
-                    <span class="fig ledger__fig">1,792.00<span class="unit">USD</span></span>
+                    <span class="fig ledger__fig">2,418,044.00<span class="unit">USD</span></span>
                   </li>
                   <li class="ledger__row ledger__row--plain">
                     <span class="ledger__label">수익</span>
-                    <span class="fig ledger__fig fig--rev">7,319.00<span class="unit">USD</span></span>
+                    <span class="fig ledger__fig fig--rev">9,880,400.00<span class="unit">USD</span></span>
                   </li>
                   <li class="ledger__row ledger__row--plain ledger__row--net">
                     <span class="ledger__label">순이익</span>
-                    <span class="fig fig--net">5,527.00<span class="unit">USD</span></span>
+                    <span class="fig fig--net">7,462,356.00<span class="unit">USD</span></span>
                   </li>
                 </ul>
               </div>
@@ -483,14 +483,14 @@
               <figure class="device devices__back" style="--dw:244px">
                 <div class="device__screen">
                   <img src="/img/screens/ko/fieldReport.jpg"
-                       alt="Creek Bottom의 농지 보고서. 구획 두 개를 합쳐 9.27헥타르이고, 비용과 수익, 순이익이 미국 달러로 적혀 있어요."
+                       alt="도로 건너 밭의 농지 보고서. 구획 두 개를 합쳐 9.27헥타르이고, 비용과 수익, 순이익이 미국 달러로 적혀 있어요."
                        width="395" height="860" loading="lazy" decoding="async">
                 </div>
               </figure>
               <figure class="device devices__front" style="--dw:244px">
                 <div class="device__screen">
                   <img src="/img/screens/ko/parcelReport.jpg"
-                       alt="East 40의 구획 보고서. 비용과 수익, 순이익에 옥수수 수확 항목, 방제와 작업 내역이 나와 있어요."
+                       alt="1번 두둑의 구획 보고서. 비용과 수익, 순이익에 추청벼 수확 항목, 방제와 작업 내역이 나와 있어요."
                        width="395" height="860" loading="lazy" decoding="async">
                 </div>
               </figure>
@@ -522,19 +522,19 @@
               <ol class="rot__line">
                 <li class="rot__node">
                   <span class="rot__year">2023</span>
-                  <span class="rot__crop">밀</span>
+                  <span class="rot__crop">고추</span>
                 </li>
                 <li class="rot__node">
                   <span class="rot__year">2024</span>
-                  <span class="rot__crop">옥수수</span>
+                  <span class="rot__crop">들깨</span>
                 </li>
                 <li class="rot__node">
                   <span class="rot__year">2025</span>
-                  <span class="rot__crop">밀</span>
+                  <span class="rot__crop">추청벼</span>
                 </li>
                 <li class="rot__node rot__node--flag">
                   <span class="rot__year">2026</span>
-                  <span class="rot__crop">밀</span>
+                  <span class="rot__crop">추청벼</span>
                   <span class="chip chip--warn">작년과 같은 작물</span>
                 </li>
               </ol>

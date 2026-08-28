@@ -61,7 +61,7 @@
      Two colour systems, held apart.
 
      The same orange used to mean "money going out" on a figure and "the
-     field called Creek Bottom" on a dot two screens later, and the class
+     field called După pădure" on a dot two screens later, and the class
      names admitted it: .dot--cost sat on a field. The page now reads on
      three rules.
 
@@ -71,15 +71,15 @@
 
      Nothing else is a coloured numeral, so no hue does two jobs inside one
      shape. Neither set was picked here. The field hues are
-     ScreenshotSeeder.fieldColors in seed order, which is why Creek Bottom
-     is the orange one and Home 80 the green one. The entry hues are
+     ScreenshotSeeder.fieldColors in seed order, which is why După pădure
+     is the orange one and Tarla la șosea the green one. The entry hues are
      JournalEntryType.color.
      ---------------------------------------------------------- */
   :root {
-    --field-1: #4CAF50;  /* Home 80 */
-    --field-2: #FF9800;  /* Creek Bottom */
-    --field-3: #9C27B0;  /* Miller Place */
-    --field-4: #009688;  /* Timber Pasture */
+    --field-1: #4CAF50;  /* Tarla la șosea */
+    --field-2: #FF9800;  /* După pădure */
+    --field-3: #9C27B0;  /* Via de la deal */
+    --field-4: #009688;  /* Livada din vale */
 
     --entry-treatment: #FF9500;  /* JournalEntryType.treatment, .orange */
     --entry-operation: #0A84FF;  /* JournalEntryType.operation, .blue */
@@ -229,7 +229,7 @@
       <svg class="plan" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid meet" role="presentation" focusable="false">
         <g style="--d:980ms">
           <path class="plan__dim" style="--len:1180" d="M270 108 V126 M270 117 H1356 M1356 108 V126"/>
-          <text class="plan__total" x="813" y="96" text-anchor="middle">32.33 ha</text>
+          <text class="plan__total" x="813" y="96" text-anchor="middle">32,33 ha</text>
         </g>
 
         <path class="plan__track" d="M0 430 L1600 418 M0 450 L1600 438"/>
@@ -256,7 +256,7 @@
       </svg>
     </div>
 
-    <p class="micro hero__block">Planul fermei demo &middot; patru câmpuri &middot; 32.33 ha</p>
+    <p class="micro hero__block">Planul fermei demo &middot; patru câmpuri &middot; 32,33 ha</p>
 
     <div class="hero__body wrap" data-stagger>
       <p class="section__num" aria-hidden="true">01</p>
@@ -284,12 +284,12 @@
             <figure class="device" style="--dw:296px">
               <div class="device__screen">
                 <img src="/img/screens/ro/fieldMap.jpg"
-                     alt="Harta câmpurilor din Agrondo. Patru contururi colorate, desenate peste imagini din satelit, iar dedesubt Creek Bottom, Home 80, Miller Place și Timber Pasture, cu suprafețele lor."
+                     alt="Harta câmpurilor din Agrondo. Patru contururi colorate, desenate peste imagini din satelit, iar dedesubt După pădure, Livada din vale, Tarla la șosea și Via de la deal, cu suprafețele lor."
                      width="395" height="860" loading="lazy" decoding="async">
               </div>
             </figure>
             <div class="dim" style="--dim-top:62%;--dim-left:57%;--dim-w:32%" aria-hidden="true">
-              <span class="dim__chip">9.27 ha</span>
+              <span class="dim__chip">9,27 ha</span>
             </div>
           </div>
         </div>
@@ -308,27 +308,27 @@
               <ul class="ledger reveal" data-stagger>
                 <li class="ledger__row">
                   <span class="dot dot--f2"></span>
-                  <span class="ledger__label">Creek Bottom</span>
-                  <span class="fig ledger__fig">9.27<span class="unit">ha</span></span>
+                  <span class="ledger__label">După pădure</span>
+                  <span class="fig ledger__fig">9,27<span class="unit">ha</span></span>
                 </li>
                 <li class="ledger__row">
                   <span class="dot dot--f1"></span>
-                  <span class="ledger__label">Home 80</span>
-                  <span class="fig ledger__fig">13.36<span class="unit">ha</span></span>
+                  <span class="ledger__label">Tarla la șosea</span>
+                  <span class="fig ledger__fig">13,36<span class="unit">ha</span></span>
                 </li>
                 <li class="ledger__row">
                   <span class="dot dot--f3"></span>
-                  <span class="ledger__label">Miller Place</span>
-                  <span class="fig ledger__fig">5.60<span class="unit">ha</span></span>
+                  <span class="ledger__label">Via de la deal</span>
+                  <span class="fig ledger__fig">5,60<span class="unit">ha</span></span>
                 </li>
                 <li class="ledger__row">
                   <span class="dot dot--f4"></span>
-                  <span class="ledger__label">Timber Pasture</span>
-                  <span class="fig ledger__fig">4.09<span class="unit">ha</span></span>
+                  <span class="ledger__label">Livada din vale</span>
+                  <span class="fig ledger__fig">4,09<span class="unit">ha</span></span>
                 </li>
                 <li class="ledger__row ledger__row--plain ledger__row--sum">
                   <span class="ledger__label">Total fermă</span>
-                  <span class="fig ledger__fig">32.33<span class="unit">ha</span></span>
+                  <span class="fig ledger__fig">32,33<span class="unit">ha</span></span>
                 </li>
               </ul>
               <p class="caption">Cele patru câmpuri, așa cum le arată aplicația, fiecare cu culoarea pe care o poartă pe hartă. Suprafețele sunt rotunjite la afișare, așa că totalul iese cu o sutime peste suma rândurilor de mai sus.</p>
@@ -367,7 +367,7 @@
         <figure class="device device--break" style="--dw:268px">
           <div class="device__screen">
             <img src="/img/screens/ro/journal.jpg"
-                 alt="Jurnalul Agrondo. Înregistrări pentru o recoltă de porumb, un erbicid la 2.5 litri pe hectar, un semănat, un fungicid și un arat, fiecare cu data lui."
+                 alt="Jurnalul Agrondo. Înregistrări pentru o recoltă de grâu de toamnă, un erbicid la 2.5 litri pe hectar, un semănat, un fungicid și un arat, fiecare cu data lui."
                  width="395" height="860" loading="lazy" decoding="async">
           </div>
         </figure>
@@ -376,9 +376,9 @@
           <ul class="ledger reveal" data-stagger>
             <li class="ledger__row">
               <span class="dot dot--harvest"></span>
-              <span class="ledger__label">Recoltă, porumb</span>
-              <span class="fig ledger__fig">35,000<span class="unit">kg</span></span>
-              <span class="ledger__meta spec-line num">7,525.00 USD</span>
+              <span class="ledger__label">Recoltă, grâu de toamnă</span>
+              <span class="fig ledger__fig">23.014<span class="unit">kg</span></span>
+              <span class="ledger__meta spec-line num">22.761,00 RON</span>
             </li>
             <li class="ledger__row">
               <span class="dot dot--treatment"></span>
@@ -387,8 +387,8 @@
             </li>
             <li class="ledger__row">
               <span class="dot dot--operation"></span>
-              <span class="ledger__label">Semănat, Home 80</span>
-              <span class="spec-line num">Jun 20, 2026</span>
+              <span class="ledger__label">Semănat, Parcela A</span>
+              <span class="spec-line num">20 iun. 2026</span>
             </li>
             <li class="ledger__row">
               <span class="dot dot--treatment"></span>
@@ -397,8 +397,8 @@
             </li>
             <li class="ledger__row">
               <span class="dot dot--operation"></span>
-              <span class="ledger__label">Arat, Creek Bottom</span>
-              <span class="spec-line num">May 21, 2026</span>
+              <span class="ledger__label">Arat</span>
+              <span class="spec-line num">21 mai 2026</span>
             </li>
           </ul>
           <p class="caption">Cele cinci înregistrări din captura de mai sus. Aici punctul rotund arată tipul înregistrării: tratament, operațiune, recoltă.</p>
@@ -426,19 +426,19 @@
              smallest type underneath. It belongs here, beside the two report
              screens it was read off, and labelled before it is read. -->
         <div class="money-strip">
-          <p class="micro">Fermă demo. Creek Bottom, așa cum îl socotește ecranul Raport câmp.</p>
+          <p class="micro">Fermă demo. Câmpul După pădure, așa cum îl socotește ecranul Raport câmp.</p>
           <div class="strip reveal">
             <div class="strip__cell">
               <span class="micro">Suprafață</span>
-              <span class="fig fig--strip">9.27<span class="unit">ha</span></span>
+              <span class="fig fig--strip">9,27<span class="unit">ha</span></span>
             </div>
             <div class="strip__cell">
               <span class="micro">Costuri</span>
-              <span class="fig fig--strip">3,635.00<span class="unit">USD</span></span>
+              <span class="fig fig--strip">16.712,00<span class="unit">RON</span></span>
             </div>
             <div class="strip__cell strip__cell--net">
               <span class="micro">Profit net</span>
-              <span class="fig fig--strip fig--rev">11,209.00<span class="unit">USD</span></span>
+              <span class="fig fig--strip fig--rev">51.570,00<span class="unit">RON</span></span>
             </div>
           </div>
         </div>
@@ -448,29 +448,29 @@
             <div class="stack-12">
               <div class="panel reveal">
                 <div class="panel__head">
-                  <h3 class="h-3">East 40</h3>
-                  <p class="micro">Creek Bottom &middot; 4.57 ha</p>
+                  <h3 class="h-3">Parcela B</h3>
+                  <p class="micro">După pădure &middot; 3,09 ha</p>
                 </div>
                 <ul class="ledger" data-stagger>
                   <li class="ledger__row ledger__row--plain">
                     <span class="ledger__label">Tratamente (4)</span>
-                    <span class="fig ledger__fig">983.00<span class="unit">USD</span></span>
+                    <span class="fig ledger__fig">3.055,00<span class="unit">RON</span></span>
                   </li>
                   <li class="ledger__row ledger__row--plain">
                     <span class="ledger__label">Operațiuni (3)</span>
-                    <span class="fig ledger__fig">809.00<span class="unit">USD</span></span>
+                    <span class="fig ledger__fig">2.515,00<span class="unit">RON</span></span>
                   </li>
                   <li class="ledger__row ledger__row--plain">
                     <span class="ledger__label">Costuri</span>
-                    <span class="fig ledger__fig">1,792.00<span class="unit">USD</span></span>
+                    <span class="fig ledger__fig">5.570,00<span class="unit">RON</span></span>
                   </li>
                   <li class="ledger__row ledger__row--plain">
                     <span class="ledger__label">Venit</span>
-                    <span class="fig ledger__fig fig--rev">7,319.00<span class="unit">USD</span></span>
+                    <span class="fig ledger__fig fig--rev">22.761,00<span class="unit">RON</span></span>
                   </li>
                   <li class="ledger__row ledger__row--plain ledger__row--net">
                     <span class="ledger__label">Profit net</span>
-                    <span class="fig fig--net">5,527.00<span class="unit">USD</span></span>
+                    <span class="fig fig--net">17.191,00<span class="unit">RON</span></span>
                   </li>
                 </ul>
               </div>
@@ -483,14 +483,14 @@
               <figure class="device devices__back" style="--dw:244px">
                 <div class="device__screen">
                   <img src="/img/screens/ro/fieldReport.jpg"
-                       alt="Ecranul Raport câmp pentru Creek Bottom: 9.27 hectare în două parcele, cu costuri, venit și profit net în dolari americani."
+                       alt="Ecranul Raport câmp pentru După pădure: 9,27 hectare în trei parcele, cu costuri, venit și profit net în lei."
                        width="395" height="860" loading="lazy" decoding="async">
                 </div>
               </figure>
               <figure class="device devices__front" style="--dw:244px">
                 <div class="device__screen">
                   <img src="/img/screens/ro/parcelReport.jpg"
-                       alt="Ecranul Raport parcelă pentru East 40, cu costuri, venit și profit net, o înregistrare de recoltă de porumb și detalierea tratamentelor și a operațiunilor."
+                       alt="Ecranul Raport parcelă pentru Parcela B, cu costuri, venit și profit net, o înregistrare de recoltă de grâu de toamnă și detalierea tratamentelor și a operațiunilor."
                        width="395" height="860" loading="lazy" decoding="async">
                 </div>
               </figure>
@@ -522,7 +522,7 @@
               <ol class="rot__line">
                 <li class="rot__node">
                   <span class="rot__year">2023</span>
-                  <span class="rot__crop">Grâu</span>
+                  <span class="rot__crop">Soia</span>
                 </li>
                 <li class="rot__node">
                   <span class="rot__year">2024</span>
@@ -530,11 +530,11 @@
                 </li>
                 <li class="rot__node">
                   <span class="rot__year">2025</span>
-                  <span class="rot__crop">Grâu</span>
+                  <span class="rot__crop">Grâu de toamnă</span>
                 </li>
                 <li class="rot__node rot__node--flag">
                   <span class="rot__year">2026</span>
-                  <span class="rot__crop">Grâu</span>
+                  <span class="rot__crop">Grâu de toamnă</span>
                   <span class="chip chip--warn">Aceeași cultură ca anul trecut</span>
                 </li>
               </ol>
@@ -642,7 +642,7 @@
             <figure class="device" style="--dw:232px">
               <div class="device__screen">
                 <img src="/img/screens/ro/home.jpg"
-                     alt="Ecranul principal din Agrondo: o prezentare a fermei cu 4 câmpuri pe 32.33 hectare, prognoza pe trei zile și numărul de parcele și de culturi."
+                     alt="Ecranul principal din Agrondo: o prezentare a fermei Agro Dobrescu SRL, cu 4 câmpuri pe 32,33 hectare, prognoza pe trei zile și numărul de parcele și de culturi."
                      width="395" height="860" loading="lazy" decoding="async">
               </div>
             </figure>
