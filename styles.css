@@ -1,0 +1,1576 @@
+/* Agrondo: Farm Tracker — agrondo.com
+   The Ledger. Committed dark, no light variant.
+   No webfont, no CDN, no external request of any kind. */
+
+/* ============================================================
+   1. TOKENS
+   ============================================================ */
+:root {
+  color-scheme: dark;
+
+  /* Surfaces */
+  --paper: #08090A;
+  --sheet: #101314;
+  --sheet-hi: #161A1B;
+  --floor: #050607;
+
+  /* Line */
+  --rule: #1C2321;
+  --rule-lit: #2E3A31;
+  --ruled-paper: rgba(255, 255, 255, 0.030);
+  --edge-hi: rgba(255, 255, 255, 0.045);
+
+  /* Ink */
+  --ink: #F2F5F2;
+  --ink-2: #A8B2AA;
+  --ink-3: #7D8C7A;
+  --ink-4: #6C7670;
+
+  /* Green: object vs reading */
+  --green: #4CAF50;
+  --green-lit: #63C167;
+  --green-read: #6FD97A;
+  --green-ink: #06210A;
+  --green-glass: rgba(76, 175, 80, 0.10);
+  --green-line: rgba(76, 175, 80, 0.34);
+
+  /* Data accents, sampled from the app */
+  --cost: #FF9500;
+  --op: #0A84FF;
+  --harvest: #9C27B0;
+  --pasture: #009688;
+  --warn: #E8A33D;
+
+  /* Type */
+  --sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+
+  /* Layout */
+  --maxw: 1200px;
+  --gut: clamp(20px, 5vw, 64px);
+  --pad-y: clamp(72px, 10vw, 128px);
+  --split-pad: clamp(32px, 4vw, 72px);
+  /* Distance from the viewport edge to the container's content edge */
+  --edge: max(var(--gut), calc((100vw - var(--maxw)) / 2 + var(--gut)));
+  --spine-x: calc(var(--edge) - 40px);
+
+  /* Ruled paper pitch. Body type is 1.0625rem at 1.60, so one line is 1.7rem.
+     The ruling sits at two lines, which is why it reads as paper and not as
+     a texture. Change the body leading and this has to move with it. */
+  --rule-pitch: 3.4rem;
+
+  /* Radii */
+  --r-card: 16px;
+  --r-panel: 20px;
+  --r-bezel: 40px;
+  --r-screen: 32px;
+
+  /* Shadow */
+  --sh-card: 0 24px 60px -30px rgba(0, 0, 0, 0.92);
+  --sh-device: 0 30px 70px -34px rgba(0, 0, 0, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-draw: cubic-bezier(0.16, 1, 0.30, 1);
+  --ease-press: cubic-bezier(0.34, 1.30, 0.64, 1);
+
+  /* Plan drawing.
+     This site carries no photograph of a farm, and that is a decision, not
+     a gap. What stands where one would is line work: the four fields of the
+     demo farm, drawn on graph paper to the areas printed beside them. A
+     drawing is honest about being a drawing. A picture of a farm nobody
+     stood in is the first thing a farmer catches, and once it is caught
+     every true sentence on the page has to argue its way back.
+
+     --plan-grid   the graph paper, faint enough to sit under body type
+     --plan-scrim  the wash that buys contrast where type lands on the plan */
+  --plan-grid: rgba(255, 255, 255, 0.030);
+  --plan-scrim: linear-gradient(180deg,
+      rgba(8, 9, 10, 0.26) 0%,
+      rgba(8, 9, 10, 0.34) 32%,
+      rgba(8, 9, 10, 0.62) 68%,
+      rgba(8, 9, 10, 0.86) 100%);
+}
+
+/* ============================================================
+   2. RESET
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink-2);
+  font-family: var(--sans);
+  font-size: 1.0625rem;
+  line-height: 1.60;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+img, picture, svg, video {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select { font: inherit; color: inherit; }
+
+h1, h2, h3, h4 {
+  color: var(--ink);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+p { text-wrap: pretty; }
+ul, ol { list-style: none; padding: 0; }
+
+a { color: var(--green-read); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+:focus-visible {
+  outline: 2px solid var(--green-lit);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+::selection { background: var(--green-line); color: var(--ink); }
+
+/* ============================================================
+   3. TYPE ROLES
+   ============================================================ */
+.num { font-variant-numeric: tabular-nums slashed-zero; font-family: var(--mono); }
+
+.h-display {
+  font-size: clamp(2.75rem, 7.2vw, 5.25rem);
+  letter-spacing: -0.035em;
+  line-height: 0.98;
+  max-width: 15ch;
+}
+
+.h-2 {
+  font-size: clamp(1.875rem, 4.2vw, 3rem);
+  letter-spacing: -0.028em;
+  line-height: 1.06;
+  max-width: 18ch;
+}
+
+/* Headline in a band that carries a plate column runs one step larger */
+.h-2--plate {
+  font-size: clamp(2.125rem, 5vw, 3.5rem);
+  letter-spacing: -0.030em;
+  line-height: 1.04;
+  max-width: 16ch;
+}
+
+.h-3 { font-size: 1.25rem; letter-spacing: -0.015em; line-height: 1.25; }
+
+.lede {
+  font-size: clamp(1.0625rem, 1.6vw, 1.3125rem);
+  line-height: 1.55;
+  color: var(--ink-2);
+  max-width: 44ch;
+}
+
+.body { max-width: 62ch; color: var(--ink-2); }
+
+.eyebrow, .micro {
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  line-height: 1.3;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.caption {
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--ink-3);
+  max-width: 52ch;
+}
+
+.spec-line {
+  font-family: var(--mono);
+  font-size: 0.8125rem;
+  letter-spacing: 0.02em;
+  color: var(--ink-3);
+}
+
+/* Figures */
+.fig {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums slashed-zero;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.010em;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.fig--strip { font-size: clamp(1.5rem, 3.4vw, 2.375rem); letter-spacing: -0.012em; line-height: 1; }
+.fig--cost { color: var(--cost); }
+.fig--rev { color: var(--green-read); }
+.fig--net {
+  color: var(--green-read);
+  font-size: clamp(1.875rem, 4vw, 2.75rem);
+  letter-spacing: -0.015em;
+  line-height: 1;
+}
+
+.unit {
+  font-family: var(--mono);
+  font-size: 0.55em;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--ink-3);
+  margin-left: 0.15em;
+}
+
+/* Outdoor legibility floor */
+@media (max-width: 600px) {
+  .eyebrow, .micro { font-size: 0.75rem; letter-spacing: 0.12em; }
+  .caption { font-size: 0.875rem; }
+  .body, .lede { font-size: 1.0625rem; }
+}
+
+/* ============================================================
+   4. LAYOUT
+   ============================================================ */
+.wrap {
+  width: 100%;
+  max-width: var(--maxw);
+  margin-inline: auto;
+  padding-inline: var(--gut);
+}
+
+.wrap--narrow { max-width: 800px; }
+
+.section {
+  position: relative;
+  padding-block: var(--pad-y);
+  scroll-margin-top: 88px;
+}
+
+/* Ruled paper, desktop and tablet only.
+
+   THE RULE, and it is one rule for the whole site: ruled paper marks a band
+   that sits flat on paper. A band carrying its own drawn plate is never ruled,
+   because the plate brings graph paper of its own and two rulings in one band
+   read as a mistake. That is the whole of it. Do not use the ruling to
+   alternate bands for rhythm, and do not attach a second meaning to it on one
+   page: index.html rules 02, 04, 05, 07 and 08, and leaves the hero, the two
+   .split bands and the close bare. help.html carries no plates at all, so
+   every band on it is ruled and the page reads as one continuous sheet.
+
+   The pitch is two lines of body type, not an arbitrary number, so the ruling
+   lands where the text does. See --rule-pitch. */
+@media (min-width: 700px) {
+  .section--ruled {
+    background-image: repeating-linear-gradient(180deg, var(--ruled-paper) 0 1px, transparent 1px var(--rule-pitch));
+  }
+}
+
+/* The spine. Each section draws its own segment, so the line is continuous. */
+@media (min-width: 1024px) {
+  .section--spine::before {
+    content: "";
+    position: absolute;
+    left: var(--spine-x);
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: var(--rule);
+  }
+  .section__num {
+    position: absolute;
+    left: var(--spine-x);
+    top: var(--pad-y);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transform: translateX(-50%);
+    writing-mode: vertical-rl;
+  }
+  .section__num::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--green);
+  }
+}
+
+.section__num {
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.20em;
+  line-height: 1;
+  color: var(--green);
+  margin-bottom: 12px;
+}
+
+/* Stacks: vertical rhythm without per element margins */
+.stack-8 > * + * { margin-top: 8px; }
+.stack-12 > * + * { margin-top: 12px; }
+.stack-16 > * + * { margin-top: 16px; }
+.stack-24 > * + * { margin-top: 24px; }
+.stack-32 > * + * { margin-top: 32px; }
+.stack-48 > * + * { margin-top: 48px; }
+
+/* Twelve column grid, collapses to one below 860px */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+/* A grid item's automatic minimum size is its min-content width, so anything
+   wider than its track pushes the track out and the page sideways with it.
+   The overlapping .devices pairs did exactly that on a phone. */
+.grid > * { min-width: 0; }
+
+@media (min-width: 860px) {
+  .grid { grid-template-columns: repeat(12, 1fr); gap: 24px; }
+  .col-5 { grid-column: span 5; }
+  .col-6 { grid-column: span 6; }
+  .col-7 { grid-column: span 7; }
+  .col-12 { grid-column: span 12; }
+  .grid--center { align-items: center; }
+}
+
+/* ============================================================
+   5. PLAN DRAWING
+   The line work that stands where a photograph would.
+
+   The four boundaries in the hero are the four fields of the demo farm,
+   drawn to the areas the ledger prints in 02, near enough 14,000 square
+   units to the hectare, so the smallest shape on the screen really is the
+   smallest field. The hues are the map key from 02, so a field holds one
+   colour from the hero to the ledger. The arrangement is the one in the
+   field map screenshot: two fields north of the track, two south, each
+   divided down the middle into its parcels.
+
+   Nothing is named on the plan. The hero type lands across the lower left
+   of it, and a label under a headline is a label nobody reads. The names
+   and the areas are a screen below, in the ledger, where they can be.
+   ============================================================ */
+.graph {
+  background-color: var(--paper);
+  background-image:
+    repeating-linear-gradient(0deg, var(--plan-grid) 0 1px, transparent 1px 44px),
+    repeating-linear-gradient(90deg, var(--plan-grid) 0 1px, transparent 1px 44px);
+}
+
+.plan { display: block; }
+
+.plan__track { fill: none; stroke: var(--rule-lit); stroke-width: 2; }
+
+/* Field identity, one key for the whole page. The values are declared once,
+   in index.html beside the ledger chips that use them. */
+.fld { --fld: var(--green); }
+.fld--f1 { --fld: var(--field-1, #4CAF50); }
+.fld--f2 { --fld: var(--field-2, #FF9800); }
+.fld--f3 { --fld: var(--field-3, #9C27B0); }
+.fld--f4 { --fld: var(--field-4, #009688); }
+
+.fld__edge {
+  fill: var(--fld);
+  fill-opacity: 0.09;
+  stroke: var(--fld);
+  stroke-width: 2.5;
+  stroke-linejoin: round;
+}
+
+.fld__split { fill: none; stroke: var(--fld); stroke-width: 1.5; stroke-opacity: 0.5; }
+
+.plan__dim { fill: none; stroke: var(--green); stroke-width: 1.5; }
+
+.plan__total {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums slashed-zero;
+  font-size: 21px;
+  font-weight: 700;
+  fill: var(--green-read);
+}
+
+/* Under the split the total would set at nine pixels, so the phone gets the
+   boundaries alone and reads the figure off the ledger in 02 instead. */
+@media (max-width: 859px) {
+  .plan__dim, .plan__total { display: none; }
+}
+
+/* The boundary draws itself, the way it does under a finger in the app. The
+   rest state is the finished drawing: a browser that ignores the animation,
+   or a reader who has asked for no motion, still gets the whole plan. */
+.fld__edge, .fld__split, .plan__dim {
+  stroke-dashoffset: 0;
+  stroke-dasharray: var(--len, 1400);
+  animation: draw 1100ms var(--ease-draw) both;
+  animation-delay: var(--d, 0ms);
+}
+
+@keyframes draw { from { stroke-dashoffset: var(--len, 1400); fill-opacity: 0; } }
+
+.plan__total {
+  animation: ink 460ms var(--ease-out) both;
+  animation-delay: calc(var(--d, 0ms) + 780ms);
+}
+
+@keyframes ink { from { opacity: 0; } }
+
+/* ============================================================
+   6. NAV
+   ============================================================ */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  transition: background 200ms linear, border-color 200ms linear;
+  border-bottom: 1px solid transparent;
+}
+
+.nav.is-scrolled {
+  background: rgba(8, 9, 10, 0.86);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border-bottom-color: var(--rule);
+}
+
+.nav__in {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-height: 64px;
+}
+
+.nav__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* Above 760px .nav__in is one flex row that does not wrap. Without this the
+     brand is the first thing the row takes width from when something else
+     overflows, and the wordmark spills out of its own box and lands on top of
+     the first link. The brand is the one thing on the bar that must not
+     shrink, at any width. */
+  flex: none;
+  color: var(--ink);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  min-height: 48px;
+}
+.nav__brand:hover { text-decoration: none; }
+
+.nav__icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  border: 1px solid var(--rule);
+}
+
+.nav__links { display: none; margin-left: auto; gap: 4px; }
+
+.nav__links a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding-inline: 12px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--ink-2);
+  transition: color 160ms linear;
+}
+.nav__links a:hover { color: var(--ink); text-decoration: none; }
+
+.nav__links a::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  height: 2px;
+  background: var(--green);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 200ms var(--ease-out);
+}
+.nav__links a.is-active { color: var(--ink); }
+.nav__links a.is-active::after { transform: scaleX(1); }
+
+.nav__chip {
+  margin-left: auto;
+  display: none;
+  align-items: center;
+  padding: 7px 14px;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: var(--sheet);
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  white-space: nowrap;
+}
+
+/* The chip appears as soon as there is room for its one line */
+@media (min-width: 520px) {
+  .nav__chip { display: inline-flex; }
+}
+
+/* Two kinds of nav, and they cannot follow the same rule.
+
+   index.html carries four in-page anchors. They are a convenience: the page
+   scrolls, everything they point at is below the fold anyway, and dropping
+   them on a phone costs a reader nothing. So they drop.
+
+   help, support, privacy and terms carry five links that are the only route
+   between pages. Dropping those on a phone left a reader with a brand mark,
+   a chip and several thousand pixels of scrolling before the footer offered
+   a way out. Those four mark their nav .nav--pages and keep the links at
+   every width, on a second row when the bar is too narrow to hold them.
+
+   Count before you edit this comment: four anchors on one page, five links
+   on four pages. The old note here said "four links, so no hamburger" long
+   after the subpages had grown a fifth, which is how the gap survived. */
+@media (min-width: 760px) {
+  .nav__links { display: flex; }
+  .nav__chip { margin-left: 16px; }
+}
+
+/* Subpages below 760px: brand on the first row, routes on the second.
+   The links wrap rather than scroll, so nothing hides off the edge on a
+   narrow handset. Compact, because this bar is sticky and every pixel it
+   takes is a pixel of reading gone. */
+@media (max-width: 759px) {
+  .nav--pages .nav__in {
+    flex-wrap: wrap;
+    row-gap: 0;
+    min-height: 0;
+    padding-block: 4px;
+  }
+  .nav--pages .nav__brand { min-height: 44px; }
+  .nav--pages .nav__chip { order: 0; }
+
+  .nav--pages .nav__links {
+    order: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    margin-left: 0;
+    /* Pulls the first link's text back onto the brand's left edge */
+    margin-inline: -10px;
+    gap: 0 2px;
+  }
+  .nav--pages .nav__links a {
+    min-height: 44px;
+    padding-inline: 10px;
+    font-size: 0.875rem;
+  }
+  .nav--pages .nav__links a::after { left: 10px; right: 10px; bottom: 8px; }
+
+  /* The bar is two rows tall here, so anchors need more clearance */
+  .nav--pages ~ main .section,
+  .nav--pages ~ main [id] { scroll-margin-top: 112px; }
+}
+
+/* Measured at 768px: .nav__in wanted 780px of a 768px viewport, the chip's
+   right border was cut off by the viewport edge, and the brand was squeezed
+   below its own text so the bar read "AgrondoHome". Five links plus the chip
+   do not fit on one row from 760px, where the links switch on, upward.
+
+   Measured again after the fix, forcing the chip back on at each width: the
+   row stops overflowing at 810px in Chrome on macOS. The ceiling here is 900
+   rather than 810 on purpose. 810 is one font stack's answer, and this site
+   ships no webfont, so a reader on Segoe or Roboto gets wider links and a
+   wider chip than the number above. 90px is the margin bought for that.
+
+   Below 760px the bar wraps to two rows and the chip has the first row to
+   itself, so the band has a floor as well as a ceiling. */
+@media (min-width: 760px) and (max-width: 900px) {
+  .nav__chip { display: none; }
+}
+
+/* Skip link. .visually-hidden clips with rect(), which cannot be undone on
+   focus without restating every property, so this is its own rule. Sits above
+   the nav, which is z-index 60. Every page points it at #main. */
+.skip {
+  position: fixed;
+  left: 12px;
+  top: 12px;
+  z-index: 200;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: var(--green);
+  color: var(--green-ink);
+  font-weight: 650;
+  transform: translateY(-300%);
+}
+.skip:focus { transform: translateY(0); text-decoration: none; }
+
+/* Current page marker on a subpage. .is-active is owned by the index
+   scrollspy, which only tracks in-page anchors, so a subpage marks itself
+   with aria-current and gets the same underline with no JS at all. */
+.nav__links a[aria-current="page"] { color: var(--ink); }
+.nav__links a[aria-current="page"]::after { transform: scaleX(1); }
+.foot__links a[aria-current="page"] { color: var(--ink); }
+
+/* There was a .nav__toggle here, a hamburger button with a matching handler
+   in script.js, styled and wired and present in every download, that no page
+   ever used. It was shipped weight defending a gap it never closed. The gap
+   is closed above by .nav--pages, which needs no button and no script, so
+   both halves are gone. If a disclosure is ever wanted, write it then. */
+
+/* ============================================================
+   7. BUTTONS
+   ============================================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 0 26px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.005em;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 140ms var(--ease-out), color 140ms var(--ease-out),
+              transform 140ms var(--ease-out), border-color 140ms var(--ease-out),
+              box-shadow 140ms var(--ease-out);
+}
+.btn:hover { text-decoration: none; }
+.btn:active { transform: translateY(0) scale(0.985); transition-timing-function: var(--ease-press); transition-duration: 80ms; }
+
+.btn--primary { background: var(--green); color: var(--green-ink); }
+.btn--primary:hover {
+  background: var(--green-lit);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(76, 175, 80, 0.26);
+}
+
+.btn--ghost { background: none; color: var(--ink-2); padding-inline: 12px; }
+.btn--ghost:hover { color: var(--ink); transform: translateY(-1px); }
+
+.btn--outline { background: none; border-color: var(--rule-lit); color: var(--ink); }
+.btn--outline:hover { border-color: var(--green); color: var(--green-read); }
+
+.btn__arrow { transition: transform 160ms var(--ease-out); }
+.btn--ghost:hover .btn__arrow { transform: translateY(2px); }
+
+.btn-row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; }
+
+/* ============================================================
+   8. HERO
+   ============================================================ */
+.hero {
+  position: relative;
+  background-color: var(--paper); /* first paint needs no image */
+  isolation: isolate;
+}
+
+/* The plan sits behind the type at every width. There is no crop variable
+   and no subject that can slide off an edge, because the drawing keeps the
+   aspect of its own viewBox and is centred in the band. On a phone it is
+   run wider than the viewport so the boundaries stay boundaries instead of
+   shrinking into a strip of pattern. */
+.hero__plan {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__plan .plan {
+  flex: none;
+  width: 100%;
+  height: auto;
+  animation: settle 2400ms var(--ease-draw) both;
+}
+
+@keyframes settle { from { transform: scale(1.03); } to { transform: scale(1); } }
+
+/* The wash. Type runs almost the full height of the hero on a wide screen,
+   so this cannot go clear at the top. It carries its weight low and left,
+   under the strip and the caption, where the smallest type lands. */
+.hero__plan::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(66% 56% at 16% 74%, rgba(8, 9, 10, 0.66), rgba(8, 9, 10, 0) 74%),
+    var(--plan-scrim);
+  pointer-events: none;
+}
+
+/* A plan sheet carries a title block. So does this one. */
+.hero__block {
+  position: absolute;
+  right: var(--edge);
+  bottom: 34px;
+  z-index: 1;
+  padding-top: 10px;
+  border-top: 1px solid var(--rule-lit);
+  color: var(--ink-4);
+}
+
+@media (max-width: 1023px) { .hero__block { display: none; } }
+
+.hero__body { position: relative; z-index: 2; padding-block: clamp(76px, 14vw, 116px) 72px; }
+
+/* Phone: the drawing is run a little wider than the viewport so the shapes
+   have some size to them, but not so wide that any of the four is cut. At
+   116% the frame holds the plan from 110 to 1490 in its own coordinates and
+   the fields live between 270 and 1356, so all four stay whole. */
+@media (max-width: 859px) {
+  .hero__plan .plan { width: 116%; }
+}
+
+/* Desktop: type anchored bottom left, on the land it describes */
+@media (min-width: 860px) {
+  .hero {
+    display: flex;
+    align-items: flex-end;
+    min-height: 92svh;
+  }
+  .hero__body { padding-block: 140px 80px; }
+}
+
+.hero__cta { margin-top: 32px; }
+.hero__spec { margin-top: 16px; }
+
+/* Hero ledger strip */
+.strip {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid var(--rule);
+  border-radius: var(--r-card);
+  background: var(--sheet);
+  box-shadow: var(--sh-card);
+  overflow: hidden;
+  max-width: 720px;
+}
+
+.strip__cell {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 20px;
+  border-top: 1px solid var(--rule);
+}
+.strip__cell:first-child { border-top: 0; }
+
+.strip__cell--net::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  height: 2px;
+  background: var(--green-line);
+}
+
+@media (min-width: 640px) {
+  .strip { grid-template-columns: repeat(3, 1fr); }
+  .strip__cell {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+    padding: 22px 24px 24px;
+    border-top: 0;
+    border-left: 1px solid var(--rule);
+  }
+  .strip__cell:first-child { border-left: 0; }
+  .strip__cell .micro { align-self: flex-start; }
+  .strip__cell--net::after { left: 24px; right: 24px; }
+}
+
+/* ============================================================
+   9. LEDGER ROWS
+   ============================================================ */
+.ledger { width: 100%; }
+
+.ledger__row {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: baseline;
+  gap: 8px 14px;
+  min-height: 56px;
+  padding: 14px 12px;
+  border-radius: 8px;
+  transition: background 160ms linear;
+}
+
+.ledger__row::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: var(--rule);
+  transform-origin: left;
+}
+
+.ledger__row:last-child::after { display: none; }
+
+.ledger__label { color: var(--ink-2); }
+.ledger__fig { justify-self: end; text-align: right; font-size: clamp(1.25rem, 2.2vw, 1.75rem); }
+.ledger__meta { grid-column: 2 / -1; }
+
+/* A row with no dot keeps the label in the first cell */
+.ledger__row--plain { grid-template-columns: 1fr auto; }
+
+/* Summary and net rows */
+.ledger__row--sum {
+  border-top: 1px solid var(--rule);
+  margin-top: 8px;
+  padding-top: 20px;
+}
+.ledger__row--sum .ledger__label { color: var(--ink); font-weight: 500; }
+.ledger__row--sum .ledger__fig { color: var(--ink); }
+
+.ledger__row--net {
+  border-top: 2px solid var(--green-line);
+  margin-top: 8px;
+  padding-top: 22px;
+}
+.ledger__row--net .ledger__label { color: var(--ink); font-weight: 500; }
+
+@media (hover: hover) and (pointer: fine) {
+  .ledger__row:hover { background: var(--sheet-hi); }
+  .ledger__row:hover .dot { box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.04); }
+}
+
+/* Colour dots, sampled from the app's own legend */
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--ink-3);
+  align-self: center;
+  flex: none;
+  transition: box-shadow 160ms linear;
+}
+.dot--cost { background: var(--cost); }
+.dot--green { background: var(--green); }
+.dot--op { background: var(--op); }
+.dot--harvest { background: var(--harvest); }
+.dot--pasture { background: var(--pasture); }
+
+/* ============================================================
+   10. SPEC ROWS, DOTTED LEADERS
+   ============================================================ */
+.spec { width: 100%; }
+
+.spec__row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  min-height: 48px;
+  padding-block: 12px;
+}
+
+.spec__row dt {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex: 1 1 auto;
+  min-width: 0;
+  color: var(--ink-2);
+}
+
+.spec__row dt::after {
+  content: "";
+  flex: 1 1 auto;
+  min-width: 18px;
+  border-bottom: 1px dotted var(--rule-lit);
+  transform: translateY(-0.25em);
+}
+
+.spec__row dd {
+  flex: 0 1 auto;
+  text-align: right;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.spec__row dd.num { font-weight: 700; }
+
+@media (max-width: 520px) {
+  .spec__row { flex-wrap: wrap; gap: 2px 10px; }
+  .spec__row dt { flex-basis: 100%; }
+  .spec__row dt::after { display: none; }
+  .spec__row dd { text-align: left; }
+}
+
+/* ============================================================
+   11. CARDS AND PANELS
+   ============================================================ */
+.card {
+  position: relative;
+  background: var(--sheet);
+  border: 1px solid var(--rule);
+  border-radius: var(--r-card);
+  padding: 24px;
+  box-shadow: var(--sh-card);
+  transition: border-color 180ms var(--ease-out), transform 180ms var(--ease-out);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: inset 0 1px 0 var(--edge-hi);
+  pointer-events: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .card:hover { border-color: var(--rule-lit); transform: translateY(-3px); }
+}
+
+.panel {
+  position: relative;
+  background: var(--sheet);
+  border: 1px solid var(--rule);
+  border-radius: var(--r-panel);
+  padding: clamp(20px, 3.5vw, 32px);
+  box-shadow: var(--sh-card);
+}
+
+.panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: inset 0 1px 0 var(--edge-hi);
+  pointer-events: none;
+}
+
+.panel__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 8px;
+}
+
+/* Chips */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border: 1px solid var(--green-line);
+  border-radius: 999px;
+  background: var(--green-glass);
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--green-read);
+  white-space: nowrap;
+}
+.chip--warn { border-color: rgba(232, 163, 61, 0.42); background: rgba(232, 163, 61, 0.10); color: var(--warn); }
+.chip--quiet { border-color: var(--rule); background: var(--sheet); color: var(--ink-3); }
+
+/* ============================================================
+   12. DEVICE FRAME
+   Source screenshots are 395x860. Never upscale past 395px.
+   The frame crops the bottom 2.5% to cut content bleeding under
+   the app's floating tab bar: 860 * 0.975 = 838.5.
+   ============================================================ */
+.device {
+  width: var(--dw, 264px);
+  max-width: 100%;
+  padding: 8px;
+  background: var(--sheet-hi);
+  border-radius: var(--r-bezel);
+  box-shadow: var(--sh-device);
+}
+
+.device__screen {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--r-screen);
+  aspect-ratio: 395 / 838.5;
+  background: var(--paper);
+}
+
+.device__screen img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: top;
+}
+
+@media (max-width: 859px) {
+  .device { width: min(var(--dw, 264px), 240px); }
+}
+
+/* A device standing in the body flow rather than in a side column, with its
+   caption centred under it. */
+.device-inline { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+.device-inline > .caption { text-align: center; }
+
+/* Two phones, one behind and lower, like stakes driven to different depths */
+.devices { position: relative; display: flex; justify-content: center; }
+.devices__back { position: relative; z-index: 1; margin-top: 40px; }
+.devices__front { position: relative; z-index: 2; margin-left: -64px; }
+
+/* A pair overlaps by 64px, so two 240px phones want 416px inside a column that
+   is only 362px wide on a 402px viewport. The page then runs past the viewport
+   and mobile Safari and Chrome zoom the whole document out to fit, which puts
+   every glyph on the page about a tenth under its intended size. Cap each
+   phone at half its column plus the overlap and the pair fits exactly, at any
+   width, without either phone being cropped. */
+@media (max-width: 859px) {
+  .devices .device { width: min(var(--dw, 264px), 240px, calc((100% + 64px) / 2)); }
+}
+
+@media (max-width: 639px) {
+  .devices__back { margin-top: 24px; }
+  .devices__front { margin-left: -48px; }
+  .devices .device { width: min(var(--dw, 264px), 240px, calc((100% + 48px) / 2)); }
+}
+
+/* The one device on the page that breaks its band edge: it sits in the body
+   column and reaches back over the plate beside it. Disabled below 860px. */
+@media (min-width: 860px) {
+  .device--break {
+    position: relative;
+    z-index: 2;
+    margin-left: calc((var(--split-pad) + 56px) * -1);
+  }
+  .split--right .device--break {
+    margin-left: 0;
+    margin-right: calc((var(--split-pad) + 56px) * -1);
+    align-self: flex-end;
+  }
+}
+
+/* Dimension line drawn over a screenshot. A drafting convention, not a web pattern.
+   Author positions it with --dim-top, --dim-left, --dim-w on .dim. */
+.device-wrap { position: relative; display: inline-block; }
+
+.dim {
+  position: absolute;
+  top: var(--dim-top, 40%);
+  left: var(--dim-left, 12%);
+  width: var(--dim-w, 60%);
+  height: 1px;
+  background: var(--green);
+  transform-origin: left;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.dim::before, .dim::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  width: 1px;
+  height: 9px;
+  background: var(--green);
+}
+.dim::before { left: 0; }
+.dim::after { right: 0; }
+
+.dim__chip {
+  position: absolute;
+  left: 50%;
+  bottom: 8px;
+  transform: translateX(-50%);
+  padding: 4px 10px;
+  border: 1px solid var(--green-line);
+  border-radius: 999px;
+  background: var(--green-glass);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums slashed-zero;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--green-read);
+  white-space: nowrap;
+}
+
+/* ============================================================
+   13. SPLIT SECTIONS WITH A PLATE COLUMN
+   The column beside the copy is drawn, never photographed. It is graph paper
+   carrying one piece of the section's own evidence: in 03 the shape of a
+   single journal entry, in 06 the size of the care library counted out in
+   marks. Both are things the band already says in words. The plate only
+   makes them a thing you can look at.
+   ============================================================ */
+.split { position: relative; padding-block: 0; }
+
+.split__plate {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+  padding: clamp(28px, 5vw, 52px);
+  background-color: var(--sheet);
+  border-block: 1px solid var(--rule);
+}
+
+.plate__head, .plate__foot { color: var(--ink-4); }
+.plate__foot { padding-top: 14px; border-top: 1px solid var(--rule); }
+
+/* 03. What one entry can be, numbered the way a sheet index is numbered. */
+.plate__index { list-style: none; padding: 0; margin: 0; counter-reset: idx; }
+
+.plate__index li {
+  counter-increment: idx;
+  display: grid;
+  grid-template-columns: 2.4em 1fr;
+  gap: 3px 14px;
+  padding: 15px 0;
+  border-top: 1px solid var(--rule);
+}
+.plate__index li:first-child { border-top: 0; padding-top: 0; }
+.plate__index li:last-child { padding-bottom: 0; }
+
+.plate__index li::before {
+  content: counter(idx, decimal-leading-zero);
+  grid-row: span 2;
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  line-height: 1.7;
+  color: var(--green);
+}
+
+.plate__k { color: var(--ink); }
+.plate__v { color: var(--ink-3); font-size: 0.9375rem; line-height: 1.45; }
+
+/* 06. The figure is the reading. The marks are the size of it. */
+.plate__fig { display: flex; align-items: baseline; gap: 8px; }
+
+.tally {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 7px;
+  max-width: 262px;
+}
+.tally li { width: 3px; height: 22px; border-radius: 1px; background: var(--green); opacity: 0.45; }
+.tally li:nth-child(5n) { opacity: 0.85; }
+
+.split__body { padding-block: var(--pad-y); padding-inline: var(--gut); }
+
+@media (min-width: 860px) {
+  /* The plate column is sized, never a percentage of a huge viewport, so it
+     cannot stretch into a slab beside the copy on a wide screen. */
+  .split {
+    display: grid;
+    grid-template-columns: min(42%, var(--plate-max, 480px)) minmax(0, 1fr);
+    align-items: stretch;
+  }
+  .split__plate { min-height: 100%; }
+  .split__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-block: var(--pad-y);
+    padding-inline: var(--split-pad) var(--edge);
+  }
+
+  /* Plate on the right */
+  .split--right { grid-template-columns: minmax(0, 1fr) min(42%, var(--plate-max, 480px)); }
+  .split--right .split__plate { grid-column: 2; grid-row: 1; }
+  .split--right .split__body {
+    grid-column: 1;
+    grid-row: 1;
+    padding-inline: var(--edge) var(--split-pad);
+  }
+}
+
+/* ============================================================
+   14. ROTATION TIMELINE
+   ============================================================ */
+.rot { margin-top: 32px; }
+
+.rot__line {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.rot__line::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  top: 22px;
+  height: 1px;
+  background: var(--rule);
+}
+
+@media (min-width: 560px) { .rot__line { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+
+.rot__node {
+  position: relative;
+  z-index: 1;
+  padding: 12px 14px;
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  background: var(--sheet);
+  transition: border-color 300ms var(--ease-out), background 300ms var(--ease-out);
+}
+
+.rot__year {
+  display: block;
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: var(--ink-3);
+  margin-bottom: 6px;
+}
+
+.rot__crop { display: block; color: var(--ink); font-weight: 500; }
+
+.rot__node--flag { border-color: rgba(232, 163, 61, 0.45); }
+.rot__node--flag .rot__crop { color: var(--warn); }
+.rot__node--flag .chip { margin-top: 10px; }
+
+/* JS fills the nodes left to right. Without JS they are simply already filled. */
+.js .rot__node { opacity: 1; }
+.js .rot.is-armed .rot__node { opacity: 0.28; }
+.js .rot.is-armed .rot__node.is-on { opacity: 1; transition: opacity 700ms var(--ease-out); }
+
+/* ============================================================
+   15. PLANT THUMBNAIL RAIL
+   The one place on the page where colour comes up to full.
+   ============================================================ */
+.rail {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 96px;
+  gap: 14px;
+  margin-top: 32px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 8px;
+  scrollbar-width: none;
+}
+.rail::-webkit-scrollbar { display: none; }
+
+@media (min-width: 1100px) {
+  .rail { grid-auto-flow: row; grid-template-columns: repeat(6, 96px); overflow: visible; }
+}
+
+.rail__item { scroll-snap-align: start; }
+
+.thumb { width: 96px; }
+
+.thumb__frame {
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid var(--rule);
+  background: var(--sheet);
+  aspect-ratio: 1;
+}
+
+/* Several of these are illustrations on a light ground, so they need
+   holding down at rest or they become the brightest thing on the page. */
+.thumb__frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(0.30) saturate(0.85) brightness(0.80);
+  transition: filter 300ms var(--ease-out), transform 300ms var(--ease-out);
+}
+
+.thumb figcaption { margin-top: 8px; text-align: center; }
+
+@media (hover: hover) and (pointer: fine) {
+  .thumb:hover .thumb__frame img { filter: none; transform: scale(1.03); }
+}
+
+/* ============================================================
+   16. PRICING, ONE PANEL SPLIT BY A HAIRLINE
+   ============================================================ */
+.tiers { display: grid; grid-template-columns: 1fr; padding: 0; overflow: hidden; }
+
+.tiers__half { padding: clamp(24px, 4vw, 40px); }
+.tiers__half + .tiers__half { border-top: 1px solid var(--rule); }
+
+.tiers__title { margin-bottom: 20px; }
+
+@media (min-width: 760px) {
+  .tiers { grid-template-columns: 1fr 1fr; }
+  .tiers__half + .tiers__half { border-top: 0; border-left: 1px solid var(--rule); }
+}
+
+/* ============================================================
+   17. FAQ ACCORDION
+   Native details and summary, so it works with no JS at all.
+   ============================================================ */
+.faq { border-top: 1px solid var(--rule); }
+
+.faq__item { border-bottom: 1px solid var(--rule); }
+
+.faq__q {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 64px;
+  padding: 18px 4px;
+  color: var(--ink);
+  font-weight: 500;
+  cursor: pointer;
+  list-style: none;
+  transition: color 160ms linear;
+}
+.faq__q::-webkit-details-marker { display: none; }
+.faq__q:hover { color: var(--green-read); }
+
+.faq__icon {
+  flex: none;
+  width: 14px;
+  height: 14px;
+  position: relative;
+}
+.faq__icon::before, .faq__icon::after {
+  content: "";
+  position: absolute;
+  inset: 50% 0 auto 0;
+  height: 1px;
+  background: var(--ink-3);
+  transition: transform 200ms var(--ease-out);
+}
+.faq__icon::after { transform: rotate(90deg); }
+.faq__item[open] .faq__icon::after { transform: rotate(0deg); }
+
+.faq__a { padding: 0 4px 22px; color: var(--ink-2); max-width: 62ch; }
+
+/* ============================================================
+   18. FOOTER
+   ============================================================ */
+.foot {
+  background: var(--floor);
+  border-top: 1px solid var(--rule);
+  padding-block: 48px 40px;
+}
+
+.foot__in {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px 32px;
+}
+
+.foot__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink);
+  font-weight: 700;
+}
+.foot__brand img { width: 24px; height: 24px; border-radius: 7px; }
+
+.foot__links { display: flex; flex-wrap: wrap; gap: 4px 8px; margin-left: auto; }
+
+.foot__links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding-inline: 12px;
+  font-size: 0.875rem;
+  color: var(--ink-3);
+}
+.foot__links a:hover { color: var(--ink); }
+
+.foot__base {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--rule);
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  color: var(--ink-3);
+}
+
+/* ============================================================
+   19. LONG FORM LEGAL PAGES
+   ============================================================ */
+.legal { padding-block: clamp(56px, 8vw, 96px) clamp(72px, 10vw, 112px); }
+
+.legal h1 { font-size: clamp(2rem, 5vw, 2.75rem); letter-spacing: -0.03em; margin-bottom: 8px; }
+.legal h2 { font-size: 1.25rem; letter-spacing: -0.015em; margin-top: 44px; margin-bottom: 12px; }
+.legal h3 { font-size: 1.0625rem; margin-top: 28px; margin-bottom: 8px; }
+
+.legal p, .legal li { color: var(--ink-2); max-width: 68ch; }
+.legal p + p { margin-top: 14px; }
+
+.legal ul, .legal ol { margin: 14px 0; padding-left: 22px; max-width: 68ch; }
+.legal ul { list-style: disc; }
+.legal ol { list-style: decimal; }
+.legal li { margin-bottom: 8px; padding-left: 4px; }
+.legal li::marker { color: var(--ink-3); }
+
+.legal a { text-decoration: underline; text-underline-offset: 3px; }
+
+.legal code {
+  font-family: var(--mono);
+  font-size: 0.875em;
+  padding: 2px 6px;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: var(--sheet);
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+
+.legal__meta { font-size: 0.875rem; color: var(--ink-3); margin-bottom: 32px; }
+.legal__meta strong { color: var(--ink-2); font-weight: 500; }
+
+.legal__table-wrap { overflow-x: auto; margin: 18px 0; }
+
+.legal table {
+  width: 100%;
+  min-width: 520px;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+.legal th, .legal td {
+  text-align: left;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+.legal th { color: var(--ink); font-weight: 500; }
+.legal td { color: var(--ink-2); }
+
+.callout {
+  background: var(--sheet);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--green);
+  border-radius: 12px;
+  padding: 20px 22px;
+  margin: 26px 0;
+}
+.callout strong { color: var(--ink); font-weight: 700; }
+
+/* Back link on subpages */
+.backlink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 48px;
+  font-size: 0.875rem;
+  color: var(--ink-3);
+}
+.backlink:hover { color: var(--ink); text-decoration: none; }
+
+/* ============================================================
+   20. REVEALS
+   Rest states exist only when JS is running. With no JS the page
+   is complete and fully visible.
+   ============================================================ */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(14px);
+}
+
+.js .reveal.in {
+  opacity: 1;
+  transform: none;
+  transition: opacity 560ms var(--ease-out), transform 560ms var(--ease-out);
+  transition-delay: min(calc(var(--i, 0) * 70ms), 420ms);
+}
+
+/* The ledger hairline draws itself just behind its row.
+   Works whether .reveal sits on the list or on each row. */
+.js .reveal .ledger__row::after,
+.js .ledger__row.reveal::after { transform: scaleX(0); }
+
+.js .reveal.in .ledger__row::after,
+.js .ledger__row.reveal.in::after {
+  transform: scaleX(1);
+  transition: transform 600ms var(--ease-draw);
+  transition-delay: calc(min(calc(var(--i, 0) * 70ms), 420ms) + 120ms);
+}
+
+/* The dimension line renders drawn. JS resets it immediately before animating. */
+.js .dim.is-armed { transform: scaleX(0); }
+.js .dim.is-armed .dim__chip { opacity: 0; transform: translate(-50%, 4px); }
+.js .dim.is-armed.in { transform: scaleX(1); transition: transform 520ms var(--ease-out); }
+.js .dim.is-armed.in .dim__chip {
+  opacity: 1;
+  transform: translate(-50%, 0);
+  transition: opacity 240ms var(--ease-out) 420ms, transform 240ms var(--ease-out) 420ms;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ============================================================
+   21. REDUCED MOTION
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+    scroll-behavior: auto !important;
+  }
+  .js .reveal { opacity: 1; transform: none; }
+  .hero__plan .plan { animation: none; }
+  .card:hover, .btn:hover, .btn:active { transform: none; }
+  .thumb:hover .thumb__frame img { transform: none; }
+}
+
+@media print {
+  .nav, .hero__plan, .device, .devices, .rail, .split__plate { display: none !important; }
+  body { background: #fff; color: #000; }
+}

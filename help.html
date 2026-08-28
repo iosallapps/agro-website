@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#08090A">
+
+<title>Getting started with Agrondo</title>
+<meta name="description" content="How to draw a field in Agrondo, cut its first parcel, log a treatment or a harvest against that parcel, read the profit figures, identify a plant from a photo and export a report.">
+<link rel="canonical" href="https://agrondo.com/help.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Agrondo">
+<meta property="og:url" content="https://agrondo.com/help.html">
+<meta property="og:title" content="Getting started with Agrondo">
+<meta property="og:description" content="How to draw a field in Agrondo, cut its first parcel, log a treatment or a harvest against that parcel, read the profit figures, identify a plant from a photo and export a report.">
+<meta property="og:image" content="https://agrondo.com/img/app-icon.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:alt" content="The Agrondo app icon.">
+<meta property="og:locale" content="en_US">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Getting started with Agrondo">
+<meta name="twitter:description" content="How to draw a field in Agrondo, cut its first parcel, log a treatment or a harvest against that parcel, read the profit figures, identify a plant from a photo and export a report.">
+<meta name="twitter:image" content="https://agrondo.com/img/app-icon.png">
+<meta name="twitter:image:alt" content="The Agrondo app icon.">
+
+<link rel="icon" href="img/favicon.png" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+<link rel="stylesheet" href="styles.css">
+
+<script>(function(d){var e=d.documentElement;e.className+=" js";setTimeout(function(){if(!e.classList.contains("ready"))e.classList.remove("js")},2000)})(document);</script>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to the steps</a>
+
+<header class="nav nav--pages" data-nav>
+  <div class="nav__in wrap">
+    <a class="nav__brand" href="index.html" aria-label="Agrondo, home">
+      <img class="nav__icon" src="img/app-icon.jpg" alt="" width="28" height="28" decoding="async">
+      <span>Agrondo</span>
+    </a>
+    <nav class="nav__links" aria-label="Pages">
+      <a href="index.html">Home</a>
+      <a href="help.html" aria-current="page">Help</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+    <span class="nav__chip">Coming soon to the App Store</span>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============================================================
+       PAGE HEAD
+       Every band on this page is ruled. See the rule at styles.css
+       section 4: ruled paper marks a band that sits on paper, and
+       there is no photography anywhere on this page.
+       ============================================================ -->
+  <section class="section section--ruled">
+    <div class="wrap">
+      <div class="stack-48">
+
+        <div class="stack-24">
+          <p class="eyebrow reveal">Help and getting started</p>
+          <h1 class="h-display reveal">Start with one field.</h1>
+          <p class="lede reveal">Draw the boundary, then cut at least one parcel out of it.
+            Everything you write down afterwards attaches to a parcel, so the two belong in the
+            same sitting. The areas, the costs and the reports all follow from there.</p>
+          <p class="spec-line reveal">iPhone. Works with no signal. Six tasks in the order you
+            would actually do them, then the limits and the questions.</p>
+        </div>
+
+        <div class="grid"><nav class="col-7" aria-label="On this page">
+          <h2 class="micro">On this page</h2>
+          <div class="ledger reveal" data-stagger>
+            <a class="ledger__row ledger__row--plain" href="#draw"><span class="ledger__label">Draw a field and its first parcel</span><span class="fig ledger__fig">01</span></a>
+            <a class="ledger__row ledger__row--plain" href="#reminders"><span class="ledger__label">Put the next job on a date</span><span class="fig ledger__fig">02</span></a>
+            <a class="ledger__row ledger__row--plain" href="#journal"><span class="ledger__label">Log a treatment or a harvest</span><span class="fig ledger__fig">03</span></a>
+            <a class="ledger__row ledger__row--plain" href="#money"><span class="ledger__label">Read the profit figures</span><span class="fig ledger__fig">04</span></a>
+            <a class="ledger__row ledger__row--plain" href="#plants"><span class="ledger__label">Identify a plant from a photo</span><span class="fig ledger__fig">05</span></a>
+            <a class="ledger__row ledger__row--plain" href="#export"><span class="ledger__label">Export a report</span><span class="fig ledger__fig">06</span></a>
+            <a class="ledger__row ledger__row--plain" href="#free"><span class="ledger__label">Where the free tier stops</span><span class="fig ledger__fig">07</span></a>
+            <a class="ledger__row ledger__row--plain" href="#questions"><span class="ledger__label">Questions</span><span class="fig ledger__fig">08</span></a>
+          </div>
+        </nav></div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       01 THE FIELD AND ITS FIRST PARCEL
+       Drawing a field and cutting a parcel out of it is one continuous
+       action in the app, so it is one section here: two phones, one
+       numbered list. Splitting it in two taught a flow that dead ends.
+       ============================================================ -->
+  <section class="section section--spine section--ruled" id="draw">
+    <div class="wrap">
+      <p class="section__num">01</p>
+      <div class="grid grid--center">
+
+        <div class="col-7 stack-24">
+          <p class="eyebrow reveal">Boundary and parcels</p>
+          <h2 class="h-2 reveal">Every field needs at least one parcel.</h2>
+          <p class="body reveal">The field is the outline. The parcel is the piece you actually
+            farm, and it is what a crop, a treatment, a cost and a harvest attach to. A field on
+            its own has nowhere to hold any of them, so draw both before you go any further.</p>
+
+          <ol class="ledger reveal" data-stagger>
+            <li class="ledger__row">
+              <span class="micro">01</span>
+              <span class="ledger__label">Open the Fields tab. It is satellite imagery, so the tree
+                line and the ditch sit where you expect them.</span>
+            </li>
+            <li class="ledger__row">
+              <span class="micro">02</span>
+              <span class="ledger__label">Start a new field and trace the boundary, following the
+                edge you can see under your finger.</span>
+            </li>
+            <li class="ledger__row">
+              <span class="micro">03</span>
+              <span class="ledger__label">Close the shape. The area comes back in hectares or
+                acres. Name it what you already call it. Creek Bottom, Home 80, the one behind the
+                shed.</span>
+            </li>
+            <li class="ledger__row">
+              <span class="micro">04</span>
+              <span class="ledger__label">Open the field you just saved and tap Add Parcel. Trace
+                the parcel just inside the boundary, name it, give it its crop.</span>
+            </li>
+            <li class="ledger__row">
+              <span class="micro">05</span>
+              <span class="ledger__label">If the whole field is one crop, that single parcel is all
+                you need. Stop here and go and log something against it.</span>
+            </li>
+            <li class="ledger__row">
+              <span class="micro">06</span>
+              <span class="ledger__label">If it carries more than one, tap Split Parcel to cut the
+                field in two, or add the rest by hand. Two parcels is normal, eight is fine.</span>
+            </li>
+          </ol>
+
+          <p class="caption reveal">A parcel has to sit inside its field, and it cannot overlap the
+            parcel next to it. If the app will not close the shape, that is usually why. Redraw it
+            a little tighter.</p>
+        </div>
+
+        <div class="col-5 stack-16 reveal">
+          <div class="devices">
+            <figure class="device devices__back" style="--dw:236px">
+              <div class="device__screen">
+                <img src="img/screens/home.jpg"
+                     alt="Agrondo's home screen: a farm snapshot card for Bergstrom Family Farms LLC reading 4 fields and 32.33 ha, a forecast card showing 26 degrees and the next three days, then counters for 32.33 ha total area, 4 fields, 8 parcels and 5 crops."
+                     width="395" height="860" loading="lazy" decoding="async">
+              </div>
+            </figure>
+            <figure class="device devices__front" style="--dw:264px">
+              <div class="device__screen">
+                <img src="img/screens/fieldMap.jpg"
+                     alt="Agrondo's satellite map with four field boundaries drawn on it, each shaded in its own colour, above a legend reading Creek Bottom 9.27 ha, Home 80 13.36 ha, Miller Place 5.60 ha and Timber Pasture 4.09 ha."
+                     width="395" height="860" loading="lazy" decoding="async">
+              </div>
+            </figure>
+          </div>
+          <p class="caption">Four fields cut into eight parcels, and the counters that come off
+            them. The screenshots on this page use a demo farm. Your own copy opens on an empty
+            map with every counter at zero.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       02 REMINDERS
+       Sits here rather than late on, both because the next job is
+       what you think about once the map is done, and because it is
+       the one task with no screenshot: it breaks the run.
+       ============================================================ -->
+  <section class="section section--spine section--ruled" id="reminders">
+    <div class="wrap">
+      <p class="section__num">02</p>
+      <div class="grid">
+
+        <div class="col-6 stack-24">
+          <p class="eyebrow reveal">Reminders</p>
+          <h2 class="h-2 reveal">Put the next job on a date.</h2>
+          <p class="body reveal">A reminder is a note with a day attached to it. When the day
+            comes it arrives as a notification, whether or not the app is open.</p>
+
+          <ol class="ledger reveal" data-stagger>
+            <li class="ledger__row">
+              <span class="micro">01</span>
+              <span class="ledger__label">Write the reminder and give it a date.</span>
+            </li>
+            <li class="ledger__row">
+              <span class="micro">02</span>
+              <span class="ledger__label">Say yes when iOS asks whether Agrondo may send
+                notifications, or nothing will reach you.</span>
+            </li>
+            <li class="ledger__row">
+              <span class="micro">03</span>
+              <span class="ledger__label">If you already said no, open iOS Settings, find Agrondo in
+                the list and allow notifications there.</span>
+            </li>
+          </ol>
+        </div>
+
+        <div class="col-6 reveal">
+          <div class="card">
+            <div class="stack-16">
+              <h3 class="h-3">Read the forecast before you pick the day</h3>
+              <p class="body">The forecast for the location you mapped sits on the home screen,
+                under the farm snapshot. Look at it first and a spray date becomes a decision
+                rather than a guess.</p>
+              <dl class="spec">
+                <div class="spec__row"><dt>Weather</dt><dd>Forecast for the mapped location</dd></div>
+                <div class="spec__row"><dt>Reminders</dt><dd>Arrive as notifications</dd></div>
+              </dl>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       03 JOURNAL
+       A full width band. The phone stands in the flow rather than in
+       a side column, which is what stops the page reading as one
+       module repeated down the page.
+       ============================================================ -->
+  <section class="section section--spine section--ruled" id="journal">
+    <div class="wrap">
+      <p class="section__num">03</p>
+      <div class="stack-48">
+
+        <div class="stack-16">
+          <p class="eyebrow reveal">Journal</p>
+          <h2 class="h-2 reveal">Log it against the parcel it happened on.</h2>
+        </div>
+
+        <div class="device-inline reveal">
+          <figure class="device" style="--dw:296px">
+            <div class="device__screen">
+              <img src="img/screens/journal.jpg"
+                   alt="The Agrondo journal grouped by date: a corn harvest of 35,000 kg worth 7,525 USD on 19 July 2026, a herbicide at 2.5 litres per hectare, seeding on Home 80 on 20 June, a fungicide at 1.2 litres per hectare, and plowing on Creek Bottom on 21 May, with filter chips for crops, treatments and operations above them."
+                   width="395" height="860" loading="lazy" decoding="async">
+            </div>
+          </figure>
+          <p class="caption">One parcel's journal on the demo farm. Every line carries its dose,
+            its weight or its date.</p>
+        </div>
+
+        <div class="grid">
+          <div class="col-7">
+            <ol class="ledger reveal" data-stagger>
+              <li class="ledger__row">
+                <span class="micro">01</span>
+                <span class="ledger__label">Draw a parcel first if you have not. A field with none
+                  reads No parcels in this field, and the entry has nothing to attach to.</span>
+              </li>
+              <li class="ledger__row">
+                <span class="micro">02</span>
+                <span class="ledger__label">Tap Log Activity on the home screen. It asks for the
+                  field, then the parcel, then the kind of entry, and skips a step when there is
+                  only one thing to pick.</span>
+              </li>
+              <li class="ledger__row">
+                <span class="micro">03</span>
+                <span class="ledger__label">Or go the other way round: open the parcel, tap
+                  Journal, then the plus button in the top right corner.</span>
+              </li>
+              <li class="ledger__row">
+                <span class="micro">04</span>
+                <span class="ledger__label">Pick the kind. A crop sown, a treatment, a field
+                  operation, a harvest, a photo. A treatment takes the product and the dose. A
+                  harvest takes the weight and what it made.</span>
+              </li>
+              <li class="ledger__row">
+                <span class="micro">05</span>
+                <span class="ledger__label">Set the date and save. It writes to the phone, so no
+                  signal is not a reason to leave it until you get home.</span>
+              </li>
+            </ol>
+          </div>
+
+          <div class="col-5 reveal">
+            <div class="card">
+              <div class="stack-16">
+                <h3 class="h-3">Finding one entry again in November</h3>
+                <p class="body">The chips along the top of the journal narrow it to crops,
+                  treatments, operations, harvests or photos, and a search box sits under them.
+                  That is how you get back to one spray out of a whole season.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       04 MONEY
+       ============================================================ -->
+  <section class="section section--spine section--ruled" id="money">
+    <div class="wrap">
+      <p class="section__num">04</p>
+      <div class="grid grid--center">
+
+        <div class="col-5 reveal">
+          <div class="devices">
+            <figure class="device devices__back" style="--dw:244px">
+              <div class="device__screen">
+                <img src="img/screens/fieldReport.jpg"
+                     alt="Agrondo's Field Report for Creek Bottom, 9.27 ha across two parcels: costs 3,635.00 USD, revenue 14,844.00 USD, net profit 11,209.00 USD, then a parcel breakdown listing Ditch Side at 4.70 ha and East 40 at 4.57 ha."
+                     width="395" height="860" loading="lazy" decoding="async">
+              </div>
+            </figure>
+            <figure class="device devices__front" style="--dw:244px">
+              <div class="device__screen">
+                <img src="img/screens/parcelReport.jpg"
+                     alt="Agrondo's Parcel Report for East 40 in Creek Bottom, 4.57 ha: costs 1,792.00 USD, revenue 7,319.00 USD, net profit 5,527.00 USD, a corn harvest of 34,041 kg, and a cost breakdown of four treatments at 983.00 USD and three operations at 809.00 USD."
+                     width="395" height="860" loading="lazy" decoding="async">
+              </div>
+            </figure>
+          </div>
+        </div>
+
+        <div class="col-7 stack-24">
+          <p class="eyebrow reveal">Cost and revenue</p>
+          <h2 class="h-2 reveal">Every entry lands in a report.</h2>
+
+          <ol class="ledger reveal" data-stagger>
+            <li class="ledger__row">
+              <span class="micro">01</span>
+              <span class="ledger__label">Open a parcel and tap Report. The financial summary sits
+                at the top.</span>
+            </li>
+            <li class="ledger__row">
+              <span class="micro">02</span>
+              <span class="ledger__label">Under it: the harvests that made the revenue, and the
+                cost breakdown that spent it.</span>
+            </li>
+            <li class="ledger__row">
+              <span class="micro">03</span>
+              <span class="ledger__label">Step up to the field report to see every parcel beside
+                the others, with the field's own totals.</span>
+            </li>
+          </ol>
+
+          <dl class="spec reveal">
+            <div class="spec__row"><dt>Costs</dt><dd>Treatments and operations</dd></div>
+            <div class="spec__row"><dt>Revenue</dt><dd>What the harvests brought in</dd></div>
+            <div class="spec__row"><dt>Net profit</dt><dd>Revenue less costs</dd></div>
+            <div class="spec__row"><dt>Levels</dt><dd>Parcel and field</dd></div>
+          </dl>
+
+          <p class="caption reveal">Nothing on either screen is typed twice, and the figures here
+            are demo records. If a number looks wrong, the entry behind it is wrong, and the
+            journal is where you go to fix it.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       05 PLANTS
+       ============================================================ -->
+  <section class="section section--spine section--ruled" id="plants">
+    <div class="wrap">
+      <p class="section__num">05</p>
+      <div class="grid grid--center">
+
+        <div class="col-7 stack-24">
+          <p class="eyebrow reveal">Identification and care</p>
+          <h2 class="h-2 reveal">Get close, then tap Identify.</h2>
+
+          <ol class="ledger reveal" data-stagger>
+            <li class="ledger__row">
+              <span class="micro">01</span>
+              <span class="ledger__label">Open the Plants tab and tap Identify a plant.</span>
+            </li>
+            <li class="ledger__row">
+              <span class="micro">02</span>
+              <span class="ledger__label">One leaf or one flower filling the frame reads better
+                than a whole plant at ten paces.</span>
+            </li>
+            <li class="ledger__row">
+              <span class="micro">03</span>
+              <span class="ledger__label">Open the care guide on the result for the soil, the
+                temperature, the season, the light and the water it wants.</span>
+            </li>
+          </ol>
+
+          <p class="reveal"><span class="chip chip--quiet">3 a month on the free tier</span></p>
+
+          <p class="caption reveal">This is one of the two things in the app that need a
+            connection. The photo goes out to PlantNet and the answer comes back. The
+            <a href="privacy.html">privacy page</a> lists exactly what is sent, and what is
+            not.</p>
+        </div>
+
+        <div class="col-5 stack-16 reveal">
+          <figure class="device" style="--dw:272px">
+            <div class="device__screen">
+              <img src="img/screens/plants.jpg"
+                   alt="Agrondo's Plants tab with an Identify a plant button reading snap a photo to identify, a search box, category filters, and cards for wheat, corn, sunflower and rice, each with its botanical name and a link to the full guide."
+                   width="395" height="860" loading="lazy" decoding="async">
+            </div>
+          </figure>
+          <p class="caption">The Identify button sits above the care library, which you can search
+            and read without taking a photograph at all.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       06 EXPORT
+       ============================================================ -->
+  <section class="section section--spine section--ruled" id="export">
+    <div class="wrap">
+      <p class="section__num">06</p>
+      <div class="grid grid--center">
+
+        <div class="col-5 stack-16 reveal">
+          <div class="panel">
+            <div class="panel__head">
+              <h3 class="h-3">What comes out</h3>
+              <span class="micro">Reports</span>
+            </div>
+            <dl class="spec">
+              <div class="spec__row"><dt>PDF</dt><dd>One report, parcel or field</dd></div>
+              <div class="spec__row"><dt>CSV</dt><dd>Every field, from Settings</dd></div>
+              <div class="spec__row"><dt>Built</dt><dd>On the device</dd></div>
+              <div class="spec__row"><dt>Signal</dt><dd>Not required</dd></div>
+              <div class="spec__row"><dt>Tier</dt><dd>Subscription</dd></div>
+            </dl>
+          </div>
+          <p class="caption">The file is made on the phone. Once you have shared it, it lives
+            wherever you sent it.</p>
+        </div>
+
+        <div class="col-7 stack-24">
+          <p class="eyebrow reveal">Export</p>
+          <h2 class="h-2 reveal">Get it off the phone as a file.</h2>
+          <p class="body reveal">Two exports, kept in two different places. Both need a
+            subscription.</p>
+
+          <ol class="ledger reveal" data-stagger>
+            <li class="ledger__row">
+              <span class="micro">01</span>
+              <span class="ledger__label">For the PDF, open the report you want, at parcel level or
+                field level.</span>
+            </li>
+            <li class="ledger__row">
+              <span class="micro">02</span>
+              <span class="ledger__label">Tap Export PDF in the top right corner. It carries the
+                usual share icon.</span>
+            </li>
+            <li class="ledger__row">
+              <span class="micro">03</span>
+              <span class="ledger__label">For the CSV, go to Settings and tap Export Data. It
+                covers every field you have, not just the report you were reading.</span>
+            </li>
+            <li class="ledger__row">
+              <span class="micro">04</span>
+              <span class="ledger__label">Either way the iOS share sheet takes over: mail,
+                messages, or straight into Files.</span>
+            </li>
+          </ol>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       07 FREE TIER
+       ============================================================ -->
+  <section class="section section--spine section--ruled" id="free">
+    <div class="wrap">
+      <p class="section__num">07</p>
+      <div class="grid grid--center">
+
+        <div class="col-6 stack-24">
+          <p class="eyebrow reveal">Limits</p>
+          <h2 class="h-2 reveal">Where the free tier stops.</h2>
+          <p class="body reveal">Two fields, and three plant identifications a month. There is no
+            account to make and nothing to sign. Boundaries, parcels, the journal, the rotation
+            warning, the forecast and reading every report on screen all sit inside that.</p>
+          <p class="body reveal">Taking a file away does not. The PDF and the CSV both want a
+            subscription, billed weekly or monthly, and the same subscription takes the ceiling
+            off the fields and the identifications.</p>
+          <p class="spec-line reveal">Prices are set in the App Store, in your own currency. None
+            is printed here.</p>
+        </div>
+
+        <div class="col-6 reveal">
+          <div class="panel">
+            <div class="panel__head">
+              <h3 class="h-3">Free</h3>
+              <span class="micro">No account needed</span>
+            </div>
+            <dl class="spec">
+              <div class="spec__row"><dt>Fields</dt><dd class="num" data-count="2">2</dd></div>
+              <div class="spec__row"><dt>Plant identifications</dt><dd class="num"><span data-count="3">3</span> a month</dd></div>
+              <div class="spec__row"><dt>Mapping and areas</dt><dd>Included</dd></div>
+              <div class="spec__row"><dt>Journal</dt><dd>Included</dd></div>
+              <div class="spec__row"><dt>Reports on screen</dt><dd>Included</dd></div>
+              <div class="spec__row"><dt>PDF and CSV export</dt><dd>Subscription</dd></div>
+            </dl>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       08 QUESTIONS
+       Nobody has used the app yet, so this cannot be framed as what
+       people have asked. It is what I expect to be asked.
+       ============================================================ -->
+  <section class="section section--spine section--ruled" id="questions">
+    <div class="wrap">
+      <p class="section__num">08</p>
+      <div class="grid">
+
+        <div class="col-5 stack-16">
+          <p class="eyebrow reveal">Questions</p>
+          <h2 class="h-2 reveal">Before you ask.</h2>
+          <p class="caption reveal">Nobody has used Agrondo yet, so these are the questions I
+            expect rather than a record of any. If yours is not here, write to me from the
+            <a href="support.html">support page</a>.</p>
+        </div>
+
+        <div class="col-7 reveal">
+          <div class="faq">
+
+            <details class="faq__item">
+              <summary class="faq__q">Do I have to split a field into parcels?<span class="faq__icon"></span></summary>
+              <div class="faq__a">
+                <p>You need at least one. A crop, a treatment, an operation and a harvest all
+                  attach to a parcel, never to the field, so a field on its own has nowhere to
+                  hold them. If the whole field is one crop, draw a single parcel just inside the
+                  boundary and leave it at that. The field report adds up whatever parcels it
+                  finds.</p>
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary class="faq__q">Do I need a signal out in the field?<span class="faq__icon"></span></summary>
+              <div class="faq__a">
+                <p>Not for the work. Drawing a boundary, writing a journal entry, reading a report
+                  and exporting one all run on the phone. Two things do need a connection: plant
+                  identification, because the photo travels to PlantNet, and the weather
+                  forecast.</p>
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary class="faq__q">Where do my records live?<span class="faq__icon"></span></summary>
+              <div class="faq__a">
+                <p>On the device. There is no server holding your yields and no copy of them reaches
+                  me. Use your usual iPhone backup if you want them kept, and note that deleting the
+                  app deletes them. The <a href="privacy.html">privacy page</a> goes through this in
+                  full.</p>
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary class="faq__q">Do I have to make an account?<span class="faq__icon"></span></summary>
+              <div class="faq__a">
+                <p>No. There is nothing to sign up for and no password to lose. Open the app and
+                  draw a field.</p>
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary class="faq__q">Hectares or acres?<span class="faq__icon"></span></summary>
+              <div class="faq__a">
+                <p>Either. Areas read in hectares or in acres, and the reports follow whichever one
+                  you work in.</p>
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary class="faq__q">Will it tell me if I put the same crop back?<span class="faq__icon"></span></summary>
+              <div class="faq__a">
+                <p>Yes. If the same crop returns to a parcel in consecutive years, Agrondo says so
+                  while you are still planning, not after the drill has been through.</p>
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary class="faq__q">What language will it be in?<span class="faq__icon"></span></summary>
+              <div class="faq__a">
+                <p>Agrondo ships in 16 languages.</p>
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary class="faq__q">Can I download it yet?<span class="faq__icon"></span></summary>
+              <div class="faq__a">
+                <p>Not yet. Agrondo is close to finished and is not in the App Store. Write to me
+                  and I will tell you the day it lands, once, and then leave you alone.</p>
+              </div>
+            </details>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CLOSE
+       ============================================================ -->
+  <section class="section section--ruled">
+    <div class="wrap">
+      <div class="panel reveal">
+        <div class="stack-16">
+          <p class="eyebrow">Still stuck</p>
+          <h2 class="h-3">Tell me what you were trying to do.</h2>
+          <p class="body">Say which screen you were on and what happened instead. That is usually
+            enough for me to work out the rest.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="mailto:iosallapps@gmail.com?subject=Agrondo%20help">Write to me</a>
+            <a class="btn btn--ghost" href="support.html">Other ways to get in touch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot__in wrap">
+    <a class="foot__brand" href="index.html">
+      <img src="img/app-icon.jpg" alt="" width="24" height="24" loading="lazy" decoding="async">
+      <span>Agrondo</span>
+    </a>
+    <nav class="foot__links" aria-label="Site">
+      <a href="index.html">Home</a>
+      <a href="help.html" aria-current="page">Help</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </div>
+  <div class="foot__base wrap">
+    Agrondo: Farm Tracker &middot; agrondo.com<br>
+    Plant identification powered by PlantNet.
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
