@@ -24,7 +24,7 @@
   --ink: #F2F5F2;
   --ink-2: #A8B2AA;
   --ink-3: #7D8C7A;
-  --ink-4: #6C7670;
+  --ink-4: #727C76;
 
   /* Green: object vs reading */
   --green: #4CAF50;
@@ -1509,14 +1509,14 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
    ============================================================ */
 .js .reveal {
   opacity: 0;
-  transform: translateY(14px);
+  transform: translateY(10px);
 }
 
 .js .reveal.in {
   opacity: 1;
   transform: none;
-  transition: opacity 560ms var(--ease-out), transform 560ms var(--ease-out);
-  transition-delay: min(calc(var(--i, 0) * 70ms), 420ms);
+  transition: opacity 380ms var(--ease-out), transform 380ms var(--ease-out);
+  transition-delay: min(calc(var(--i, 0) * 40ms), 180ms);
 }
 
 /* The ledger hairline draws itself just behind its row.
@@ -1528,7 +1528,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .js .ledger__row.reveal.in::after {
   transform: scaleX(1);
   transition: transform 600ms var(--ease-draw);
-  transition-delay: calc(min(calc(var(--i, 0) * 70ms), 420ms) + 120ms);
+  transition-delay: calc(min(calc(var(--i, 0) * 40ms), 180ms) + 90ms);
 }
 
 /* The dimension line renders drawn. JS resets it immediately before animating. */

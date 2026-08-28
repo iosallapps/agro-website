@@ -104,7 +104,7 @@
         activate(entry.target);
         obs.unobserve(entry.target);
       });
-    }, { threshold: 0.18, rootMargin: '0px 0px -12% 0px' });
+    }, { threshold: 0, rootMargin: '0px 0px 18% 0px' });
 
     each(revealTargets, function (el) {
       /* Anything already on screen at load reveals without waiting */
