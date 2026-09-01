@@ -271,6 +271,13 @@
   var path = location.pathname;
   var page = path.replace(/^\/+/, '');
   if (page === '' || page === 'index.html') page = '';
+
+  /* Only these exist under every locale. Privacy and terms are English-only by
+     decision, so redirecting one sends the visitor to a 404 instead of a policy,
+     and the app links straight to them from the paywall. Bail without storing,
+     so the next visit to a page that IS translated still gets redirected. */
+  if (page !== '' && page !== 'support.html' && page !== 'help.html') return;
+
   store(match);
   location.replace('/' + match + '/' + page + location.search + location.hash);
 })();
