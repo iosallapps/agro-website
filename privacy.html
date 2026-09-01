@@ -68,7 +68,7 @@
     <strong>The short version.</strong> Your fields, your journal and your figures sit on your
     phone. I never receive them. Three things in the app reach the internet, and all three are set out
     below in full: identifying a plant sends that one photo, and the forecast sends the
-    coordinates of the map you are looking at. No ads, no analytics, no tracking, no accounts.
+    centre point of your first field. No ads, no analytics, no tracking, no accounts.
   </div>
 
   <h2>1. Who I am</h2>
@@ -80,7 +80,7 @@
     nothing from a third party, and runs no analytics of any kind.</p>
 
   <h2>2. What leaves your phone, and when</h2>
-  <p>Three requests, and nothing else. Each is listed here with the host it reaches.</p>
+  <p>Five requests, and nothing else. Each is listed here with the host it reaches.</p>
   <div class="legal__table-wrap">
     <table>
       <tr><th>What</th><th>Where it goes</th><th>When</th></tr>
@@ -93,15 +93,28 @@
         <td>Only when you tap to identify a plant</td>
       </tr>
       <tr>
-        <td>The latitude and longitude of the map you are viewing</td>
+        <td>The centre point of your first field, worked out from the boundary you drew</td>
         <td>Open-Meteo (<code>api.open-meteo.com</code>), a free weather service</td>
-        <td>When a forecast is fetched or refreshed</td>
+        <td>When the home screen loads or refreshes, if you have drawn at least one field</td>
       </tr>
       <tr>
         <td>The area of the map you are looking at, so the imagery for it can be fetched</td>
         <td>Apple, through Apple Maps, which supplies the satellite imagery the app draws
             your fields on</td>
         <td>Whenever a map is shown, panned or zoomed</td>
+      </tr>
+      <tr>
+        <td>A request for the thumbnail images PlantNet returns with a match, so you can see what
+            it thinks your plant is</td>
+        <td>PlantNet’s own image host, reached directly</td>
+        <td>Only after an identification returns results</td>
+      </tr>
+      <tr>
+        <td>Whatever a web page you opened needs to load. Links open in a browser inside the app,
+            so the page is fetched the way any browser fetches it</td>
+        <td>The site you tapped: this one for the policy and terms, or Wikimedia and Wikipedia for
+            a photo credit or a plant description</td>
+        <td>Only when you tap a link</td>
       </tr>
     </table>
   </div>
@@ -144,10 +157,11 @@
     privacy policy, not this one.</p>
 
   <h2>5. Weather</h2>
-  <p>To show a forecast for your land, the app sends the latitude and longitude of the map you are
-    looking at to Open-Meteo. Nothing goes with it: no identifier, no account, no subscription
-    status. Open-Meteo has nothing to tie the request to you. If you never open a weather view, no
-    coordinates are sent at all.</p>
+  <p>To show a forecast for your land, the app works out the centre point of your first field from
+    the boundary you drew, and sends that latitude and longitude to Open-Meteo. This happens on its
+    own when the home screen loads or refreshes, not only when you look at the forecast. Nothing
+    goes with it: no identifier, no account, no subscription status. Open-Meteo has nothing to tie
+    the request to you. Until you have drawn a field, no coordinates are sent at all.</p>
 
   <h2>6. Your farm records</h2>
   <p>The fields and parcels you draw, the areas, the crops sown, the treatments with their dose
@@ -162,8 +176,8 @@
   <p>Agrondo asks for your location while you are using the app so the map can find you and so a
     boundary is easier to trace. The locations you save stay with your fields on the device.
     Coordinates leave the phone in only two places, both described above: the map imagery request
-    in section 4 and the weather request in section 5. Both describe the part of the map on
-    screen, not a record of where you have been, and neither reaches me.</p>
+    in section 4 and the weather request in section 5. Both describe land you drew yourself, not a
+    record of where you have been, and neither reaches me.</p>
 
   <h2>8. Camera and photo library</h2>
   <p>Camera access is for photographing a plant or documenting work in the field. Photo library
@@ -225,8 +239,8 @@
   <p>Most of your control here is exercised without asking me for anything:</p>
   <ul>
     <li>Revoke camera, photo or location access at any time in iOS Settings.</li>
-    <li>Stop using plant identification and the weather view, and every outbound transfer stops
-      with it.</li>
+    <li>Stop identifying plants, and delete your fields, and every outbound transfer stops with
+      it.</li>
     <li>Delete the app and your records go with it.</li>
   </ul>
   <p>Under the GDPR my legal basis is your consent, given through the iOS permission prompts and
