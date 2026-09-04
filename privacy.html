@@ -80,7 +80,7 @@
     nothing from a third party, and runs no analytics of any kind.</p>
 
   <h2>2. What leaves your phone, and when</h2>
-  <p>Six requests, and nothing else. Each is listed here with the host it reaches.</p>
+  <p>Seven requests, and nothing else. Each is listed here with the host it reaches.</p>
   <div class="legal__table-wrap">
     <table>
       <tr><th>What</th><th>Where it goes</th><th>When</th></tr>
@@ -115,6 +115,13 @@
         <td>Wikipedia (<code>&lt;language&gt;.wikipedia.org</code>), the edition for your app language,
             falling back to English</td>
         <td>Only when you open a result’s details</td>
+      </tr>
+      <tr>
+        <td>Your subscription receipt, so the app knows whether Agrondo Pro is active, and a random
+            identifier that RevenueCat generates for the install. No name, no email, no account</td>
+        <td>RevenueCat (<code>api.revenuecat.com</code>), the service that validates the receipt with
+            Apple and tells the app what you are entitled to</td>
+        <td>At launch, and whenever you buy or restore a subscription</td>
       </tr>
       <tr>
         <td>Whatever a web page you opened needs to load. Links open in a browser inside the app,
@@ -210,10 +217,10 @@
     <table>
       <tr>
         <td><strong>Analytics or tracking SDKs</strong></td>
-        <td>None. The app has no third-party libraries at all. Everything it is built on is an
-            Apple framework that already ships with iOS, and subscriptions run on Apple's
-            StoreKit rather than a payment library. That is checkable: there are no package
-            dependencies in the project.</td>
+        <td>None. The app carries exactly one third-party library, RevenueCat, and it exists only
+            to run subscriptions on top of Apple's StoreKit. It reports purchases, not people:
+            no analytics, no advertising, no profiling. Everything else Agrondo is built on is an
+            Apple framework that already ships with iOS.</td>
       </tr>
       <tr>
         <td><strong>Advertising</strong></td>
