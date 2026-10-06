@@ -52,7 +52,7 @@
       <a href="/privacy.html" aria-current="page">Privacy</a>
       <a href="/terms.html">Terms</a>
     </nav>
-    <span class="nav__chip">Coming soon to the App Store</span>
+    <a class="nav__chip" href="https://apps.apple.com/app/id6775927132">On the App Store</a>
 <!-- lang:picker-top -->
 <!-- /lang:picker-top -->
   </div>
@@ -63,13 +63,14 @@
   <a class="backlink" href="/index.html">Back to the Agrondo home page</a>
 
   <h1>Privacy Policy</h1>
-  <p class="legal__meta"><strong>Last updated:</strong> 28 August 2026</p>
+  <p class="legal__meta"><strong>Last updated:</strong> 6 October 2026</p>
 
   <div class="callout">
     <strong>The short version.</strong> Your fields, your journal and your figures sit on your
-    phone. I never receive them. Three things in the app reach the internet, and all three are set out
-    below in full: identifying a plant sends that one photo, and the forecast sends the
-    centre point of your first field. No ads, no analytics, no tracking, no accounts.
+    phone. I never receive them. What does reach the internet is set out below in full:
+identifying a plant sends that one photo with a random identifier for your installation, the
+forecast sends the centre point of your first field, and RevenueCat checks your purchase
+history with Apple. No ads, no analytics, no tracking, no accounts.
   </div>
 
   <h2>1. Who I am</h2>
@@ -88,7 +89,7 @@
       <tr>
         <td>The photo you picked, an identifier for your installation, your app language, and
             whether a subscription is active</td>
-        <td>A small relay I run at <code>agrondo-plantnet.workers.dev</code>, hosted on Cloudflare
+        <td>A small relay I run at <code>agrondo-plantnet.plantnet-proxy.workers.dev</code>, hosted on Cloudflare
             Workers. It passes the photo to PlantNet
             (<code>my-api.plantnet.org</code>), run by a French research consortium</td>
         <td>Only when you tap to identify a plant</td>
@@ -118,11 +119,12 @@
         <td>Only when you open a result’s details</td>
       </tr>
       <tr>
-        <td>Your subscription receipt, so the app knows whether Agrondo Pro is active, and a random
-            identifier that RevenueCat generates for the install. No name, no email, no account</td>
+        <td>Your App Store purchase history for Agrondo, so the app knows whether a subscription or a
+Lifetime purchase is active, and a random identifier that RevenueCat generates for the
+install. No name, no email, no account</td>
         <td>RevenueCat (<code>api.revenuecat.com</code>), the service that validates the receipt with
             Apple and tells the app what you are entitled to</td>
-        <td>At launch, and whenever you buy or restore a subscription</td>
+        <td>At launch, and whenever you buy something or tap Restore Purchases</td>
       </tr>
       <tr>
         <td>Whatever a web page you opened needs to load. Links open in a browser inside the app,
@@ -156,7 +158,8 @@
     and I have no way to turn it back into a person. It is the value iOS calls the vendor
     identifier, so it is shared by every app from this same developer on your device, and it
     resets once you remove the last app from this developer. Deleting Agrondo on its own will not
-    reset it if you keep another of my apps installed.</p>
+reset it if you keep another of my apps installed. On the rare occasion iOS does not supply
+that value, the app generates a random one instead and keeps it on the device.</p>
   <p>The count lives in Cloudflare KV, Cloudflare's key store: one number per installation per
     month, which expires by itself roughly forty days later. No photo is stored, no result is
     stored, and no history is built from either.</p>
@@ -208,10 +211,15 @@
     Settings, and then it is attached to a message you can read and edit before you send it.</p>
 
   <h2>10. Subscriptions</h2>
-  <p>Apple takes the payment. It happens inside the App Store, and I never see your card, your
-    address or your Apple Account. The app learns one thing from Apple: whether a subscription is
-    currently active. As section 3 explains, that yes or no is passed to the identification relay
-    so it knows which monthly limit to apply.</p>
+  <p>Agrondo offers weekly and monthly subscriptions, a yearly subscription and a one-time
+Lifetime purchase. Apple takes every payment. It happens inside the App Store, and I never see
+your card, your address or your Apple Account. RevenueCat, listed in section 2, reads your
+purchase history for this app from Apple so the app learns one thing: whether a subscription or
+a Lifetime purchase is currently active. As section 3 explains, that yes or no is passed to the
+identification relay so it knows which monthly limit to apply.</p>
+<p>Subscriptions are managed and cancelled in iOS Settings, under your Apple Account and then
+Subscriptions. Restore Purchases in the app's Settings asks Apple again for what this Apple
+Account has bought.</p>
 
   <h2>11. What Agrondo does not do</h2>
   <div class="legal__table-wrap">
