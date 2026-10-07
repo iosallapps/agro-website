@@ -160,18 +160,18 @@
     <p>Als Agrondo crasht of vastloopt, schrijft iOS een rapport en geeft dat bij de volgende
       start terug aan de app. Agrondo houdt daar een korte geschiedenis van bij op het apparaat,
       samen met de fouten die hij opving en zelf oploste. Die geschiedenis blijft in de app en
-      gaat uit zichzelf nergens heen.</p>
+      gaat uit zichzelf nergens heen. Daarnaast gaat een crashrapport zonder bedrijfsgegevens naar Firebase Crashlytics, zodat ik zie dat er iets misging. Wat je aan het doen was, vertelt het me niet.</p>
     <p>Open Instellingen in de app en tik op de regel voor ondersteuning. Agrondo begint een
       mailconcept aan mij, met de versie van de app in het onderwerp en die laatste regels als
       platte tekst in het bericht. Lees het door, haal eruit wat je liever niet stuurt, en verstuur
       het dan. Valt de app zomaar weg zonder waarschuwing, dan is dit de mail om te sturen.
       Meestal staat erin waar hij het begaf.</p>
-    <p><span class="chip chip--quiet">Er gaat niets weg tot jij op versturen tikt</span></p>
+    <p><span class="chip chip--quiet">De mail gaat pas weg als jij op versturen tikt</span></p>
   </div>
 
   <h2>Abonnementen</h2>
   <div class="stack-24">
-    <p>De gratis versie kost niets en er is geen account aan te maken.</p>
+    <p>De gratis versie kost niets, toont advertenties en er is geen account aan te maken.</p>
 
     <div class="panel">
       <h3>Wat gratis dekt</h3>
@@ -184,7 +184,7 @@
       </dl>
     </div>
 
-    <p>Het Agrondo-abonnement is de betaalde versie. Het haalt de limiet op velden weg, trekt
+    <p>Het Agrondo-abonnement is de betaalde versie. Het haalt de advertenties en de limiet op velden weg, trekt
       plantherkenning op naar 100 per maand en zet export aan, zodat een veldrapport als PDF van de
       telefoon gaat en de registraties als CSV. Het wordt wekelijks of maandelijks afgerekend via je
       Apple Account en verlengt vanzelf tot je opzegt. Beide abonnementen beginnen met een gratis
@@ -229,12 +229,8 @@
 
   <h2>Waar je registraties staan</h2>
   <div class="stack-24">
-    <p>Velden, percelen, gewassen, bespuitingen, oogsten, kosten, omzet en de foto’s die je erbij
-      zet, staan op het apparaat opgeslagen met SwiftData van Apple. Ik heb er geen kopie van en
-      kan ze niet lezen. Twee dingen gaan het internet op die iets van jou bevatten. Een plant
-      herkennen verstuurt die ene foto. De weersverwachting verstuurt het middelpunt van je eerste
-      veld.</p>
-    <p><a href="/privacy.html">Het privacybeleid</a> zet die twee volledig op een rij, regel voor
+    <p>Velden, percelen, gewassen, bespuitingen, oogsten, kosten, omzet en de foto’s die je erbij zet, staan op het apparaat opgeslagen met SwiftData van Apple. Ik heb er geen kopie van en kan ze niet lezen. Twee dingen uit je registraties gaan het internet op. Een plant herkennen verstuurt die ene foto. De weersverwachting verstuurt het middelpunt van je eerste veld. Daarnaast laadt de gratis versie advertenties van Google AdMob, en stuurt de app gebruiks- en crashstatistieken naar Google Firebase, zonder je registraties.</p>
+    <p><a href="/privacy.html">Het privacybeleid</a> zet dat allemaal volledig op een rij, regel voor
       regel. <a href="/terms.html">De voorwaarden</a> gaan over de licentie, het abonnement en de
       grenzen van wat de app belooft.</p>
 

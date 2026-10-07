@@ -159,18 +159,18 @@
   <div class="stack-24">
     <p>Quand Agrondo plante ou se fige, iOS écrit un rapport et le rend à l’application au lancement
       suivant. Agrondo en garde un court historique sur l’appareil, avec les erreurs qu’il a
-      rattrapées. Cet historique reste dans l’application et ne part nulle part de lui-même.</p>
+      rattrapées. Cet historique reste dans l’application et ne part nulle part de lui-même. À part, un rapport de plantage sans aucune donnée de votre exploitation part vers Firebase Crashlytics pour que je sache que quelque chose a cassé, sans me dire ce que vous faisiez.</p>
     <p>Ouvrez les Réglages dans l’application et touchez la ligne Assistance. Agrondo prépare un
       brouillon de mail à mon adresse, avec la version de l’application en objet et ces
       dernières lignes écrites en clair dans le corps du message. Relisez, coupez ce que vous
       préférez ne pas envoyer, puis envoyez. Si l’application se ferme sans prévenir, c’est ce
       message-là qu’il me faut. Il indique en général où ça a lâché.</p>
-    <p><span class="chip chip--quiet">Rien ne part avant que vous touchiez Envoyer</span></p>
+    <p><span class="chip chip--quiet">Le mail ne part que quand vous touchez Envoyer</span></p>
   </div>
 
   <h2>Abonnements</h2>
   <div class="stack-24">
-    <p>La version gratuite ne coûte rien et il n’y a aucun compte à créer.</p>
+    <p>La version gratuite ne coûte rien, affiche des publicités, et il n’y a aucun compte à créer.</p>
 
     <div class="panel">
       <h3>Ce que couvre la version gratuite</h3>
@@ -183,7 +183,7 @@
       </dl>
     </div>
 
-    <p>L’abonnement Agrondo est la formule payante. Il supprime la limite de champs, porte
+    <p>L’abonnement Agrondo est la formule payante. Il supprime les publicités et la limite de champs, porte
       l’identification de plantes à 100 par mois et active l’export : un rapport de champ quitte le
       téléphone en PDF et vos données en CSV. Il est facturé à la semaine ou au mois via votre
       compte Apple et se renouvelle tout seul jusqu’à ce que vous le résiliiez. Les deux formules
@@ -229,12 +229,8 @@
 
   <h2>Où sont stockées vos données</h2>
   <div class="stack-24">
-    <p>Les champs, les parcelles, les cultures, les traitements, les récoltes, les coûts, les
-      revenus et les photos que vous joignez sont stockés sur l’appareil avec SwiftData d’Apple.
-      Je n’en garde aucune copie et je ne peux pas les lire. Seules deux choses qui vous
-      concernent passent par internet. L’identification d’une plante envoie cette seule photo. Les
-      prévisions météo envoient le point central de votre premier champ.</p>
-    <p><a href="/privacy.html">La politique de confidentialité</a> détaille ces deux points, ligne
+    <p>Les champs, les parcelles, les cultures, les traitements, les récoltes, les coûts, les revenus et les photos que vous joignez sont stockés sur l’appareil avec SwiftData d’Apple. Je n’en garde aucune copie et je ne peux pas les lire. Seules deux choses issues de vos données passent par internet. L’identification d’une plante envoie cette seule photo. Les prévisions météo envoient le point central de votre premier champ. À côté, la version gratuite charge des publicités de Google AdMob, et l’application envoie des statistiques d’utilisation et de plantage à Google Firebase, sans rien de vos données.</p>
+    <p><a href="/privacy.html">La politique de confidentialité</a> détaille tout cela, ligne
       par ligne. <a href="/terms.html">Les conditions</a> couvrent la licence, l’abonnement et
       les limites de ce que l’application promet.</p>
 

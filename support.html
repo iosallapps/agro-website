@@ -159,17 +159,19 @@
   <div class="stack-24">
     <p>When Agrondo crashes or freezes, iOS writes a report and hands it back to the app on the
       next launch. Agrondo keeps a short history of those on the device, along with the errors it
-      caught and recovered from. The history sits in the app and goes nowhere on its own.</p>
+      caught and recovered from. That history sits in the app and goes nowhere on its own. A
+      separate crash report, with no farm data in it, goes to Firebase Crashlytics so I can see
+      that something broke, but it does not tell me what you were doing.</p>
     <p>Open Settings inside the app and tap the support row. Agrondo starts a mail draft addressed
       to me, with the app version in the subject and those recent lines written into the body as
       plain text. Read it, cut whatever you would rather not send, then send it. If the app is
       closing on you without warning, this is the one to send. It usually says where it died.</p>
-    <p><span class="chip chip--quiet">Nothing leaves until you tap send</span></p>
+    <p><span class="chip chip--quiet">The mail leaves only when you tap send</span></p>
   </div>
 
   <h2>Subscriptions</h2>
   <div class="stack-24">
-    <p>The free tier costs nothing and there is no account to make.</p>
+    <p>The free tier costs nothing, shows ads, and there is no account to make.</p>
 
     <div class="panel">
       <h3>What free covers</h3>
@@ -182,8 +184,8 @@
       </dl>
     </div>
 
-    <p>The Agrondo subscription is the paid tier. It removes the field limit, lifts plant
-      identification to 100 a month, and turns on export, so a field report leaves the phone as a
+    <p>The Agrondo subscription is the paid tier. It removes the ads and the field limit, lifts
+      plant identification to 100 a month, and turns on export, so a field report leaves the phone as a
       PDF and the records leave as a CSV. It is billed weekly or monthly through your Apple Account
       and renews on its own until you cancel. Both plans come with a 3-day free trial for eligible
       accounts: cancel at least 24 hours before the trial ends and nothing is charged.</p>
@@ -227,9 +229,11 @@
   <div class="stack-24">
     <p>Fields, parcels, crops, sprays, harvests, costs, revenue and the photos you attach are
       stored on the device with Apple’s SwiftData. I hold no copy and cannot read them. Two
-      things reach the internet that carry anything of yours. Identifying a plant sends that one
-      photo. The weather forecast sends the centre point of your first field.</p>
-    <p><a href="/privacy.html">The privacy policy</a> lists both of those in full, line by line.
+      things reach the internet that carry anything from your records. Identifying a plant sends
+      that one photo. The weather forecast sends the centre point of your first field. Apart from
+      those, the free version loads ads from Google AdMob, and the app sends usage and crash
+      statistics to Google Firebase, none of which include your records.</p>
+    <p><a href="/privacy.html">The privacy policy</a> lists all of it in full, line by line.
       <a href="/terms.html">The terms</a> cover the licence, the subscription and the limits of
       what the app promises.</p>
 

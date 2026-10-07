@@ -160,17 +160,17 @@
     <p>När Agrondo kraschar eller låser sig, skriver iOS en rapport och lämnar tillbaka den till
       appen vid nästa start. Agrondo sparar en kort historik över dem på enheten, tillsammans med
       de fel den fångade och redde ut. Historiken ligger kvar i appen och går ingenstans av sig
-      själv.</p>
+      själv. Separat går en kraschrapport utan gårdsdata till Firebase Crashlytics, så att jag ser att något gick sönder. Vad du höll på med säger den inte.</p>
     <p>Öppna Inställningar inne i appen och tryck på raden för support. Agrondo påbörjar ett mejl
       till mig, med appversionen i ämnesraden och de senaste raderna inskrivna i brödtexten som ren
       text. Läs igenom, stryk det du hellre håller för dig själv och skicka. Stänger appen ner sig
       utan förvarning, är det här mejlet du ska skicka. Det brukar säga var det tog stopp.</p>
-    <p><span class="chip chip--quiet">Ingenting skickas förrän du trycker på skicka</span></p>
+    <p><span class="chip chip--quiet">Mejlet skickas först när du trycker på skicka</span></p>
   </div>
 
   <h2>Prenumerationer</h2>
   <div class="stack-24">
-    <p>Gratisversionen kostar ingenting och det finns inget konto att skapa.</p>
+    <p>Gratisversionen kostar ingenting, visar annonser och det finns inget konto att skapa.</p>
 
     <div class="panel">
       <h3>Vad gratisversionen täcker</h3>
@@ -183,7 +183,7 @@
       </dl>
     </div>
 
-    <p>Agrondos prenumeration är den betalda versionen. Den tar bort gränsen för antal fält, höjer
+    <p>Agrondos prenumeration är den betalda versionen. Den tar bort annonserna och gränsen för antal fält, höjer
       växtidentifieringen till 100 i månaden och slår på exporten, så att en fältrapport lämnar
       telefonen som PDF och anteckningarna som CSV. Den dras veckovis eller månadsvis via ditt
       Apple-konto och förnyas av sig själv tills du säger upp den. Båda planerna börjar med 3
@@ -228,11 +228,8 @@
 
   <h2>Var dina anteckningar ligger</h2>
   <div class="stack-24">
-    <p>Fält, skiften, grödor, sprutningar, skördar, kostnader, intäkter och fotona du lägger
-      till sparas på enheten med Apples SwiftData. Jag har ingen kopia och kan inte läsa dem.
-      Två saker som innehåller något av ditt går ut på nätet. Växtidentifieringen skickar det ena
-      fotot. Väderprognosen skickar mittpunkten av ditt första fält.</p>
-    <p><a href="/privacy.html">Integritetspolicyn</a> går igenom båda i sin helhet, rad för rad.
+    <p>Fält, skiften, grödor, sprutningar, skördar, kostnader, intäkter och fotona du lägger till sparas på enheten med Apples SwiftData. Jag har ingen kopia och kan inte läsa dem. Två saker ur dina anteckningar går ut på nätet. Växtidentifieringen skickar det ena fotot. Väderprognosen skickar mittpunkten av ditt första fält. Utöver det laddar gratisversionen annonser från Google AdMob, och appen skickar användnings- och kraschstatistik till Google Firebase, utan dina anteckningar.</p>
+    <p><a href="/privacy.html">Integritetspolicyn</a> går igenom allt i sin helhet, rad för rad.
       <a href="/terms.html">Villkoren</a> täcker licensen, prenumerationen och gränserna för vad
       appen lovar.</p>
 

@@ -157,17 +157,17 @@
   <div class="stack-24">
     <p>Quando o Agrondo fecha sozinho ou trava, o iOS escreve um relatório e devolve ao app na abertura
       seguinte. O Agrondo guarda um histórico curto disso no aparelho, junto com os erros que ele
-      capturou e contornou. Esse histórico fica no app e não vai a lugar nenhum por conta própria.</p>
+      capturou e contornou. Esse histórico fica no app e não vai a lugar nenhum por conta própria. À parte, um relatório de falha sem dados da sua fazenda vai para o Firebase Crashlytics, para eu saber que algo quebrou, mas ele não me diz o que você estava fazendo.</p>
     <p>Abra os Ajustes dentro do app e toque na linha de suporte. O Agrondo começa um rascunho de e-mail
       endereçado a mim, com a versão do app no assunto e essas últimas linhas escritas no corpo
       como texto simples. Leia, corte o que preferir não mandar e envie. Se o app está fechando
       sem aviso, é esse o e-mail para mandar. Ele costuma dizer onde a coisa morreu.</p>
-    <p><span class="chip chip--quiet">Nada sai até você tocar em enviar</span></p>
+    <p><span class="chip chip--quiet">O e-mail só sai quando você toca em enviar</span></p>
   </div>
 
   <h2>Assinaturas</h2>
   <div class="stack-24">
-    <p>O plano grátis não custa nada e não tem conta para criar.</p>
+    <p>O plano grátis não custa nada, mostra anúncios e não tem conta para criar.</p>
 
     <div class="panel">
       <h3>O que o grátis cobre</h3>
@@ -180,7 +180,7 @@
       </dl>
     </div>
 
-    <p>A assinatura do Agrondo é o plano pago. Ela tira o limite de campos, leva a identificação de
+    <p>A assinatura do Agrondo é o plano pago. Ela tira os anúncios e o limite de campos, leva a identificação de
       plantas a 100 por mês e libera a exportação, então o relatório do campo sai do celular em PDF
       e os registros saem em CSV. É cobrada por semana ou por mês pela sua Conta Apple e se renova
       sozinha até você cancelar. Os dois planos vêm com 3 dias de teste grátis para contas
@@ -223,11 +223,8 @@
 
   <h2>Onde ficam os seus registros</h2>
   <div class="stack-24">
-    <p>Campos, talhões, culturas, pulverizações, colheitas, custos, receita e as fotos que você anexa
-      ficam guardados no aparelho com o SwiftData da Apple. Eu não tenho cópia e não consigo ler
-      nada disso. Duas coisas que levam algum dado seu vão para a internet. Identificar uma planta
-      envia aquela foto. A previsão do tempo envia o ponto central do seu primeiro campo.</p>
-    <p>A <a href="/privacy.html">política de privacidade</a> lista as duas por inteiro, linha por linha.
+    <p>Campos, talhões, culturas, pulverizações, colheitas, custos, receita e as fotos que você anexa ficam guardados no aparelho com o SwiftData da Apple. Eu não tenho cópia e não consigo ler nada disso. Duas coisas dos seus registros vão para a internet. Identificar uma planta envia aquela foto. A previsão do tempo envia o ponto central do seu primeiro campo. Fora isso, a versão grátis carrega anúncios do Google AdMob e o app envia estatísticas de uso e de falhas para o Google Firebase, sem os seus registros.</p>
+    <p>A <a href="/privacy.html">política de privacidade</a> lista tudo isso por inteiro, linha por linha.
       Os <a href="/terms.html">termos</a> cobrem a licença, a assinatura e os limites do que o app
       promete.</p>
 

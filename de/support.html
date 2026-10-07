@@ -160,18 +160,18 @@
     <p>Stürzt Agrondo ab oder friert ein, schreibt iOS einen Bericht und gibt ihn beim nächsten Start
       an die App zurück. Agrondo hält davon eine kurze Historie auf dem Gerät, zusammen mit den
       Fehlern, die Agrondo abgefangen und überstanden hat. Diese Historie bleibt in der App und geht
-      von allein nirgendwohin.</p>
+      von allein nirgendwohin. Ein separater Absturzbericht ohne Hofdaten geht an Firebase Crashlytics, damit ich sehe, dass etwas kaputtging. Was du gerade gemacht hast, verrät er mir nicht.</p>
     <p>Öffne die Einstellungen in der App und tippe auf die Support-Zeile. Agrondo öffnet einen
       Mailentwurf an mich, mit der App-Version im Betreff und den letzten Zeilen als reinem
       Text im Nachrichtentext. Lies ihn durch, streich raus, was du lieber nicht schickst, und
       schick ihn ab. Schließt sich die App ohne Vorwarnung, ist das die Mail, die du schicken
       solltest. Meistens steht darin, wo sie gestorben ist.</p>
-    <p><span class="chip chip--quiet">Nichts geht raus, bis du auf Senden tippst</span></p>
+    <p><span class="chip chip--quiet">Die Mail geht erst raus, wenn du auf Senden tippst</span></p>
   </div>
 
   <h2>Abos</h2>
   <div class="stack-24">
-    <p>Die Gratisversion kostet nichts, und ein Konto brauchst du nicht.</p>
+    <p>Die Gratisversion kostet nichts, zeigt Werbung, und ein Konto brauchst du nicht.</p>
 
     <div class="panel">
       <h3>Was die Gratisversion abdeckt</h3>
@@ -184,7 +184,7 @@
       </dl>
     </div>
 
-    <p>Das Agrondo-Abo ist die bezahlte Version. Es hebt die Grenze bei den Feldern auf, erhöht die
+    <p>Das Agrondo-Abo ist die bezahlte Version. Es entfernt die Werbung, hebt die Grenze bei den Feldern auf, erhöht die
       Pflanzenbestimmung auf 100 pro Monat und schaltet den Export frei: Ein Feldbericht verlässt
       das Handy als PDF, die Aufzeichnungen als CSV. Es wird wöchentlich oder monatlich über deinen
       Apple Account abgerechnet und verlängert sich von selbst, bis du kündigst. Beide Varianten
@@ -228,11 +228,8 @@
 
   <h2>Wo deine Aufzeichnungen liegen</h2>
   <div class="stack-24">
-    <p>Felder, Parzellen, Kulturen, Spritzungen, Ernten, Kosten, Umsatz und die Fotos, die du anhängst,
-      liegen mit SwiftData von Apple auf dem Gerät. Ich habe keine Kopie und kann sie nicht
-      lesen. Zwei Dinge gehen ins Internet, die etwas von dir enthalten. Die Pflanzenbestimmung
-      schickt dieses eine Foto. Die Wettervorhersage schickt den Mittelpunkt deines ersten Feldes.</p>
-    <p><a href="/privacy.html">Die Datenschutzerklärung</a> führt beides vollständig auf, Zeile für
+    <p>Felder, Parzellen, Kulturen, Spritzungen, Ernten, Kosten, Umsatz und die Fotos, die du anhängst, liegen mit SwiftData von Apple auf dem Gerät. Ich habe keine Kopie und kann sie nicht lesen. Zwei Dinge aus deinen Aufzeichnungen gehen ins Internet. Die Pflanzenbestimmung schickt dieses eine Foto. Die Wettervorhersage schickt den Mittelpunkt deines ersten Feldes. Daneben lädt die Gratisversion Werbung von Google AdMob, und die App sendet Nutzungs- und Absturzstatistiken an Google Firebase, ohne deine Aufzeichnungen.</p>
+    <p><a href="/privacy.html">Die Datenschutzerklärung</a> führt alles vollständig auf, Zeile für
       Zeile. <a href="/terms.html">Die Bedingungen</a> regeln die Lizenz, das Abo und die
       Grenzen dessen, was die App verspricht.</p>
 

@@ -160,17 +160,17 @@
     <p>Kiedy Agrondo się wysypie albo zawiesi, iOS zapisuje raport i oddaje go aplikacji przy
       następnym uruchomieniu. Agrondo trzyma krótką historię takich zdarzeń na urządzeniu, razem
       z błędami, które wyłapało i z których się podniosło. Ta historia siedzi w aplikacji i sama nigdzie
-      nie wychodzi.</p>
+      nie wychodzi. Osobno raport o awarii, bez danych z gospodarstwa, trafia do Firebase Crashlytics, żebym wiedział, że coś się zepsuło. Nie mówi mi jednak, co wtedy robiłeś.</p>
     <p>Otwórz Ustawienia w aplikacji i dotknij wiersza pomocy. Agrondo tworzy szkic wiadomości do
       mnie, z wersją aplikacji w temacie i tymi ostatnimi wierszami wpisanymi w treść jako zwykły
       tekst. Przeczytaj go, wytnij, czego wolisz nie wysyłać, i wyślij. Jeśli aplikacja zamyka się bez
       ostrzeżenia, to jest ta wiadomość do wysłania. Zwykle widać w niej, w którym miejscu padła.</p>
-    <p><span class="chip chip--quiet">Nic nie wychodzi, dopóki nie wyślesz</span></p>
+    <p><span class="chip chip--quiet">Mail wychodzi dopiero, gdy go wyślesz</span></p>
   </div>
 
   <h2>Subskrypcje</h2>
   <div class="stack-24">
-    <p>Wersja darmowa nic nie kosztuje i nie ma konta do zakładania.</p>
+    <p>Wersja darmowa nic nie kosztuje, wyświetla reklamy i nie ma konta do zakładania.</p>
 
     <div class="panel">
       <h3>Co obejmuje wersja darmowa</h3>
@@ -183,7 +183,7 @@
       </dl>
     </div>
 
-    <p>Subskrypcja Agrondo to wersja płatna. Znosi limit pól, podnosi rozpoznawanie roślin do 100
+    <p>Subskrypcja Agrondo to wersja płatna. Usuwa reklamy, znosi limit pól, podnosi rozpoznawanie roślin do 100
       miesięcznie i włącza eksport, więc raport pola wychodzi z telefonu jako PDF, a zapisy jako CSV.
       Jest rozliczana tygodniowo albo miesięcznie przez Twoje Konto Apple i odnawia się sama, dopóki
       nie zrezygnujesz. Oba plany mają 3-dniowy darmowy okres próbny dla uprawnionych kont: anuluj
@@ -225,11 +225,8 @@
 
   <h2>Gdzie leżą Twoje zapisy</h2>
   <div class="stack-24">
-    <p>Pola, działki, uprawy, opryski, zbiory, koszty, przychód i zdjęcia, które dodajesz, leżą na
-      urządzeniu w SwiftData od Apple. Nie mam żadnej kopii i nie mogę ich czytać. Do internetu
-      wychodzą dwie rzeczy, które niosą cokolwiek Twojego. Rozpoznanie rośliny wysyła to jedno
-      zdjęcie. Prognoza pogody wysyła punkt środkowy Twojego pierwszego pola.</p>
-    <p><a href="/privacy.html">Polityka prywatności</a> wymienia obie w całości, wiersz po wierszu.
+    <p>Pola, działki, uprawy, opryski, zbiory, koszty, przychód i zdjęcia, które dodajesz, leżą na urządzeniu w SwiftData od Apple. Nie mam żadnej kopii i nie mogę ich czytać. Do internetu wychodzą dwie rzeczy z Twoich zapisów. Rozpoznanie rośliny wysyła to jedno zdjęcie. Prognoza pogody wysyła punkt środkowy Twojego pierwszego pola. Poza tym wersja darmowa wczytuje reklamy z Google AdMob, a aplikacja wysyła statystyki użycia i awarii do Google Firebase, bez Twoich zapisów.</p>
+    <p><a href="/privacy.html">Polityka prywatności</a> wymienia to wszystko w całości, wiersz po wierszu.
       <a href="/terms.html">Regulamin</a> obejmuje licencję, subskrypcję i granice tego, co aplikacja
       obiecuje.</p>
 
