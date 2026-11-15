@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="apple-itunes-app" content="app-id=6775927132">
 <meta name="color-scheme" content="dark">
-<meta name="theme-color" content="#08090A">
+<meta name="theme-color" content="#06140f">
 
 <title>Agrondo: 영농일지</title>
 <meta name="description" content="위성 지도에 경계를 그리면 면적이 나와요. 파종, 방제, 약 용량, 수확을 그때그때 적어 두세요. 한 해 농사가 끝날 무렵이면 숫자는 이미 다 더해져 있어요.">
@@ -30,7 +30,7 @@
 <link rel="icon" href="/img/favicon.png" type="image/png" sizes="48x48">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 
-<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/styles.css?v=20261115c">
 
 <!-- Page scoped additions. Everything else comes from styles.css. -->
 <style>
@@ -168,7 +168,7 @@
 <header class="nav" data-nav>
   <div class="nav__in wrap">
     <a class="nav__brand" href="/index.html" aria-label="Agrondo, 홈">
-      <img class="nav__icon" src="/img/app-icon.jpg" alt="" width="28" height="28" decoding="async">
+      <img class="nav__icon" src="/img/app-icon.webp" alt="" width="28" height="28" decoding="async">
       <span>Agrondo</span>
     </a>
     <nav class="nav__links" aria-label="주 메뉴">
@@ -262,7 +262,7 @@
     <div class="hero__body wrap" data-stagger>
       <p class="section__num" aria-hidden="true">01</p>
       <p class="eyebrow reveal">iPhone으로 쓰는 영농일지</p>
-      <h1 class="h-display reveal">밭마다 장부에 한 줄씩.</h1>
+      <h1 class="h-display reveal">밭마다 장부에 <em>한 줄씩.</em></h1>
       <p class="lede reveal">위성 지도에 경계를 그리면 면적이 나와요. 파종, 방제, 약 용량, 수확을 그때그때 적어 두세요. 한 해 농사가 끝날 무렵이면 숫자는 이미 다 더해져 있어요.</p>
 
       <div class="btn-row hero__cta reveal">
@@ -284,9 +284,9 @@
           <div class="device-wrap">
             <figure class="device" style="--dw:296px">
               <div class="device__screen">
-                <img src="/img/screens/ko/fieldMap.jpg"
+                <img src="/img/screens/ko/framed/fieldMap.webp"
                      alt="Agrondo의 농지 지도. 위성 사진 위에 색이 다른 경계 네 개가 그려져 있고, 그 아래에 도로 건너 밭, 산밑 배밭, 집앞 큰논, 하우스 3동이 각자 면적과 함께 적혀 있어요."
-                     width="395" height="860" loading="lazy" decoding="async">
+                     width="560" height="1143" loading="lazy" decoding="async">
               </div>
             </figure>
             <div class="dim" style="--dim-top:62%;--dim-left:57%;--dim-w:32%" aria-hidden="true">
@@ -300,7 +300,7 @@
             <div class="stack-24">
               <div class="stack-16 reveal">
                 <p class="eyebrow">면적</p>
-                <h2 class="h-2" id="map-h">경계를 그으세요. 면적은 따라 나와요.</h2>
+                <h2 class="h-2" id="map-h">경계를 그으세요. <em>면적은 따라 나와요.</em></h2>
               </div>
               <p class="body">위성 지도 위에서 손가락으로 농지 둘레를 따라 그리세요. Agrondo가 헥타르나 제곱미터로 면적을 돌려줘요. 농지를 구획으로 나누면 구획마다 면적이 따로 나와요.</p>
             </div>
@@ -360,16 +360,16 @@
         <div class="stack-24">
           <div class="stack-16 reveal">
             <p class="eyebrow">기록</p>
-            <h2 class="h-2--plate" id="journal-h">농사철은 길고, 기억은 짧아요.</h2>
+            <h2 class="h-2--plate" id="journal-h">농사철은 길고, <em>기억은 짧아요.</em></h2>
           </div>
           <p class="body">밭에 서 있을 때 바로 적어 두세요. 무엇을 파종했는지, 어떤 약을 얼마나 쳤는지, 어떤 작업으로 지나갔는지, 수확은 얼마나 났는지. 사진까지 붙여도 신호 없이 폰에 저장돼요.</p>
         </div>
 
         <figure class="device device--break" style="--dw:268px">
           <div class="device__screen">
-            <img src="/img/screens/ko/journal.jpg"
+            <img src="/img/screens/ko/framed/journal.webp"
                  alt="Agrondo 일지. 추청벼 수확, 헥타르당 2.5리터 제초제, 파종 작업, 살균제, 경운 작업이 각각 날짜와 함께 적혀 있어요."
-                 width="395" height="860" loading="lazy" decoding="async">
+                 width="560" height="1143" loading="lazy" decoding="async">
           </div>
         </figure>
 
@@ -417,7 +417,7 @@
         <div class="stack-24">
           <div class="stack-16 reveal">
             <p class="eyebrow">비용과 수익</p>
-            <h2 class="h-2" id="money-h">들어간 돈, 나온 돈.</h2>
+            <h2 class="h-2" id="money-h">들어간 돈, <em>나온 돈.</em></h2>
           </div>
           <p class="body">구획마다 방제와 작업에 들어간 돈을 적고, 수확으로 들어온 돈을 적으세요. 구획별로도 농지별로도 Agrondo가 순이익을 계산해 줘요.</p>
         </div>
@@ -483,16 +483,16 @@
             <div class="devices">
               <figure class="device devices__back" style="--dw:244px">
                 <div class="device__screen">
-                  <img src="/img/screens/ko/fieldReport.jpg"
+                  <img src="/img/screens/ko/framed/fieldReport.webp"
                        alt="도로 건너 밭의 농지 보고서. 구획 두 개를 합쳐 9.27헥타르이고, 비용과 수익, 순이익이 원으로 적혀 있어요."
-                       width="395" height="860" loading="lazy" decoding="async">
+                       width="560" height="1143" loading="lazy" decoding="async">
                 </div>
               </figure>
               <figure class="device devices__front" style="--dw:244px">
                 <div class="device__screen">
-                  <img src="/img/screens/ko/parcelReport.jpg"
+                  <img src="/img/screens/ko/framed/parcelReport.webp"
                        alt="1번 두둑의 구획 보고서. 비용과 수익, 순이익에 추청벼 수확 항목, 방제와 작업 내역이 나와 있어요."
-                       width="395" height="860" loading="lazy" decoding="async">
+                       width="560" height="1143" loading="lazy" decoding="async">
                 </div>
               </figure>
             </div>
@@ -511,7 +511,7 @@
         <div class="stack-24">
           <div class="stack-16 reveal">
             <p class="eyebrow">이력</p>
-            <h2 class="h-2" id="history-h">작년에 뭘 심었는지 앱이 기억해요.</h2>
+            <h2 class="h-2" id="history-h">작년에 뭘 심었는지 <em>앱이 기억해요.</em></h2>
           </div>
           <p class="body">같은 구획에 같은 작물이 두 해 연달아 들어가면 Agrondo가 알려 줘요. 경고는 홈 화면과 그 구획의 작물 이력에 떠요. 정해 둔 작물 시즌과 일지에 적어 둔 파종 기록을 읽어서 판단해요.</p>
         </div>
@@ -584,7 +584,7 @@
         <div class="stack-24">
           <div class="stack-16 reveal">
             <p class="eyebrow">식별과 관리</p>
-            <h2 class="h-2--plate" id="plants-h">잎사귀에 카메라를 갖다 대세요.</h2>
+            <h2 class="h-2--plate" id="plants-h">잎사귀에 카메라를 <em>갖다 대세요.</em></h2>
           </div>
           <p class="body">식물을 찍으면 Agrondo가 이름을 알려 줘요. 식별은 PlantNet이 맡고 있어요. 관리 가이드에는 <span class="num" data-count="61">61</span>종이 들어 있고, 종마다 무엇이 필요한지 적혀 있어요.</p>
         </div>
@@ -592,16 +592,16 @@
         <div class="devices">
           <figure class="device devices__back" style="--dw:232px">
             <div class="device__screen">
-              <img src="/img/screens/ko/plantDetail.jpg"
+              <img src="/img/screens/ko/framed/plantDetail.webp"
                    alt="Agrondo의 밀 페이지. 관리 가이드에 토양, 온도, 최적 시기, 빛, 물주기가 정리돼 있어요."
-                   width="395" height="860" loading="lazy" decoding="async">
+                   width="560" height="1143" loading="lazy" decoding="async">
             </div>
           </figure>
           <figure class="device devices__front" style="--dw:272px">
             <div class="device__screen">
-              <img src="/img/screens/ko/plants.jpg"
+              <img src="/img/screens/ko/framed/plants.webp"
                    alt="Agrondo의 식물 탭. 사진으로 식물을 식별하는 버튼 아래에 밀, 옥수수, 해바라기, 벼의 관리 가이드가 있어요."
-                   width="395" height="860" loading="lazy" decoding="async">
+                   width="560" height="1143" loading="lazy" decoding="async">
             </div>
           </figure>
         </div>
@@ -642,9 +642,9 @@
           <div class="stack-12">
             <figure class="device" style="--dw:232px">
               <div class="device__screen">
-                <img src="/img/screens/ko/home.jpg"
+                <img src="/img/screens/ko/framed/home.webp"
                      alt="Agrondo 홈 화면. 농지 4곳에 32.33헥타르인 농장 현황과 사흘치 날씨 예보, 구획과 작물 개수가 보여요."
-                     width="395" height="860" loading="lazy" decoding="async">
+                     width="560" height="1143" loading="lazy" decoding="async">
               </div>
             </figure>
             <p class="caption">예시 농장의 홈 화면이에요.</p>
@@ -656,7 +656,7 @@
             <div class="stack-24">
               <div class="stack-16 reveal">
                 <p class="eyebrow">기록이 있는 곳</p>
-                <h2 class="h-2" id="custody-h">기록은 폰 안에 그대로 있어요.</h2>
+                <h2 class="h-2" id="custody-h">기록은 폰 안에 <em>그대로 있어요.</em></h2>
               </div>
               <p class="body">Agrondo는 기록을 기기 안에 둬요. 수확량을 쥐고 있는 서버 같은 건 없어요. 네트워크로 오가는 건 지도를 움직일 때 Apple Maps가 받아 오는 위성 사진, 날씨 예보, 그리고 식별하려고 보내는 사진 한 장이에요. 무료 버전에는 광고도 나오고, 앱은 사용 통계와 오류 통계를 보내지만 거기에 기록 내용은 들어가지 않아요. 기록 자체는 이 중 어느 것도 필요 없어요.</p>
             </div>
@@ -682,7 +682,7 @@
       <div class="stack-32">
         <div class="stack-16 reveal">
           <p class="eyebrow">가격</p>
-          <h2 class="h-2" id="pricing-h">농지 두 곳까지 무료.</h2>
+          <h2 class="h-2" id="pricing-h">농지 두 <em>곳까지 무료.</em></h2>
         </div>
 
         <div class="stack-16">
@@ -724,7 +724,7 @@
 
       <div class="stack-32">
         <div class="stack-24 reveal">
-          <img class="icon-mark" src="/img/app-icon.jpg" alt="Agrondo 앱 아이콘." width="88" height="88" loading="lazy" decoding="async">
+          <img class="icon-mark" src="/img/app-icon.webp" alt="Agrondo 앱 아이콘." width="88" height="88" loading="lazy" decoding="async">
           <h2 class="h-2" id="download-h">지금 나왔어요.</h2>
           <p class="body">Agrondo는 iPhone용으로 App Store에 있어요. 농지 두 곳과 월 3회 식물 식별은 무료이고, 만들 계정도 없어요.</p>
         </div>
@@ -741,7 +741,7 @@
 <footer class="foot">
   <div class="foot__in wrap">
     <a class="foot__brand" href="/index.html">
-      <img src="/img/app-icon.jpg" alt="" width="24" height="24" loading="lazy" decoding="async">
+      <img src="/img/app-icon.webp" alt="" width="24" height="24" loading="lazy" decoding="async">
       <span>Agrondo</span>
     </a>
     <nav class="foot__links" aria-label="푸터">
@@ -777,7 +777,8 @@
     </details>
 <!-- /lang:picker -->
   </div>
-  <div class="foot__base wrap">Agrondo: 영농일지 &middot; agrondo.com<br>식물 식별은 PlantNet이 제공해요.</div>
+  <div class="foot__base wrap">Agrondo: 영농일지 &middot; agrondo.com<br>식물 식별은 PlantNet이 제공해요.
+    <div class="foot__legal"><span>&copy; 2026 Visto Apps, the brand of Darius Cirjan</span><a href="https://vistoapps.com">Made by Visto Apps</a></div></div>
 </footer>
 
 <script src="/script.js" defer></script>
