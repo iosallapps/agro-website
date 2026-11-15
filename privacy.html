@@ -8,18 +8,18 @@
 <meta name="theme-color" content="#08090A">
 
 <title>Privacy Policy · Agrondo</title>
-<meta name="description" content="What leaves your phone when you use Agrondo, and what never does. Every service the app reaches, the ads in the free version, usage and crash statistics, and why your fields, journal and figures stay on the device.">
+<meta name="description" content="What Agrondo does with personal data: what stays on your phone, every service that receives data, ads and consent, purchases and your rights.">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Agrondo">
 <meta property="og:title" content="Privacy Policy · Agrondo">
-<meta property="og:description" content="Your fields, journal and figures stay on your phone. This page lists everything that does leave it: a plant photo, the forecast point, ads in the free version, and usage and crash statistics.">
+<meta property="og:description" content="What Agrondo does with personal data: what stays on your phone, every service that receives data, ads and consent, purchases and your rights.">
 <meta property="og:url" content="https://agrondo.com/privacy.html">
 <meta property="og:image" content="https://agrondo.com/img/app-icon.png">
 <meta property="og:image:alt" content="The Agrondo app icon.">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Privacy Policy · Agrondo">
-<meta name="twitter:description" content="Your fields, journal and figures stay on your phone. This page lists everything that does leave it: a plant photo, the forecast point, ads in the free version, and usage and crash statistics.">
+<meta name="twitter:description" content="What Agrondo does with personal data: what stays on your phone, every service that receives data, ads and consent, purchases and your rights.">
 <meta name="twitter:image" content="https://agrondo.com/img/app-icon.png">
 <meta name="twitter:image:alt" content="The Agrondo app icon.">
 
@@ -32,6 +32,7 @@
 <!-- lang:alt -->
 <link rel="canonical" href="https://agrondo.com/privacy.html">
 <link rel="alternate" hreflang="en" href="https://agrondo.com/privacy.html">
+<link rel="alternate" hreflang="ro" href="https://agrondo.com/ro/privacy.html">
 <link rel="alternate" hreflang="x-default" href="https://agrondo.com/privacy.html">
 <!-- /lang:alt -->
 </head>
@@ -59,313 +60,43 @@
 </header>
 
 <main class="legal wrap wrap--narrow" id="main">
-
   <a class="backlink" href="/index.html">Back to the Agrondo home page</a>
-
-  <h1>Privacy Policy</h1>
-  <p class="legal__meta"><strong>Last updated:</strong> 7 October 2026</p>
-
-  <div class="callout">
-    <strong>The short version.</strong> Your fields, your journal and your figures sit on your
-    phone. I never receive them. What does reach the internet is set out below in full:
-identifying a plant sends that one photo with an identifier for your installation, the
-forecast sends the centre point of your first field, and RevenueCat checks your purchase
-history with Apple. The free version shows ads from Google AdMob, and the app sends usage
-statistics and crash reports to Google Firebase. Ads are personalised and your device's
-advertising identifier is used only if you allow it. Subscribers see no ads. No accounts,
-and your farm records are never part of any of it.
-  </div>
-
-  <h2>1. Who I am</h2>
-  <p>Agrondo is an iOS app for mapping fields and keeping farm records. It is written and
-    published by one independent developer, and that is who this page means by "I". For the
-    purposes of the GDPR, that same person is the data controller. Write to
-    <a href="mailto:iosallapps@gmail.com">iosallapps@gmail.com</a>.</p>
-  <p>This website is a set of static files served by GitHub Pages. It sets no cookies, loads
-    nothing from a third party, and runs no analytics of any kind.</p>
-
-  <h2>2. What leaves your phone, and when</h2>
-  <p>The requests below, and nothing else. Each is listed with the service it reaches.</p>
-  <div class="legal__table-wrap">
-    <table>
-      <tr><th>What</th><th>Where it goes</th><th>When</th></tr>
-      <tr>
-        <td>The photo you picked, an identifier for your installation, your app language, and
-            whether a subscription is active</td>
-        <td>A small relay I run at <code>agrondo-plantnet.plantnet-proxy.workers.dev</code>, hosted on Cloudflare
-            Workers. It passes the photo to PlantNet
-            (<code>my-api.plantnet.org</code>), run by a French research consortium</td>
-        <td>Only when you tap to identify a plant</td>
-      </tr>
-      <tr>
-        <td>The centre point of your first field, worked out from the boundary you drew</td>
-        <td>Open-Meteo (<code>api.open-meteo.com</code>), a free weather service</td>
-        <td>When the home screen loads or refreshes, if you have drawn at least one field</td>
-      </tr>
-      <tr>
-        <td>The area of the map you are looking at, so the imagery for it can be fetched</td>
-        <td>Apple, through Apple Maps, which supplies the satellite imagery the app draws
-            your fields on</td>
-        <td>Whenever a map is shown, panned or zoomed</td>
-      </tr>
-      <tr>
-        <td>A request for the thumbnail images PlantNet returns with a match, so you can see what
-            it thinks your plant is</td>
-        <td>PlantNet’s own image host, reached directly</td>
-        <td>Only after an identification returns results</td>
-      </tr>
-      <tr>
-        <td>The Latin name of an identified species, so a one-paragraph description can be shown.
-            Nothing about you, and never your photo</td>
-        <td>Wikipedia (<code>&lt;language&gt;.wikipedia.org</code>), the edition for your app language,
-            falling back to English</td>
-        <td>Only when you open a result’s details</td>
-      </tr>
-      <tr>
-        <td>Your App Store purchase history for Agrondo, so the app knows whether a subscription or a
-Lifetime purchase is active, and a random identifier that RevenueCat generates for the
-install. No name, no email, no account</td>
-        <td>RevenueCat (<code>api.revenuecat.com</code>), the service that validates the receipt with
-            Apple and tells the app what you are entitled to</td>
-        <td>At launch, and whenever you buy something or tap Restore Purchases</td>
-      </tr>
-      <tr>
-        <td>Your answer to Google's consent form, with the information Google needs to work out
-            whether its consent rules apply where you are</td>
-        <td>Google's User Messaging Platform, part of Google AdMob</td>
-        <td>At launch. The form itself appears only in the European Economic Area, the United
-            Kingdom and Switzerland, and again whenever you open Ad Privacy Settings</td>
-      </tr>
-      <tr>
-        <td>An ad request: the app and the ad slot, device and system details, your approximate
-            region from the IP address, and the advertising identifier only if you allowed
-            tracking. Ad impressions and taps are reported back</td>
-        <td>Google AdMob (<code>googleads.g.doubleclick.net</code> and related Google ad
-            hosts)</td>
-        <td>Free version only, after the tracking question has been answered: when the app opens,
-            and after you finish an action such as saving a field</td>
-      </tr>
-      <tr>
-        <td>Usage statistics: which screens and features were used, for example that a field was
-            saved or a report was exported, paywall views and purchases, with a random app instance
-            ID that Firebase creates for your installation, device model, iOS version, app
-            version and approximate region. Never a field name, a note, a place or a photo</td>
-        <td>Google Analytics for Firebase</td>
-        <td>While you use the app, if measurement is allowed: outside the EEA, the UK and
-            Switzerland by default, inside them only with your consent</td>
-      </tr>
-      <tr>
-        <td>Crash reports: the technical record of a crash (the code that failed, device model,
-            iOS and app version, free memory and disk) with a random installation ID</td>
-        <td>Firebase Crashlytics, part of Google Firebase</td>
-        <td>After the app crashes, the next time it opens</td>
-      </tr>
-      <tr>
-        <td>Whatever a web page you opened needs to load. Links open in a browser inside the app,
-            so the page is fetched the way any browser fetches it</td>
-        <td>The site you tapped: this one for the policy and terms, or Wikimedia and Wikipedia for
-            a photo credit or a plant description</td>
-        <td>Only when you tap a link</td>
-      </tr>
-    </table>
-  </div>
-  <p>If the relay ever moves to an address on <code>agrondo.com</code>, the host named in this
-    table changes with it, and so does the date at the top of the page.</p>
-
-  <h2>3. Identifying a plant</h2>
-  <p>Tap to identify and the photo goes to my relay first, then on to PlantNet. The reason is the
-    key. PlantNet issues a key that authenticates the app to them, and anything shipped inside an
-    iOS app can be read straight out of the download. Ship that key and one person can drain the
-    quota and take identification down for everybody using the app. So the key sits on the relay,
-    and the app never holds it.</p>
-  <p>The relay runs on Cloudflare Workers, which makes Cloudflare a processor: your photo passes
-    through their network on its way to PlantNet. It is not kept there. The relay reads the
-    request, forwards it upstream, and writes one number.</p>
-  <p>Three things travel with the image:</p>
-  <ul>
-    <li>Your app language, so the common names come back in the language you read.</li>
-    <li>An identifier for your installation, which is how identifications are counted against the
-      monthly limit.</li>
-    <li>Whether a subscription is currently active, which decides which limit applies.</li>
-  </ul>
-  <p>That identifier comes from iOS, not from me. It is not your name and not your Apple Account,
-    and I have no way to turn it back into a person. It is the value iOS calls the vendor
-    identifier, so it is shared by every app from this same developer on your device, and it
-    resets once you remove the last app from this developer. Deleting Agrondo on its own will not
-reset it if you keep another of my apps installed. On the rare occasion iOS does not supply
-that value, the app generates a random one instead and keeps it on the device.</p>
-  <p>The count lives in Cloudflare KV, Cloudflare's key store: one number per installation per
-    month, which expires by itself roughly forty days later. No photo is stored, no result is
-    stored, and no history is built from either.</p>
-  <p>Once the relay hands your photo on, PlantNet handles it under their own terms. If you would
-    rather send nothing at all, do not use plant identification. Every other part of the app works
-    without it.</p>
-
-  <h2>4. The map</h2>
-  <p>Fields are drawn on satellite imagery, and that imagery is not stored in the app. It is
-    streamed by Apple Maps as you pan and zoom, which means Apple sees which part of the world
-    you are looking at, in the same way it does in Apple's own Maps app. That traffic goes from
-    your phone to Apple directly and never passes through me. Apple handles it under their own
-    privacy policy, not this one.</p>
-
-  <h2>5. Weather</h2>
-  <p>To show a forecast for your land, the app works out the centre point of your first field from
-    the boundary you drew, and sends that latitude and longitude to Open-Meteo. This happens on its
-    own when the home screen loads or refreshes, not only when you look at the forecast. Nothing
-    goes with it: no identifier, no account, no subscription status. Open-Meteo has nothing to tie
-    the request to you. Until you have drawn a field, no coordinates are sent at all.</p>
-
-  <h2>6. Your farm records</h2>
-  <p>The fields and parcels you draw, the areas, the crops sown, the treatments with their dose
-    and date, the field operations, the harvests, the journal entries, the costs, the revenue and
-    the photos you attach are stored on your device with Apple's SwiftData. They stay there. I
-    hold no copy, run no database of your records, and cannot read them.</p>
-  <p>The app does not sync to iCloud at present. Your records live on the one device that made
-    them, so use your normal iPhone backup if you want them kept. Deleting the app deletes
-    them.</p>
-
-  <h2>7. Location</h2>
-  <p>Agrondo asks for your location while you are using the app so the map can find you and so a
-    boundary is easier to trace. The locations you save stay with your fields on the device.
-    Coordinates leave the phone in only two places, both described above: the map imagery request
-    in section 4 and the weather request in section 5. Both describe land you drew yourself, not a
-    record of where you have been, and neither reaches me. The app never passes your coordinates
-    to its ad or analytics services. Like any service on the internet, Google can work out an
-    approximate region, such as a country or city, from your IP address.</p>
-
-  <h2>8. Camera and photo library</h2>
-  <p>Camera access is for photographing a plant or documenting work in the field. Photo library
-    access is for picking an image you already have. Those photos stay on the device unless you
-    use plant identification, which section 3 covers line by line. Both permissions are optional,
-    and you can revoke either one in iOS Settings.</p>
-
-  <h2>9. Crash reports</h2>
-  <p>When the app crashes, Firebase Crashlytics sends a crash report to Google the next time you
-    open it: the code that failed, the device model, the iOS and app version, and a random
-    identifier for the installation. It holds nothing you typed, drew or photographed. I use it
-    to find and fix crashes, and Crashlytics keeps a report for 90 days.</p>
-  <p>Separately, iOS writes crash and hang reports through Apple's MetricKit and hands them back
-    to the app. Agrondo keeps the most recent of those on your device, together with a short list
-    of errors it recovered from. That history leaves your phone only if you choose to mail support
-    from the app's Settings, and then it is attached to a message you can read and edit before you
-    send it.</p>
-
-  <h2>10. Subscriptions</h2>
-  <p>Agrondo offers weekly and monthly subscriptions, a yearly subscription and a one-time
-Lifetime purchase. Apple takes every payment. It happens inside the App Store, and I never see
-your card, your address or your Apple Account. RevenueCat, listed in section 2, reads your
-purchase history for this app from Apple so the app learns one thing: whether a subscription or
-a Lifetime purchase is currently active. As section 3 explains, that yes or no is passed to the
-identification relay so it knows which monthly limit to apply. Where usage statistics are
-allowed (section 12), the app also gives RevenueCat the Firebase app instance ID, so that a trial,
-a renewal or a cancellation can be counted in the same statistics. A subscription or a Lifetime
-purchase also turns off every ad in the app.</p>
-<p>Subscriptions are managed and cancelled in iOS Settings, under your Apple Account and then
-Subscriptions. Restore Purchases in the app's Settings asks Apple again for what this Apple
-Account has bought.</p>
-
-  <h2>11. Ads in the free version</h2>
-  <p>The free version of Agrondo shows full-screen ads from Google AdMob: one when the app opens,
-    and one now and then after you finish an action such as saving a field or adding a journal
-    entry. Subscribers, people on a free trial and Lifetime buyers see no ads at all.</p>
-  <p>The order of the questions on first launch is fixed. If you are in the European Economic
-    Area, the United Kingdom or Switzerland, Google's consent form comes first, and you choose
-    there whether your data may be used for personalised ads and for measurement. Then iOS asks
-    whether Agrondo may track you across apps and websites. No ad is requested before you have
-    answered that question.</p>
-  <ul>
-    <li>If you allow tracking, Google may use your device's advertising identifier (IDFA) to
-      show ads that are more relevant to you and to measure them.</li>
-    <li>If you do not, the advertising identifier stays unavailable to the app, and where
-      Google's consent form applies and you said no, the ads are not personalised. Ads are
-      still shown in the free version.</li>
-  </ul>
-  <p>Google acts under its own privacy policy for advertising, at
-    <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.
-    You can change your consent at any time from Settings inside Agrondo, under Ad Privacy
-    Settings (shown where Google's consent form applies), and you can change the tracking answer
-    in iOS Settings, under Privacy &amp; Security and then Tracking.</p>
-
-  <h2>12. Usage statistics</h2>
-  <p>Agrondo uses Google Analytics for Firebase to learn how the app is used: which features
-    people reach, where they stop, and whether a change made things better. It records events
-    such as a field saved, a journal entry added, a plant identified, a report exported, a paywall
-    shown and a purchase made, each with a few fixed values such as the kind of entry or whether
-    an identification was confident. It never records a field name, a note, a place, a photo or
-    anything else you wrote.</p>
-  <p>The events carry a random app instance ID that Firebase creates for your installation, along
-    with the device model, iOS version, app version, language and approximate region. In the
-    European Economic Area, the United Kingdom and Switzerland, nothing is collected unless you
-    agree in Google's consent form. Elsewhere it is on by default. Builds from TestFlight or
-    development are never measured. Google keeps these statistics for the retention period set in
-    the project, at most 14 months, and then deletes them.</p>
-
-  <h2>13. What Agrondo does not do</h2>
-  <div class="legal__table-wrap">
-    <table>
-      <tr>
-        <td><strong>Your records</strong></td>
-        <td>Never sent to the ad or analytics services. Fields, boundaries, notes, costs, yields
-            and photos stay on the device.</td>
-      </tr>
-      <tr>
-        <td><strong>Selling data</strong></td>
-        <td>Never. Nothing is sold, rented or traded.</td>
-      </tr>
-      <tr>
-        <td><strong>Accounts</strong></td>
-        <td>None. There is nothing to sign up for and no database of users.</td>
-      </tr>
-      <tr>
-        <td><strong>Ads for paying users</strong></td>
-        <td>None. A subscription, a free trial or a Lifetime purchase removes every ad.</td>
-      </tr>
-      <tr>
-        <td><strong>Tracking without asking</strong></td>
-        <td>Never. The advertising identifier is used only if you allow tracking when iOS
-            asks.</td>
-      </tr>
-    </table>
-  </div>
-
-  <h2>14. Exports</h2>
-  <p>Reports you export as PDF or CSV are built on your device and go wherever you send them. Once
-    a file leaves the app, it is covered by whatever service you sent it through.</p>
-
-  <h2>15. Children</h2>
-  <p>Agrondo is a working tool for people who farm. It is not directed at children under 13, and I
-    do not knowingly collect anything from them.</p>
-
-  <h2>16. Your rights</h2>
-  <p>Most of your control here is exercised without asking me for anything:</p>
-  <ul>
-    <li>Revoke camera, photo or location access at any time in iOS Settings.</li>
-    <li>Stop identifying plants, and delete your fields, and every outbound transfer stops with
-      it.</li>
-    <li>Change your ad and measurement consent from Ad Privacy Settings in the app's Settings,
-      where Google's consent form applies.</li>
-    <li>Turn tracking off in iOS Settings, under Privacy &amp; Security and then Tracking.</li>
-    <li>Subscribe, start a free trial or buy Lifetime, and no ads are shown.</li>
-    <li>Delete the app and your records go with it.</li>
-  </ul>
-  <p>Under the GDPR my legal basis for the app's features is your consent, given through the iOS
-    permission prompts and again each time you tap to identify a plant or open a forecast. For
-    personalised ads, for storing and reading information on your device for ads, and for usage
-    statistics, the legal basis is the consent you give in Google's form, and you can withdraw it
-    at any point from Ad Privacy Settings. Crash reports are sent on the basis of my legitimate
-    interest in keeping the app working. You have the right to access, correct, delete or object
-    to the use of data about you, and to complain to your data protection authority.</p>
-  <p>I hold no account and no profile of you. The records on my side are the monthly counter tied
-    to your installation, which expires on its own, and the usage statistics and crash reports
-    kept by Google Firebase under a random identifier. Write to me and I will delete the counter.
-    Usage statistics are tied to the app instance ID, which a reinstall replaces, so deleting the
-    app ends the link between your phone and what was collected.</p>
-
-  <h2>17. Changes</h2>
-  <p>If this policy changes, the date at the top changes with it.</p>
-
-  <h2>18. Contact</h2>
-  <p><a href="mailto:iosallapps@gmail.com">iosallapps@gmail.com</a>. One person reads it.</p>
+<!--legal:start-->
+<h1>Privacy Policy</h1>
+<p class="last-updated">Last updated: November 15, 2026</p>
+<nav class="legal-toc" aria-label="Contents"><ol>
+<li><a href="#intro">Who we are</a></li>
+<li><a href="#glance">At a glance</a></li>
+<li><a href="#local">Data that stays on your device</a></li>
+<li><a href="#services">Services that receive data</a></li>
+<li><a href="#permissions">Permissions</a></li>
+<li><a href="#consent">Consent, ads and tracking</a></li>
+<li><a href="#purchases">Purchases</a></li>
+<li><a href="#retention">How long data is kept</a></li>
+<li><a href="#transfers">Transfers outside the EEA</a></li>
+<li><a href="#rights">Your rights (EEA, UK, Switzerland)</a></li>
+<li><a href="#us">United States</a></li>
+<li><a href="#children">Children</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#website">This website</a></li>
+<li><a href="#changes">Changes</a></li>
+</ol></nav>
+<section id="intro" class="legal-section"><h2>1. Who we are</h2><p>Visto Apps is the brand of Darius Cirjan, the developer and data controller. This policy explains what the Agrondo app (iOS) and the website https://agrondo.com do with personal data.</p><p>Contact for any privacy question or request: <a href="mailto:iosallapps@gmail.com">iosallapps@gmail.com</a>. Website: <a href="https://vistoapps.com" rel="noopener">vistoapps.com</a>. We answer within one month (art. 12 GDPR). We are not required to appoint a Data Protection Officer.</p><p>Last updated: November 15, 2026.</p></section>
+<section id="glance" class="legal-section"><h2>2. At a glance</h2><ul><li>No account. Agrondo does not ask for your name, email or phone number.</li><li>Your fields, parcels, journal entries, photos, costs and reminders stay on your device.</li><li>One thing sends a photo away: when you tap to identify a plant, the photo goes through our relay on Cloudflare Workers to Pl@ntNet. The relay does not keep it.</li><li>The forecast sends the centre of your first field to Open-Meteo.</li><li>The free version shows ads from Google AdMob. Personalised ads only with your consent; in the EEA, UK and Switzerland no ad loads before you answer the consent form.</li><li>Usage statistics (Google Analytics for Firebase) start only after the consent form has been answered in the EEA, UK and Switzerland. Crash reports help us fix bugs.</li><li>We do not sell personal data for money. Our only server is the small plant relay described below, which keeps one counter per installation and nothing else.</li></ul></section>
+<section id="local" class="legal-section"><h2>3. Data that stays on your device</h2><p>Field and parcel boundaries, crops, treatments, operations, harvests, costs and revenue, journal photos, reminders and settings (for example the farm name, area unit and currency) are stored only in the app's storage on your device. There is no sync to iCloud or to any server of ours, and we cannot see them. Reports and the CSV export are created on the device and leave it only through the share sheet, to the place you choose. You delete data in the app item by item (for example Delete Field, Delete Entry); there is no single button that erases everything. Deleting the app removes all of it. Because it is not synced, use your normal iPhone backup if you want it kept.</p></section>
+<section id="services" class="legal-section"><h2>4. Services that receive data</h2><p>Each service below receives data only when the part of the app that uses it runs. Google, Apple, RevenueCat and the other providers act as independent controllers or as our processors, under their own terms.</p><div class="table-wrap"><table class="legal-table"><thead><tr><th scope="col">Service</th><th scope="col">Data</th><th scope="col">Purpose</th><th scope="col">Legal basis</th><th scope="col">Retention</th></tr></thead><tbody><tr><th scope="row"><a href="https://policies.google.com/technologies/ads" rel="noopener">Google AdMob</a><br><small>Google Ireland Ltd / Google LLC</small></th><td data-label="Data">Advertising identifier (IDFA on iOS only if you allow tracking; Android advertising ID), IP address, device and app information, ad impressions and taps.</td><td data-label="Purpose">Showing ads in the free version. Personalised ads only with your consent; otherwise limited, non-personalised ads.</td><td data-label="Legal basis">Personalised ads: consent, art. 6(1)(a) GDPR and art. 5(3) ePrivacy. Limited ads: legitimate interest in funding the free app, art. 6(1)(f) GDPR.</td><td data-label="Retention">Set by Google (see its policy). Outside the EEA.</td></tr><tr><th scope="row"><a href="https://policies.google.com/privacy" rel="noopener">Google User Messaging Platform</a><br><small>Google Ireland Ltd / Google LLC</small></th><td data-label="Data">Your consent choices (IAB TCF string), stored on the device; device information needed to show the form.</td><td data-label="Purpose">Asking for and recording your consent in the EEA, UK and Switzerland.</td><td data-label="Legal basis">Legal obligation, art. 6(1)(c) GDPR</td><td data-label="Retention">On your device until you change it or delete the app. Outside the EEA.</td></tr><tr><th scope="row"><a href="https://firebase.google.com/support/privacy" rel="noopener">Google Analytics for Firebase</a><br><small>Google Ireland Ltd / Google LLC</small></th><td data-label="Data">A random app instance ID, events such as screens opened, features used and purchases started, app version, device model, OS, language, country derived from the IP address.</td><td data-label="Purpose">Understanding which features are used so we can improve the app. No name, email or content you create is sent.</td><td data-label="Legal basis">EEA, UK and Switzerland: consent given in the consent form, art. 6(1)(a) GDPR. Elsewhere: legitimate interest in improving the app, art. 6(1)(f) GDPR.</td><td data-label="Retention">At most 14 months for event data. Outside the EEA.</td></tr><tr><th scope="row"><a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase Crashlytics</a><br><small>Google Ireland Ltd / Google LLC</small></th><td data-label="Data">Crash reports: stack trace, device model, OS and app version, a random installation ID.</td><td data-label="Purpose">Finding and fixing crashes.</td><td data-label="Legal basis">Legitimate interest, art. 6(1)(f) GDPR</td><td data-label="Retention">90 days. Outside the EEA.</td></tr><tr><th scope="row"><a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat</a><br><small>RevenueCat, Inc. (USA)</small></th><td data-label="Data">A random customer ID, purchase receipts and subscription status from the store, app version and country.</td><td data-label="Purpose">Checking which purchases you own and unlocking them, including on restore.</td><td data-label="Legal basis">Performance of a contract, art. 6(1)(b) GDPR: needed for the feature you use</td><td data-label="Retention">While you use the app, then deleted on request. Outside the EEA.</td></tr><tr><th scope="row"><a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple App Store</a><br><small>Apple Distribution International Ltd</small></th><td data-label="Data">Your Apple Account, payment details and purchase history. We never see your payment details.</td><td data-label="Purpose">Selling and renewing purchases, refunds.</td><td data-label="Legal basis">Performance of a contract, art. 6(1)(b) GDPR: needed for the feature you use</td><td data-label="Retention">Set by Apple.</td></tr><tr><th scope="row"><a href="https://www.apple.com/legal/privacy/data/en/apple-maps/" rel="noopener">Apple Maps (MapKit)</a><br><small>Apple Inc.</small></th><td data-label="Data">The map area you look at, your IP address. Apple does not link it to your Apple Account.</td><td data-label="Purpose">Drawing the standard and satellite map on iOS.</td><td data-label="Legal basis">Performance of a contract, art. 6(1)(b) GDPR: needed for the feature you use</td><td data-label="Retention">Set by Apple.</td></tr><tr><th scope="row"><a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">Agrondo plant relay (Cloudflare Workers)</a><br><small>Cloudflare, Inc. (USA), running code of Visto Apps</small></th><td data-label="Data">The photo you chose to identify (downscaled JPEG, longest side at most 2048 px), the plant part you picked, your app language, an identifier of your installation (the iOS vendor ID, or a random one kept on the device if iOS gives none), whether a subscription is active, and your IP address as Cloudflare sees any request.</td><td data-label="Purpose">Passing the photo on to Pl@ntNet without putting the Pl@ntNet key inside the app, and counting identifications per installation per month against the free and Pro limits. The relay does not keep the photo; it stores only a counter per installation.</td><td data-label="Legal basis">Performance of a contract, art. 6(1)(b) GDPR: needed for the feature you use</td><td data-label="Retention">The photo is not stored. The monthly counter expires by itself about 40 days after it is written. Cloudflare's standard network logs follow its policy. Outside the EEA.</td></tr><tr><th scope="row"><a href="https://plantnet.org/" rel="noopener">Pl@ntNet</a><br><small>Pl@ntNet research consortium (France)</small></th><td data-label="Data">The photo, the plant part and the language, forwarded by the Agrondo relay. The app then loads the result thumbnails directly from Pl@ntNet's image host, which sees your IP address.</td><td data-label="Purpose">Naming the plant in the photo and showing similar pictures.</td><td data-label="Legal basis">Performance of a contract, art. 6(1)(b) GDPR: needed for the feature you use</td><td data-label="Retention">Set by Pl@ntNet (see its policy).</td></tr><tr><th scope="row"><a href="https://open-meteo.com/en/terms" rel="noopener">Open-Meteo</a><br><small>Open-Meteo (weather data service)</small></th><td data-label="Data">The latitude and longitude of the centre of the first field you drew, your IP address. Not your device location.</td><td data-label="Purpose">Showing the current temperature and the three-day forecast on the home screen.</td><td data-label="Legal basis">Performance of a contract, art. 6(1)(b) GDPR: needed for the feature you use</td><td data-label="Retention">Set by Open-Meteo.</td></tr><tr><th scope="row"><a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" rel="noopener">Wikipedia and Wikimedia Commons</a><br><small>Wikimedia Foundation, Inc. (USA)</small></th><td data-label="Data">The scientific name of an identified plant and the app language (to fetch a short description from the Wikipedia edition for that language); a request for the plant pictures of the care library. Never your photo. Your IP address and device information reach Wikimedia as with any web request.</td><td data-label="Purpose">Showing a short description of an identified plant and the pictures with their credits.</td><td data-label="Legal basis">Performance of a contract, art. 6(1)(b) GDPR: needed for the feature you use</td><td data-label="Retention">Set by Wikimedia. Outside the EEA.</td></tr></tbody></table></div><ul><li>Apple Maps draws the satellite and standard map; there is no other map provider. Pictures in the plant library and plant descriptions come from Wikimedia and Wikipedia.</li><li>Pl@ntNet identification is the only feature that sends one of your photos away. The relay runs on Cloudflare Workers and is code of ours, but it only forwards the photo and keeps a number per installation, not the photo. The app sends the iOS vendor identifier to count identifications: it is shared by all apps of the same developer on your device, it is not your name or Apple Account, and iOS resets it when the last app of that developer is removed. If a Pro subscription is active the app tells the relay, which lifts the monthly limit from 3 to 100 identifications. Pl@ntNet's own handling of the photo is described in its policy.</li><li>The usage statistics are a fixed list of events (screens, features used, paywall and purchase steps, ad outcomes) with values from a fixed set or numbers. They never contain a field name, note, place or photo.</li><li>On iOS RevenueCat also receives the Firebase app instance ID, so that renewals and trial conversions can be counted. It is sent only once usage statistics are allowed.</li><li>Crash reports are not tied to the consent form: they are collected on the basis of our legitimate interest in a working app, and contain no field data, photos or coordinates. The app also reads a few settings from Firebase Remote Config (for example which purchase screen to show), a request that carries the installation ID and your IP address and does not depend on the consent form.</li></ul></section>
+<section id="permissions" class="legal-section"><h2>5. Permissions</h2><p>The app asks for these permissions only when you use the feature, and works without them. Change them anytime in your device settings.</p><ul><li><strong>Camera.</strong> To take a photo for your field journal or to identify a plant. A photo taken for identification is sent only when you tap to identify it.</li><li><strong>Photo library.</strong> To add pictures to your field journal, or to pick a picture of a plant to identify. Only the pictures you pick are read; the app never browses your library.</li><li><strong>Location (while using the app).</strong> To centre the map on your fields. It is read on the device and is not sent to any service: the forecast uses the centre of the first field you drew, not your position.</li><li><strong>Notifications.</strong> Local reminders scheduled on the device. No push server is involved.</li><li><strong>Tracking (iOS, App Tracking Transparency).</strong> Asked once, after the consent form. If you choose Ask App Not to Track, the IDFA is not shared and ads are not personalised with it.</li></ul></section>
+<section id="consent" class="legal-section"><h2>6. Consent, ads and tracking</h2><p>In the EEA, the UK and Switzerland the app first shows Google's consent form (a certified consent management platform under the IAB Transparency and Consent Framework). Until you answer it, no ad is requested and no usage statistics are sent. If you refuse personalised ads, you still get limited, non-personalised ads.</p><p>On iOS the App Tracking Transparency prompt comes after the consent form. Ads load only once it is answered.</p><p>Change your choice anytime: in the app, Settings, Support, Ad Privacy Settings (shown where the consent form applies). On iOS, also Settings, Privacy & Security, Tracking.</p><p>Buying the paid version removes ads.</p></section>
+<section id="purchases" class="legal-section"><h2>7. Purchases</h2><p>Purchases are made through App Store. The store processes the payment; we receive only a pseudonymous receipt, checked through RevenueCat, that tells the app which purchase you own. We never see your card or account details.</p></section>
+<section id="retention" class="legal-section"><h2>8. How long data is kept</h2><p>Data on your device stays until you delete it in the app or delete the app. Data held by the services above is kept for the period listed in the table. Our plant relay keeps one counter per installation and month, which deletes itself about 40 days later; it keeps no photo. Emails you send us are kept as long as needed to answer, and at most 2 years.</p></section>
+<section id="transfers" class="legal-section"><h2>9. Transfers outside the EEA</h2><p>Some providers (Google, RevenueCat and others marked in the table) process data in the United States or other countries. Transfers rely on the EU-U.S. Data Privacy Framework for certified companies or on the European Commission's Standard Contractual Clauses (art. 45 and 46 GDPR).</p></section>
+<section id="rights" class="legal-section"><h2>10. Your rights (EEA, UK, Switzerland)</h2><p>You have the right to access, correct and delete your data, to restrict or object to processing (including to object at any time to processing based on legitimate interest), to data portability, and to withdraw consent at any time without affecting earlier processing.</p><p>Because the app has no account, we usually cannot tell which data at Google or RevenueCat is yours. Write to <a href="mailto:iosallapps@gmail.com">iosallapps@gmail.com</a> and include, if you can, the RevenueCat ID shown in the app or your purchase receipt, and we will forward the request to the provider. You can always delete all data on the device by deleting the app.</p><p>You can complain to the supervisory authority where you live or work, or to ours: Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP), <a href="https://www.dataprotection.ro" rel="noopener">www.dataprotection.ro</a>. The list of EU authorities: <a href="https://www.edpb.europa.eu/about-edpb/about-edpb/members_en" rel="noopener">edpb.europa.eu</a>.</p></section>
+<section id="us" class="legal-section"><h2>11. United States</h2><ul><li>We do not sell personal information for money.</li><li>When you allow personalised ads, Google AdMob uses your advertising identifier for ads based on activity in other apps. Some US state laws (for example California) call this "sharing" or "targeted advertising". You can opt out at any time: refuse tracking on iOS (Settings, Privacy & Security, Tracking), delete or reset the advertising ID on Android, or email us and we will treat it as an opt-out request.</li><li>Residents of California and other US states with privacy laws can ask to know, correct or delete their personal information, and will not be treated differently for doing so. Categories collected in the last 12 months are the ones in the table above (identifiers, internet activity, approximate location from IP, purchase records). Requests: <a href="mailto:iosallapps@gmail.com">iosallapps@gmail.com</a>.</li></ul></section>
+<section id="children" class="legal-section"><h2>12. Children</h2><p>Agrondo is not directed at children. We do not knowingly collect personal data from children under 13, or under the age of digital consent in their country (13 to 16 in the EU). If you believe a child gave us data, write to <a href="mailto:iosallapps@gmail.com">iosallapps@gmail.com</a> and we will delete what we can reach. Ads in the app are not designed for children.</p></section>
+<section id="security" class="legal-section"><h2>13. Security</h2><p>All network connections use HTTPS. Data on the device is protected by the operating system's app sandbox and encryption. No system is perfectly secure, so we keep what leaves your device to the minimum listed here.</p></section>
+<section id="website" class="legal-section"><h2>14. This website</h2><p>https://agrondo.com is hosted on GitHub Pages (GitHub, Inc., USA), which records the IP address of visitors in server logs for security. The site sets no cookies and uses no analytics or ads. It stores only your language choice in your browser (local storage).</p></section>
+<section id="changes" class="legal-section"><h2>15. Changes</h2><p>If the app starts handling data differently, we update this page and the date at the top before the new version ships. Important changes are also mentioned in the store update notes.</p></section>
+<!--legal:end-->
 
 </main>
 
