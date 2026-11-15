@@ -1,0 +1,20 @@
+# Agrondo
+
+> Field area measure and farm tracker for iPhone, by Visto Apps (https://vistoapps.com).
+
+Agrondo measures field area on a satellite map in acres, hectares or square meters, splits fields into parcels, keeps a farm journal of operations and treatments (dose, application method, cost, photos), totals cost and revenue per parcel and field, identifies plants from a photo (Pl@ntNet engine, a suggestion with a confidence score) and exports PDF reports and CSV. Requires iOS 17.0 or later. Plant identification and the weather forecast need a connection; drawing fields, the journal and the reports work on the phone.
+
+Free to download. Free users see ads; a subscription (weekly or monthly) unlocks the full app, and a special offer in the app adds a yearly plan and a one-time Lifetime purchase. Prices are shown in the App Store in your currency.
+
+Languages: English, Deutsch, Español, Français, Italiano, Nederlands, Polski, Português (Brasil), Português (Portugal), Română, Svenska, Türkçe, 日本語, 한국어, 简体中文, 繁體中文. Each has its own address: https://agrondo.com/<code>/ (de, es, fr, it, nl, pl, pt-BR, pt-PT, ro, sv, tr, ja, ko, zh-Hans, zh-Hant).
+
+## Pages
+- [Home (English)](https://agrondo.com/)
+- [Acasă (Română)](https://agrondo.com/ro/)
+- [Getting started](https://agrondo.com/help.html)
+- [Support](https://agrondo.com/support.html)
+- [Privacy Policy](https://agrondo.com/privacy.html)
+- [Terms of Use](https://agrondo.com/terms.html)
+- [Politica de confidențialitate](https://agrondo.com/ro/privacy.html)
+- [Termeni](https://agrondo.com/ro/terms.html)
+- [App Store](https://apps.apple.com/app/id6775927132)
