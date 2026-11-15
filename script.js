@@ -193,15 +193,6 @@
       });
     });
   });
-
-  /* ----------------------------------------------------------
-     7. Nav disclosure, removed
-     A hamburger handler used to sit here, bound to [data-nav-toggle]
-     and [data-nav-panel]. No page ever carried either attribute, so
-     it shipped in every download and ran on nothing. The subpages
-     now keep their links on a second row, in CSS, which works with
-     this file blocked. Nothing here to replace it with.
-     ---------------------------------------------------------- */
 })();
 
 /* ============================================================

@@ -31,20 +31,16 @@
   --green: #2fbf6a;
   --green-lit: #5fdc92;
   --green-read: #86eaaa;
-  --green-ink: #03210f;
   --green-glass: rgba(47, 191, 106, 0.14);
   --green-line: rgba(47, 191, 106, 0.42);
 
   /* Data accents, sampled from the app */
   --cost: #FF9500;
-  --op: #0A84FF;
   --harvest: #9C27B0;
-  --pasture: #009688;
   --warn: #E8A33D;
 
   /* Type */
   --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --serif: "Instrument Serif", "Instrument Serif Fallback", Georgia, serif;
   --mono: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
   /* Layout */
@@ -64,12 +60,9 @@
   /* Radii */
   --r-card: 24px;
   --r-panel: 28px;
-  --r-bezel: 40px;
-  --r-screen: 32px;
 
   /* Shadow */
   --sh-card: 0 24px 60px -30px rgba(0, 0, 0, 0.92);
-  --sh-device: 0 30px 70px -34px rgba(0, 0, 0, 1), inset 0 0 0 1px rgba(255, 255, 255, 0.06);
 
   /* Motion */
   --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1);
@@ -84,14 +77,8 @@
      stood in is the first thing a farmer catches, and once it is caught
      every true sentence on the page has to argue its way back.
 
-     --plan-grid   the graph paper, faint enough to sit under body type
-     --plan-scrim  the wash that buys contrast where type lands on the plan */
+     --plan-grid   the graph paper, faint enough to sit under body type */
   --plan-grid: rgba(255, 255, 255, 0.030);
-  --plan-scrim: linear-gradient(180deg,
-      rgba(8, 9, 10, 0.26) 0%,
-      rgba(8, 9, 10, 0.34) 32%,
-      rgba(8, 9, 10, 0.62) 68%,
-      rgba(8, 9, 10, 0.86) 100%);
 }
 
 /* ============================================================
@@ -106,22 +93,15 @@ html {
 }
 
 body {
-  background: var(--paper);
-  color: var(--ink-2);
-  font-family: var(--sans);
-  font-size: 1.0625rem;
   line-height: 1.60;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  overflow-x: hidden;
 }
 
 img, picture, svg, video {
   display: block;
   max-width: 100%;
 }
-
-input, button, textarea, select { font: inherit; color: inherit; }
 
 h1, h2, h3, h4 {
   color: var(--ink);
@@ -143,33 +123,21 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   border-radius: 4px;
 }
 
-::selection { background: var(--green-line); color: var(--ink); }
-
 /* ============================================================
    3. TYPE ROLES
    ============================================================ */
-.num { font-variant-numeric: tabular-nums slashed-zero; font-family: var(--mono); }
 
 .h-display {
-  font-size: clamp(2.75rem, 7.2vw, 5.25rem);
   letter-spacing: -0.035em;
-  line-height: 0.98;
-  max-width: 15ch;
 }
 
 .h-2 {
-  font-size: clamp(1.875rem, 4.2vw, 3rem);
   letter-spacing: -0.028em;
-  line-height: 1.06;
-  max-width: 18ch;
 }
 
 /* Headline in a band that carries a plate column runs one step larger */
 .h-2--plate {
-  font-size: clamp(2.125rem, 5vw, 3.5rem);
   letter-spacing: -0.030em;
-  line-height: 1.04;
-  max-width: 16ch;
 }
 
 .h-3 { font-size: 1.25rem; letter-spacing: -0.015em; line-height: 1.25; }
@@ -177,7 +145,6 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .lede {
   font-size: clamp(1.0625rem, 1.6vw, 1.3125rem);
   line-height: 1.55;
-  color: var(--ink-2);
   max-width: 44ch;
 }
 
@@ -219,7 +186,6 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 }
 
 .fig--strip { font-size: clamp(1.5rem, 3.4vw, 2.375rem); letter-spacing: -0.012em; line-height: 1; }
-.fig--cost { color: var(--cost); }
 .fig--rev { color: var(--green-read); }
 .fig--net {
   color: var(--green-read);
@@ -313,16 +279,13 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 .section__num {
   font-family: var(--mono);
-  font-size: 0.6875rem;
   font-weight: 500;
   letter-spacing: 0.20em;
   line-height: 1;
   color: var(--green);
-  margin-bottom: 12px;
 }
 
 /* Stacks: vertical rhythm without per element margins */
-.stack-8 > * + * { margin-top: 8px; }
 .stack-12 > * + * { margin-top: 12px; }
 .stack-16 > * + * { margin-top: 16px; }
 .stack-24 > * + * { margin-top: 24px; }
@@ -346,7 +309,6 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   .col-5 { grid-column: span 5; }
   .col-6 { grid-column: span 6; }
   .col-7 { grid-column: span 7; }
-  .col-12 { grid-column: span 12; }
   .grid--center { align-items: center; }
 }
 
@@ -441,13 +403,6 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   border-bottom: 1px solid transparent;
 }
 
-.nav.is-scrolled {
-  background: rgba(8, 9, 10, 0.86);
-  -webkit-backdrop-filter: blur(14px);
-  backdrop-filter: blur(14px);
-  border-bottom-color: var(--rule);
-}
-
 .nav__in {
   display: flex;
   align-items: center;
@@ -458,7 +413,6 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .nav__brand {
   display: flex;
   align-items: center;
-  gap: 10px;
   /* Above 760px .nav__in is one flex row that does not wrap. Without this the
      brand is the first thing the row takes width from when something else
      overflows, and the wordmark spills out of its own box and lands on top of
@@ -466,32 +420,18 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
      shrink, at any width. */
   flex: none;
   color: var(--ink);
-  font-size: 1.0625rem;
-  font-weight: 700;
-  letter-spacing: -0.015em;
   min-height: 48px;
 }
 .nav__brand:hover { text-decoration: none; }
 
-.nav__icon {
-  width: 28px;
-  height: 28px;
-  border-radius: 8px;
-  border: 1px solid var(--rule);
-}
-
-.nav__links { display: none; margin-left: auto; gap: 4px; }
+.nav__links { display: none; margin-left: auto; }
 
 .nav__links a {
   position: relative;
   display: inline-flex;
   align-items: center;
-  min-height: 48px;
-  padding-inline: 12px;
-  font-size: 0.9375rem;
   font-weight: 500;
   color: var(--ink-2);
-  transition: color 160ms linear;
 }
 .nav__links a:hover { color: var(--ink); text-decoration: none; }
 
@@ -517,13 +457,6 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   padding: 7px 14px;
   border: 1px solid var(--rule);
   border-radius: 999px;
-  background: var(--sheet);
-  font-family: var(--mono);
-  font-size: 0.6875rem;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--ink-3);
   white-space: nowrap;
 }
 
@@ -573,13 +506,6 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
     flex-basis: 100%;
     margin-left: 0;
     /* Pulls the first link's text back onto the brand's left edge */
-    margin-inline: -10px;
-    gap: 0 2px;
-  }
-  .nav--pages .nav__links a {
-    min-height: 44px;
-    padding-inline: 10px;
-    font-size: 0.875rem;
   }
   .nav--pages .nav__links a::after { left: 10px; right: 10px; bottom: 8px; }
 
@@ -615,8 +541,6 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   z-index: 200;
   padding: 10px 16px;
   border-radius: 8px;
-  background: var(--green);
-  color: var(--green-ink);
   font-weight: 650;
   transform: translateY(-300%);
 }
@@ -646,9 +570,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   min-height: 52px;
   padding: 0 26px;
   border: 1px solid transparent;
-  border-radius: 999px;
   font-size: 1rem;
-  font-weight: 500;
   letter-spacing: 0.005em;
   line-height: 1;
   cursor: pointer;
@@ -659,7 +581,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .btn:hover { text-decoration: none; }
 .btn:active { transform: translateY(0) scale(0.985); transition-timing-function: var(--ease-press); transition-duration: 80ms; }
 
-.btn--primary { background: var(--green); color: var(--green-ink); }
+.btn--primary { background: var(--green); }
 .btn--primary:hover {
   background: var(--green-lit);
   transform: translateY(-1px);
@@ -669,8 +591,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .btn--ghost { background: none; color: var(--ink-2); padding-inline: 12px; }
 .btn--ghost:hover { color: var(--ink); transform: translateY(-1px); }
 
-.btn--outline { background: none; border-color: var(--rule-lit); color: var(--ink); }
-.btn--outline:hover { border-color: var(--green); color: var(--green-read); }
+.btn--outline { color: var(--ink); }
 
 .btn__arrow { transition: transform 160ms var(--ease-out); }
 .btn--ghost:hover .btn__arrow { transform: translateY(2px); }
@@ -681,8 +602,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
    8. HERO
    ============================================================ */
 .hero {
-  position: relative;
-  background-color: var(--paper); /* first paint needs no image */
+  position: relative; /* first paint needs no image */
   isolation: isolate;
 }
 
@@ -717,9 +637,6 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   content: "";
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(66% 56% at 16% 74%, rgba(8, 9, 10, 0.66), rgba(8, 9, 10, 0) 74%),
-    var(--plan-scrim);
   pointer-events: none;
 }
 
@@ -876,11 +793,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   flex: none;
   transition: box-shadow 160ms linear;
 }
-.dot--cost { background: var(--cost); }
-.dot--green { background: var(--green); }
-.dot--op { background: var(--op); }
 .dot--harvest { background: var(--harvest); }
-.dot--pasture { background: var(--pasture); }
 
 /* ============================================================
    10. SPEC ROWS, DOTTED LEADERS
@@ -992,10 +905,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   border: 1px solid var(--green-line);
   border-radius: 999px;
   background: var(--green-glass);
-  font-family: var(--mono);
   font-size: 0.6875rem;
-  font-weight: 500;
-  letter-spacing: 0.08em;
   color: var(--green-read);
   white-space: nowrap;
 }
@@ -1011,18 +921,10 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .device {
   width: var(--dw, 264px);
   max-width: 100%;
-  padding: 8px;
-  background: var(--sheet-hi);
-  border-radius: var(--r-bezel);
-  box-shadow: var(--sh-device);
 }
 
 .device__screen {
   position: relative;
-  overflow: hidden;
-  border-radius: var(--r-screen);
-  aspect-ratio: 395 / 838.5;
-  background: var(--paper);
 }
 
 .device__screen img {
@@ -1070,11 +972,6 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
     z-index: 2;
     margin-left: calc((var(--split-pad) + 56px) * -1);
   }
-  .split--right .device--break {
-    margin-left: 0;
-    margin-right: calc((var(--split-pad) + 56px) * -1);
-    align-self: flex-end;
-  }
 }
 
 /* Dimension line drawn over a screenshot. A drafting convention, not a web pattern.
@@ -1087,7 +984,6 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   left: var(--dim-left, 12%);
   width: var(--dim-w, 60%);
   height: 1px;
-  background: var(--green);
   transform-origin: left;
   z-index: 3;
   pointer-events: none;
@@ -1112,10 +1008,8 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   padding: 4px 10px;
   border: 1px solid var(--green-line);
   border-radius: 999px;
-  background: var(--green-glass);
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
-  font-family: var(--mono);
   font-variant-numeric: tabular-nums slashed-zero;
   font-size: 0.75rem;
   font-weight: 700;
@@ -1141,7 +1035,6 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   justify-content: space-between;
   gap: 40px;
   padding: clamp(28px, 5vw, 52px);
-  background-color: var(--sheet);
   border-block: 1px solid var(--rule);
 }
 
@@ -1266,8 +1159,6 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 }
 
 .rot__crop { display: block; color: var(--ink); font-weight: 500; }
-
-.rot__node--flag { border-color: rgba(232, 163, 61, 0.45); }
 .rot__node--flag .rot__crop { color: var(--warn); }
 .rot__node--flag .chip { margin-top: 10px; }
 
@@ -1280,50 +1171,9 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
    15. PLANT THUMBNAIL RAIL
    The one place on the page where colour comes up to full.
    ============================================================ */
-.rail {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 96px;
-  gap: 14px;
-  margin-top: 32px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  padding-bottom: 8px;
-  scrollbar-width: none;
-}
-.rail::-webkit-scrollbar { display: none; }
-
-@media (min-width: 1100px) {
-  .rail { grid-auto-flow: row; grid-template-columns: repeat(6, 96px); overflow: visible; }
-}
-
-.rail__item { scroll-snap-align: start; }
-
-.thumb { width: 96px; }
-
-.thumb__frame {
-  overflow: hidden;
-  border-radius: 12px;
-  border: 1px solid var(--rule);
-  background: var(--sheet);
-  aspect-ratio: 1;
-}
 
 /* Several of these are illustrations on a light ground, so they need
    holding down at rest or they become the brightest thing on the page. */
-.thumb__frame img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: grayscale(0.30) saturate(0.85) brightness(0.80);
-  transition: filter 300ms var(--ease-out), transform 300ms var(--ease-out);
-}
-
-.thumb figcaption { margin-top: 8px; text-align: center; }
-
-@media (hover: hover) and (pointer: fine) {
-  .thumb:hover .thumb__frame img { filter: none; transform: scale(1.03); }
-}
 
 /* ============================================================
    16. PRICING, ONE PANEL SPLIT BY A HAIRLINE
@@ -1356,13 +1206,11 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   min-height: 64px;
   padding: 18px 4px;
   color: var(--ink);
-  font-weight: 500;
   cursor: pointer;
   list-style: none;
   transition: color 160ms linear;
 }
 .faq__q::-webkit-details-marker { display: none; }
-.faq__q:hover { color: var(--green-read); }
 
 .faq__icon {
   flex: none;
@@ -1387,8 +1235,6 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
    18. FOOTER
    ============================================================ */
 .foot {
-  background: var(--floor);
-  border-top: 1px solid var(--rule);
   padding-block: 48px 40px;
 }
 
@@ -1404,9 +1250,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   align-items: center;
   gap: 10px;
   color: var(--ink);
-  font-weight: 700;
 }
-.foot__brand img { width: 24px; height: 24px; border-radius: 7px; }
 
 .foot__links { display: flex; flex-wrap: wrap; gap: 4px 8px; margin-left: auto; }
 
@@ -1424,10 +1268,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   margin-top: 32px;
   padding-top: 24px;
   border-top: 1px solid var(--rule);
-  font-family: var(--mono);
-  font-size: 0.75rem;
   line-height: 1.7;
-  letter-spacing: 0.02em;
   color: var(--ink-3);
 }
 
@@ -1436,8 +1277,8 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
    ============================================================ */
 .legal { padding-block: clamp(56px, 8vw, 96px) clamp(72px, 10vw, 112px); }
 
-.legal h1 { font-size: clamp(2rem, 5vw, 2.75rem); letter-spacing: -0.03em; margin-bottom: 8px; }
-.legal h2 { font-size: 1.25rem; letter-spacing: -0.015em; margin-top: 44px; margin-bottom: 12px; }
+.legal h1 { margin-bottom: 8px; }
+.legal h2 { margin-bottom: 12px; }
 .legal h3 { font-size: 1.0625rem; margin-top: 28px; margin-bottom: 8px; }
 
 .legal p, .legal li { color: var(--ink-2); max-width: 68ch; }
@@ -1452,26 +1293,19 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .legal a { text-decoration: underline; text-underline-offset: 3px; }
 
 .legal code {
-  font-family: var(--mono);
   font-size: 0.875em;
   padding: 2px 6px;
   border: 1px solid var(--rule);
   border-radius: 6px;
-  background: var(--sheet);
   color: var(--ink);
   overflow-wrap: anywhere;
 }
 
 .legal__meta { font-size: 0.875rem; color: var(--ink-3); margin-bottom: 32px; }
-.legal__meta strong { color: var(--ink-2); font-weight: 500; }
-
-.legal__table-wrap { overflow-x: auto; margin: 18px 0; }
 
 .legal table {
   width: 100%;
-  min-width: 520px;
   border-collapse: collapse;
-  font-size: 0.9375rem;
 }
 
 .legal th, .legal td {
@@ -1484,10 +1318,8 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .legal td { color: var(--ink-2); }
 
 .callout {
-  background: var(--sheet);
   border: 1px solid var(--rule);
   border-left: 3px solid var(--green);
-  border-radius: 12px;
   padding: 20px 22px;
   margin: 26px 0;
 }
@@ -1543,18 +1375,6 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   transition: opacity 240ms var(--ease-out) 420ms, transform 240ms var(--ease-out) 420ms;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
-  border: 0;
-}
-
 /* ============================================================
    21. REDUCED MOTION
    ============================================================ */
@@ -1569,11 +1389,10 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   .js .reveal { opacity: 1; transform: none; }
   .hero__plan .plan { animation: none; }
   .card:hover, .btn:hover, .btn:active { transform: none; }
-  .thumb:hover .thumb__frame img { transform: none; }
 }
 
 @media print {
-  .nav, .hero__plan, .device, .devices, .rail, .split__plate { display: none !important; }
+  .nav, .hero__plan, .device, .devices, .split__plate { display: none !important; }
   body { background: #fff; color: #000; }
 }
 
@@ -1599,7 +1418,6 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   user-select: none;
 }
 .langs__button::-webkit-details-marker { display: none; }
-.langs__button:hover { border-color: var(--rule-lit); }
 .langs__button:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
 .langs__globe { color: var(--green); font-size: 0.95em; }
 
@@ -1617,7 +1435,6 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   margin: 0;
   padding: 6px;
   list-style: none;
-  background: var(--sheet);
   border: 1px solid var(--rule);
   border-radius: 14px;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
@@ -1632,7 +1449,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   text-decoration: none;
   white-space: nowrap;
 }
-a.langs__item:hover { background: var(--sheet-hi); text-decoration: none; }
+a.langs__item:hover { text-decoration: none; }
 a.langs__item:focus-visible { outline: 2px solid var(--green); outline-offset: -2px; }
 .langs__item--on { color: var(--green-read); }
 
@@ -1655,12 +1472,11 @@ a.langs__item:focus-visible { outline: 2px solid var(--green); outline-offset: -
 
 /* The app is live: the chip became a link to the App Store page. */
 a.nav__chip { text-decoration: none; }
-a.nav__chip:hover { color: var(--ink); border-color: var(--ink-3); }
+a.nav__chip:hover { color: var(--ink); }
 
 /* Apple's official badge, used as supplied: never recoloured or redrawn. */
 .store-badge { display: inline-block; line-height: 0; border-radius: 8px; }
 .store-badge img { width: 150px; height: 50px; }
-
 
 /* ============================================================
    VISTO SKIN
@@ -1681,7 +1497,6 @@ a.nav__chip:hover { color: var(--ink); border-color: var(--ink-3); }
   --on-c1: #03210f;
   --bg: #06140f;
   --bg-2: #0b2620;
-  --text: #f3f8f4;
   --serif: "Instrument Serif", "Instrument Serif Fallback", Georgia, serif;
   --glass-line: rgba(255, 255, 255, 0.14);
   --glass-line-2: rgba(255, 255, 255, 0.26);
@@ -1799,8 +1614,6 @@ a.nav__chip:hover { background: rgba(255, 255, 255, 0.14); border-color: var(--g
 .dim { background: var(--accent-a); }
 .dim::before, .dim::after { background: var(--accent-a); }
 .dim__chip { border-color: var(--green-line); background: rgba(6, 20, 15, 0.7); font-family: var(--sans); }
-.thumb__frame { border-radius: 18px; border-color: var(--glass-line); }
-.thumb__frame img { filter: grayscale(0.15) saturate(0.95) brightness(0.9); }
 
 /* faq */
 .faq, .faq__item { border-color: var(--glass-line); }
@@ -1835,7 +1648,6 @@ a.langs__item:hover { background: rgba(255, 255, 255, 0.1); }
 .legal-section { scroll-margin-top: 96px; }
 .table-wrap, .legal__table-wrap { overflow-x: auto; margin: 16px 0 20px; border-radius: 18px; border: 1px solid var(--glass-line); background: rgba(255, 255, 255, 0.04); }
 .legal table { min-width: 0; font-size: 0.875rem; line-height: 1.5; }
-.legal .legal-table { min-width: 760px; }
 .legal th, .legal td { border-bottom-color: rgba(255, 255, 255, 0.08); }
 .legal thead th { font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-3); font-weight: 600; white-space: nowrap; }
 .legal tbody tr:last-child > * { border-bottom: 0; }
@@ -1849,7 +1661,6 @@ a.langs__item:hover { background: rgba(255, 255, 255, 0.1); }
   .legal-table tr:last-child { border-bottom: 0; }
   .legal-table th, .legal-table td { border: 0; padding: 6px 16px; }
   .legal-table td::before { content: attr(data-label); display: block; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; color: var(--ink-3); }
-  .legal__table-wrap table { min-width: 0; }
 }
 @media (max-width: 640px) { :root { --gut: 28px; } }
 @media (min-width: 760px) and (max-width: 1140px) { .nav__chip { display: none; } }
